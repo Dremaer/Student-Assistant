@@ -62,19 +62,32 @@
           </div>
         </div>
         <!-- Modal Background -->
-<div class="modal-background" id="login-modal">
-  <div class="modal-content">
-      <div class="modal-header">
-          <h2>Log In</h2>
-          <button class="close-btn" id="close-btn">&times;</button>
-      </div>
-      <form id="login-form">
-          <input type="text" placeholder="Email or username" required>
-          <input type="password" placeholder="Password" required>
-          <button type="submit">Log In</button>
-      </form>
-  </div>
-</div>
+        <div class="modal-background" id="login-modal">
+          <div class="modal-content">
+            <h2 class="modal-title">Login</h2>
+            <form id="login-form">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Email" required>
+        
+              <label for="password">Password</label>
+              <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="toggle-password bi bi-eye-slash"></i>
+              </div>
+        
+              <p class="error-message" id="error-message" style="display: none;">
+                Email or password aren't valid.
+              </p>
+        
+              <button type="submit" class="login-btn">Log in</button>
+        
+              <p class="signup">
+                Don't have an account? <a href="#">Sign Up</a>
+              </p>
+            </form>
+          </div>
+        </div>
+        
 
 
       <footer id="main-footer" class="text-center justify-content-center bg-white fixed-bottom">
