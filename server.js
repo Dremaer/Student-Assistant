@@ -1,16 +1,20 @@
-const express = require('express');
+const express = require("express");
+const path = require("path");
+const bodyParser = require("body-parser");
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; 
 
-// Middleware to handle JSON data
-app.use(express.json());
+app.set("view engine", "ejs");
+app.set("views", "views");
 
-// Basic route
-app.get('/', (req, res) => {
-  res.send('Hello from Node.js server!');
-});
+const landPageRoutes = require("./routes/landing-page");
 
-// Start the server
+app.use(express.static(path.join(__dirname, "public")));
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use("/", landPageRoutes);
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
