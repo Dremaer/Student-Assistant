@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/main_screen.css">
     <link rel="stylesheet" href="/css/modal-login.css">
     <link rel="stylesheet" href="/css/modal-signup.css">
+    <link rel="stylesheet" href="/css/uploadhub.css">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -41,7 +42,7 @@
                 <a href="#" class="nav-link" id="log-in">Log In</a> <!-- ID 추가 -->
               </li>
               <li class="nav-item">
-                <button class="btn"><a href="#" class="nav-link ">Sign Up</a></button>
+                <button type="button" class="btn"><a href="#" class="nav-link ">Sign Up</a></button>
               </li>
             </div>
           </div>
@@ -64,7 +65,24 @@
         </div>
 
 
-        <!-- Modal Background -->
+<!--Upload Hub modal sctructure-->
+<div class="modal-background" id="uploadHub-modal">
+  <div class="modal-content">
+    <h2 class="modal-title">Upload Hub</h2>
+    <button class="close-btn" id="uploadHub-close-btn">&times;</button>
+    <div class="upload-area">
+      <i class="bi bi-file-earmark-arrow-up-fill" id="upload-icon"></i>
+      <p>Drag and Drop file here or <a href="#">Choose file</a></p>
+    </div>
+    <div class="help-center">
+      <i class="bi bi-exclamation-circle" id="help-icon"></i>
+      <p class="help-text">Help Center</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Background -->
 <div class="modal-background" id="login-modal">
   <div class="modal-content">
     <h2 class="modal-title">Login</h2>
@@ -135,5 +153,7 @@
         </div>
       </footer>
       <script src="/js/modal-login.js" defer></script>
+      <script src="/js/modal-signinup.js" defer></script>
+      <script src="/js/modal-uploadhub.js" defer></script>
     </body>
 </html>
