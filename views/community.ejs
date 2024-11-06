@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="/css/main_screen.css">
     <link rel="stylesheet" href="/css/modal-login.css">
     <link rel="stylesheet" href="/css/modal-signup.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/css/uploadhub.css">
-=======
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
+    <link rel="stylesheet" href="/css/community.css">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -34,7 +31,7 @@
               </li>
               <li class="nav-item">
                 <a href="/community" class="nav-link">Community</a>
-              </li>
+            </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">EduBot</a>
               </li>
@@ -52,97 +49,43 @@
         </div>
       </nav>
 
-      <section class="info text-center">
-        <div class="container justify-content-center">
-          <div class="title">
-            <h1 class="text-white">StudentAssistant AI: <br />
-            Your Partner in <span>Exam Preparation</span></h1>
-            <p class="text">Unlock your study potential! Upload your materials and access <br>
-            AI-generated quizzes, flashcards, and practice tests to enhance your learning.</p>
-          </div>
-            <div class="search-bar input-group mb-3">
-              <input type="text" class="form-control" placeholder="Enter topic which you want to prepare" aria-label="Enter topic which you want to prepare">
-              <button class="btn btn-warning btn-left" type="button"><i class="bi bi-search"></i></button>
-              <button class="btn btn-outline-light btn-right ms-2" type="button">+ Upload Hub</button>
-          </div>
+      <div class="container mt-4">
+        <div class="header text-center mb-4">
+            <h1>Discussions</h1>
+            <p>Seek advice, get assistance, and engage with the community.</p>
+            <button class="btn discussion-button">Discussion</button>
         </div>
-
-<<<<<<< HEAD
-
-<!--Upload Hub modal sctructure-->
-<div class="modal-background" id="uploadHub-modal">
-  <div class="modal-content">
-    <h2 class="modal-title">Upload Hub</h2>
-    <button class="close-btn" id="uploadHub-close-btn">&times;</button>
-    <div class="upload-area">
-      <i class="bi bi-file-earmark-arrow-up-fill" id="upload-icon"></i>
-      <p>Drag and Drop file here or <a href="#">Choose file</a></p>
-    </div>
-    <div class="help-center">
-      <i class="bi bi-exclamation-circle" id="help-icon"></i>
-      <p class="help-text">Help Center</p>
-    </div>
-=======
-        <!-- Modal Background -->
-<div class="modal-background" id="login-modal">
-  <div class="modal-content">
-    <h2 class="modal-title">Login</h2>
-    <button class="close-btn" id="login-close-btn">&times;</button> <!-- 닫기 버튼 추가 -->
-    <form id="login-form">
-      <label for="email">Email</label>
-      <input type="text" id="email" placeholder="Email" required>
-
-      <label for="password">Password</label>
-      <div class="password-container">
-        <input type="password" id="password" placeholder="Password" required>
-        <i class="toggle-password bi bi-eye-slash"></i>
-      </div>
-
-      <p class="error-message" id="error-message" style="display: none;">
-        Email or password aren't valid.
-      </p>
-
-      <button type="submit" class="login-btn">Log in</button>
-
-      <p class="signup">
-        Don't have an account? <a href="#">Sign Up</a>
-      </p>
-    </form>
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
-  </div>
-</div>
-
-        
-
-        <div class="modal-background" id="signup-modal">
-          <div class="modal-content">
-            <h2 class="modal-title">Create your account</h2>
-            <button class="close-btn" id="signup-close-btn">&times;</button>
-            <form id="signup-form">
-              <label for="email">Email</label>
-              <input type="text" id="email" placeholder="Email" required>
-              
-              <label for="password">Password</label>
-              <div class="password-container">
-                <input type="password" id="password" placeholder="Password" required>
-                <i class="toggle-password bi bi-eye-slash"></i>
-              </div>
-        
-              <button type="submit" class="get-started-btn">Get started</button>
-              
-              <p class="terms">
-                By creating an account, I agree to StudentAssistant’s
-                <a href="#">Website Terms</a>, <a href="#">Privacy Policy</a>, and
-                <a href="#">Licensing Terms</a>.
-              </p>
-              <p class="signup">
-                Already have an account? <a href="#">Log in</a>
-              </p>
-            </form>
-          </div>
+        <div class="search-bar mb-4">
+            <input type="text" class="form-control" placeholder="Search discussions">
         </div>
-        
-        
+        <ul class="discussion-list">
+            <li class="discussion-item">
+                <img class="profile-pic" src="https://via.placeholder.com/50" alt="Profile">
+                <div class="discussion-content">
+                    <h2>What is the primary purpose of the R^2 metric in linear regression?</h2>
+                    <p class="discussion-details">Sam | 10 replies | 18d ago</p>
+                </div>
+            </li>
+            <li class="discussion-item">
+                <img class="profile-pic" src="https://via.placeholder.com/50" alt="Profile">
+                <div class="discussion-content">
+                    <h2>What is the primary purpose of the R^2 metric in linear regression?</h2>
+                    <p class="discussion-details">Sam | 10 replies | 18d ago</p>
+                </div>
+            </li>
+            <li class="discussion-item">
+                <img class="profile-pic" src="https://via.placeholder.com/50" alt="Profile">
+                <div class="discussion-content">
+                    <h2>What is the primary purpose of the R^2 metric in linear regression?</h2>
+                    <p class="discussion-details">Sam | 10 replies | 18d ago</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+
+
+
 
 <!-- Modal Background -->
 <div class="modal-background" id="login-modal">
@@ -216,6 +159,5 @@
       </footer>
       <script src="/js/modal-login.js" defer></script>
       <script src="/js/modal-signinup.js" defer></script>
-      <script src="/js/modal-uploadhub.js" defer></script>
     </body>
 </html>

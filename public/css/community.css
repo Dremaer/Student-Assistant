@@ -1,0 +1,85 @@
+.container.mt-4 .header.text-center.mb-4 h1,
+.container.mt-4 .header.text-center.mb-4 p {
+    color: white;
+}
+
+.discussion-button {
+    background-color: #ECA72C; /* 버튼 배경색을 이미지와 맞게 조정 */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-flex;
+    align-items: center; /* 수직 정렬 */
+    justify-content: center; /* 수평 정렬 */
+    height: 40px; /* 버튼 높이 고정 */
+    line-height: normal;
+    transition: background-color 0.3s;
+}
+
+.discussion-button:hover {
+    background-color: #ECA72C;
+}
+
+/* 검색바 스타일 */
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 토론 목록 스타일 */
+.discussion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.discussion-item {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.discussion-item:hover {
+    background-color: #e9ecef;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.discussion-content {
+    flex-grow: 1;
+}
+
+.discussion-content h2 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.discussion-details {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
