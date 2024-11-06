@@ -53,11 +53,16 @@ app.use("/", landPageRoutes);
 app.use("/auth", authPageRoutes);
 
 app.get("/community", (req, res) => {
-  res.render("community"); // community.ejs 파일을 렌더링
+  res.render("community"); 
 });
 app.get('/main_screen', (req, res) => {
-  res.render('main_screen'); // main_screen.ejs 파일을 렌더링
+  res.render('main_screen'); 
 });
+app.get('/edubot', (req, res) => {
+  res.render('edubot'); 
+});
+
+
 mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,
