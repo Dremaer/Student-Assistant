@@ -68,9 +68,9 @@
           <h2>Log In</h2>
           <button class="close-btn" id="close-btn">&times;</button>
       </div>
-      <form id="login-form">
-          <input type="text" placeholder="Email or username" required>
-          <input type="password" placeholder="Password" required>
+      <form method="POST" id="login-form" action="/auth">
+          <input type="email" placeholder="Email" name="email" required>
+          <input type="password" placeholder="Password" name="password" required>
           <button type="submit">Log In</button>
       </form>
   </div>
