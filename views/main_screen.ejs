@@ -62,51 +62,66 @@
               <button class="btn btn-outline-light btn-right ms-2" type="button">+ Upload Hub</button>
           </div>
         </div>
+
         <!-- Modal Background -->
 <div class="modal-background" id="login-modal">
   <div class="modal-content">
-      <div class="modal-header">
-          <h2>Log In</h2>
-          <button class="close-btn" id="close-btn">&times;</button>
-      </div>
-      <form method="POST" id="login-form" action="/auth">
-          <input type="email" placeholder="Email" name="email" required>
-          <input type="password" placeholder="Password" name="password" required>
-          <button type="submit">Log In</button>
-      </form>
-  </div>
-</div>
-
-
-
-<div class="modal-background" id="signup-modal">
-  <div class="modal-content">
-    <h2 class="modal-title">Create your account</h2>
-    <button class="close-btn" id="signup-close-btn">&times;</button>
-    <form id="signup-form">
+    <h2 class="modal-title">Login</h2>
+    <button class="close-btn" id="login-close-btn">&times;</button> <!-- 닫기 버튼 추가 -->
+    <form id="login-form">
       <label for="email">Email</label>
       <input type="text" id="email" placeholder="Email" required>
-      
+
       <label for="password">Password</label>
       <div class="password-container">
         <input type="password" id="password" placeholder="Password" required>
         <i class="toggle-password bi bi-eye-slash"></i>
       </div>
 
-      <button type="submit" class="get-started-btn">Get started</button>
-      
-      <p class="terms">
-        By creating an account, I agree to StudentAssistant’s
-        <a href="#">Website Terms</a>, <a href="#">Privacy Policy</a>, and
-        <a href="#">Licensing Terms</a>.
+      <p class="error-message" id="error-message" style="display: none;">
+        Email or password aren't valid.
       </p>
+
+      <button type="submit" class="login-btn">Log in</button>
+
       <p class="signup">
-        Already have an account? <a href="#">Log in</a>
+        Don't have an account? <a href="#">Sign Up</a>
       </p>
     </form>
   </div>
 </div>
 
+        
+
+        <div class="modal-background" id="signup-modal">
+          <div class="modal-content">
+            <h2 class="modal-title">Create your account</h2>
+            <button class="close-btn" id="signup-close-btn">&times;</button>
+            <form id="signup-form">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Email" required>
+              
+              <label for="password">Password</label>
+              <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="toggle-password bi bi-eye-slash"></i>
+              </div>
+        
+              <button type="submit" class="get-started-btn">Get started</button>
+              
+              <p class="terms">
+                By creating an account, I agree to StudentAssistant’s
+                <a href="#">Website Terms</a>, <a href="#">Privacy Policy</a>, and
+                <a href="#">Licensing Terms</a>.
+              </p>
+              <p class="signup">
+                Already have an account? <a href="#">Log in</a>
+              </p>
+            </form>
+          </div>
+        </div>
+        
+        
 
       <footer id="main-footer" class="text-center justify-content-center bg-white fixed-bottom">
         <div class="container">
