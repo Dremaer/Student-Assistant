@@ -52,6 +52,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", landPageRoutes);
 app.use("/auth", authPageRoutes);
 
+app.get("/community", (req, res) => {
+  res.render("community"); // community.ejs 파일을 렌더링
+});
+
 mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,
