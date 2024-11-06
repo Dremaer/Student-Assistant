@@ -55,7 +55,9 @@ app.use("/auth", authPageRoutes);
 app.get("/community", (req, res) => {
   res.render("community"); // community.ejs 파일을 렌더링
 });
-
+app.get('/main_screen', (req, res) => {
+  res.render('main_screen'); // main_screen.ejs 파일을 렌더링
+});
 mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,
