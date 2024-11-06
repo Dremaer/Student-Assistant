@@ -21,13 +21,10 @@
     "csurf": "^1.11.0",
     "dompurify": "^3.1.7",
     "ejs": "^3.1.10",
-<<<<<<< HEAD
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
-=======
-    "express": "^4.21.1",
     "express-session": "^1.18.1",
     "express-validator": "^7.2.0",
     "jsdom": "^25.0.1",
@@ -35,7 +32,6 @@
     "mongoose": "^8.8.0",
     "nodemailer": "^6.9.16",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "nodemon": "^3.1.7",
     "postcss-loader": "^8.1.1",
     "raw-loader": "^4.0.2",
     "session": "^0.1.0",
@@ -43,6 +39,5 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
   }
 }

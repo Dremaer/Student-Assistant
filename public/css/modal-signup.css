@@ -5,14 +5,6 @@
     padding: 0;
   }
   
-<<<<<<< HEAD
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-  }
-  
-=======
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
   /* 모달 배경 */
   .modal-background {
     display: none;
@@ -35,21 +27,13 @@
     width: 350px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-<<<<<<< HEAD
-=======
     position: relative; /* 추가: 버튼 위치 조정 */
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
   }
   
   .modal-title {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: bold;
-<<<<<<< HEAD
-  }
-  
-  #login-form label {
-=======
     text-align: left; /* 왼쪽 정렬 */
   }
   
@@ -65,25 +49,10 @@
   
   /* 입력 필드 스타일 */
   #signup-form label {
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
     display: block;
     font-size: 14px;
     color: #333;
     margin-bottom: 5px;
-<<<<<<< HEAD
-    text-align: left;
-  }
-  
-  #login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    font-size: 14px;
-  }
-  
-=======
     text-align: left; /* 텍스트를 왼쪽 정렬 */
   }
   
@@ -97,7 +66,6 @@
   }
   
   /* 비밀번호 토글 아이콘 */
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
   .password-container {
     position: relative;
   }
@@ -110,31 +78,16 @@
     cursor: pointer;
   }
   
-<<<<<<< HEAD
-=======
   /* 버튼 스타일 */
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
   .get-started-btn {
     background-color: #f9a825;
     color: white;
     border: none;
-<<<<<<< HEAD
-    padding: 10px 20px;
-=======
     padding: 15px;
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
     width: 100%;
-<<<<<<< HEAD
-    margin-bottom: 20px;
-  }
-  
-  .terms, .signup {
-    font-size: 12px;
-    color: #555;
-=======
     margin-top: 20px;
     text-transform: uppercase;
   }
@@ -145,7 +98,6 @@
     color: #555;
     text-align: left; /* 왼쪽 정렬 */
     margin-top: 10px; /* 위 여백 */
->>>>>>> 441bf47dacf6d8752fe0961668b67217fa73852c
   }
   
   .terms a, .signup a {
