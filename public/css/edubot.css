@@ -21,7 +21,7 @@
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #f9a825;
+    color: black;
 }
 
 .button-group {
@@ -65,7 +65,7 @@
 .generate-button {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #f9a825;
+    background-color: #030303;
     color: #fff;
     border: none;
     border-radius: 0 25px 25px 0;
