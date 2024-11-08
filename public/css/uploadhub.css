@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-.modal-background{
+.modal-background-upload{
     display: none;
     position: fixed;
     top: 0;
@@ -11,7 +11,7 @@
     z-index: 1000;
 }
 
-.modal-content {
+.modal-content-upload {
     font-family: "Roboto slab", serif;
     background-color: white;
     padding: 10px;
