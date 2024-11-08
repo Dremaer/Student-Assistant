@@ -1,6 +1,7 @@
 .container.mt-4 .header.text-center.mb-4 h1,
 .container.mt-4 .header.text-center.mb-4 p {
     color: black;
+    text-align: left;
 }
 
 .discussion-button {
