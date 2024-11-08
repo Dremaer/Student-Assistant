@@ -21,10 +21,6 @@
     transition: background-color 0.3s;
 }
 
-.discussion-button:hover {
-    background-color: #ECA72C;
-}
-
 /* 검색바 스타일 */
 .search-bar {
     display: flex;
