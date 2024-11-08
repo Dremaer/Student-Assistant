@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+body {
+    background-color: white;
+    font-family: 'Roboto slab', serif;
+}
+
+nav .navbar-brand img{
+    width: 50px;
+    height: auto;
+}
+
+.collapse {
+    padding-right: 50px;
+}
+
+.nav-link {
+    color: #848484;
+}
+
+.info {
+    margin-top: 140px;
+}
+
+.title p{
+    font-size: 14px;
+    color: #D2D2D2;
+}
+.btn {
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+}
+
+.btn .nav-link{
+    color: #25283D;
+    text-align: center;
+    padding: 0;
+}
+
+.btn .nav-link:hover {
+    color: white;
+    background-color: #282829;
+}
+
+.title h1 span {
+    color: #ECA72C;
+}
+
+.search-bar {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.form-control .btn-warning{
+    margin-left: 50px;
+}
+.btn-warning {
+    background-color: #ECA72C;
+    width: 40px;
+}
+
+.bi{
+    color: white;
+    font-size: 1.25rem;
+
+}
+
+.btn-outline-light{
+    width: 120px;
+    color: #25283D;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.btn-left{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.btn-right{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.col{
+    padding-top: 12px;
+    color: #25283D;
+}
+
