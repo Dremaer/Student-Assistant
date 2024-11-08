@@ -28,21 +28,21 @@ nav .navbar-brand img{
     color: #D2D2D2;
 }
 .btn {
-    background-color: white;
+    background-color: #282829;
     width: 100px;
     height: 40px;
     padding: 0;
 }
 
 .btn .nav-link{
-    color: #25283D;
+    color: white;
     text-align: center;
     padding: 0;
 }
 
 .btn .nav-link:hover {
-    color: white;
-    background-color: #282829;
+    color: black;
+    background-color: white;
 }
 
 .title h1 span {
