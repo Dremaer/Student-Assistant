@@ -69,7 +69,7 @@ app.get('/quizzes', (req, res) => {
 });
 app.get('/quizzes_subject', (req, res) => {
   res.render('quizzes_subject');
-})
+});
 
 
 mongoose
