@@ -61,6 +61,10 @@ app.get('/main_screen', (req, res) => {
 app.get('/edubot', (req, res) => {
   res.render('edubot'); 
 });
+app.get('/auth', (req, res) => {
+  res.render('auth'); 
+});
+
 
 
 mongoose
