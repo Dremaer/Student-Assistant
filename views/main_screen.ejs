@@ -70,10 +70,26 @@
   <div class="modal-content">
     <h2 class="modal-title">Upload Hub</h2>
     <button class="close-btn" id="uploadHub-close-btn">&times;</button>
-    <div class="upload-area">
+    <div class="upload-area" onclick="document.getElementById('file-input').click()">
       <i class="bi bi-file-earmark-arrow-up-fill" id="upload-icon"></i>
-      <p>Drag and Drop file here or <a href="#">Choose file</a></p>
+      <p>Drag and Drop file here or <span class="choose-file-text">Choose file</span></p>
+      <input type="file" id="file-input" onchange="displayFileDetails()">
+      <p id="file-name" class="uploaded-file-name"></p>
     </div>
+
+    <div class="tips-section">
+      <p>Choose one tip:</p>
+      <div class="tip-options">
+        <button class="tip-btn" onclick="selectOption('Quiz')">Quiz</button>
+        <button class="tip-btn" onclick="selectOption('Flashcard')">Flashcard</button>
+        <button class="tip-btn" onclick="selectOption('Mid-term exam')">Mid-term exam</button>
+        <button class="tip-btn" onclick="selectOption('Final exam')">Final exam</button>
+      </div>
+      <button class="generate-btn" onclick="generateContent()">Generate</button>
+    </div>
+    
+    
+
     <div class="help-center">
       <i class="bi bi-exclamation-circle" id="help-icon"></i>
       <p class="help-text">Help Center</p>

@@ -64,7 +64,12 @@ app.get('/edubot', (req, res) => {
 app.get('/auth', (req, res) => {
   res.render('auth'); 
 });
-
+app.get('/quizzes', (req, res) => {
+  res.render('quizzes');
+});
+app.get('/quizzes_subject', (req, res) => {
+  res.render('quizzes_subject');
+})
 
 
 mongoose
