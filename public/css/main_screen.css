@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
+*{
+    font-family: 'Roboto Slab', serif;
+}
 
 body {
     background-color: #25283D;
-    font-family: 'Roboto Slab', serif;
 }
 
 nav .navbar-brand img{
@@ -17,6 +19,8 @@ nav .navbar-brand img{
 
 .nav-link {
     color: white;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .info {
