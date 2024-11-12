@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Page when open subjects in quizzes*/
+nav .navbar-brand img{
+    width: 50px;
+    height: auto;
+}
+
+.collapse {
+    padding-right: 50px;
+}
+
+.nav-link {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn {
+    background-color: #25283D;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.btn .nav-link{
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+}
+
+.btn .nav-link:hover {
+    color: #424242;
+    background-color: #848484;
+    border: #424242;
+}
+
+#main-footer{
+    color: white;
+    padding-top: 8px;
+    background-color: #848484;
+}
+
+/* Template nav */
+#second-nav{
+    margin-top: 10px;
+}
+
+#second-nav .container{
+    display: flex;
+    margin-left: 5px;
+}
+
+.template-dropdown{
+    margin-left: 110px;
+}
+.temp-btn{
+    display: flex;
+    gap: 2px;
+    color: #ffffff;
+    background-color: #25283D;
+    padding: 5px;
+    cursor: pointer;
+}
+.dropdown-title{
+    background-color: #25283D;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.list-tip{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: #424242;
+}
+.list-item img{
+    width: 30px;
+    height: 30px;
+}

@@ -70,6 +70,10 @@ app.get('/quizzes', (req, res) => {
 app.get('/quizzes_subject', (req, res) => {
   res.render('quizzes_subject');
 });
+app.get('/quiz_template', (req, res) => {
+  res.render('quiz_template');
+});
+
 
 
 mongoose
