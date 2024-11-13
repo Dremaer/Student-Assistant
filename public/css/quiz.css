@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Page when open subjects in quizzes*/
+nav .navbar-brand img{
+    width: 50px;
+    height: auto;
+}
+
+.collapse {
+    padding-right: 50px;
+}
+
+.nav-link {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-control{
+    height: 45px;
+}
+
+#search{
+    background-color: #ECA72C;
+    color: white;
+    width: 50px;
+    height: 45px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.btn {
+    background-color: #25283D;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.btn .nav-link{
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+}
+
+.btn .nav-link:hover {
+    color: #424242;
+    background-color: #848484;
+    border: #424242;
+}
+
+#main-footer{
+    color: white;
+    padding-top: 8px;
+    background-color: #848484;
+}
+
+/* Template nav */
+#info .container{
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+}
+.img img{
+    width: 850px;
+    height: 540px;
+    border-radius: 10px;
+}
+
+.info-tip{
+    display: block;
+}
+
+.heading{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.heading h4{
+    font-weight: 550; 
+}
+
+.heading img{
+    width: 30px;
+    height: 30px;
+}
+
+.info-tip h5{
+    font-weight: 550;
+}
+
+.info-tip ul{
+    line-height: 5vh;
+}
+.info-tip ul li{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.buttons .download, 
+.buttons .edit {
+    display: inline-block; /* Ensures uniform styling */
+    width: 180px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #ECA72C;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 50px; /* Center text vertically */
+    text-decoration: none; /* Removes underline from <a> tag */
+}
+
+.download:hover, 
+.edit:hover {
+    background-color: rgba(236, 167, 44, 0.8);
+    color: #424242;
+}
+

@@ -73,6 +73,12 @@ app.get('/quizzes_subject', (req, res) => {
 app.get('/quiz_template', (req, res) => {
   res.render('quiz_template');
 });
+app.get('/quiz', (req, res) => {
+  res.render('quiz');
+});
+app.get('/quiz_1', (req, res) => {
+  res.render('quiz_1');
+});
 
 
 

@@ -55,70 +55,46 @@ nav .navbar-brand img{
 #main-footer{
     color: white;
     padding-top: 8px;
-    background-color: #848484;
+    background-color: #a4a4a4;
 }
 
-/* Template nav */
-#second-nav{
-    margin-top: 10px;
+/* Info */
+.quiz-container{
+    margin-top: 20px;
 }
 
-#second-nav .container{
+.title{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 380px;
+    color: #25283D;
+}
+
+#quiz-questions{
     display: flex;
-    margin-left: 5px;
+    gap: 200px;
 }
 
-.template-dropdown{
-    margin-left: 110px;
-}
-.temp-btn{
-    display: flex;
-    gap: 2px;
-    color: #ffffff;
-    background-color: #25283D;
-    padding: 8px;
-    cursor: pointer;
-    margin-right: 10px;
-    border-radius: 5px;
-}
-
-.temp-btn .bi{
-    font-size: 20px;
-}
-
-.dropdown-title{
-    background-color: #25283D;
+.btn-arrow{
+    width: 50px;
+    height: 50px;
+    background-color: #ECA72C;
     border: none;
-    color: #ffffff;
+}
+
+.btn-arrow:hover{
+    background-color: rgba(236, 167, 44, 0.8);
+    color: #424242;
+}
+
+.btn-arrow .bi{
     font-size: 20px;
-    padding-right: 2px;
+    font-weight: bold;
+    color: white;
 }
 
-.list-tip{
-    display: none;
-    width: 200px;
-    height: 200px;
-    background-color: #424242;
+#quiz-questions p{
+    font-size: 18px;
+    font-weight: 550;
 }
-.list-item img{
-    width: 30px;
-    height: 30px;
-}
-
-.tips-templates{
-    margin-top: 5px;
-    display: flex;
-    gap: 10px;
-}
-
-.tips-templates img{
-    width: 350px;
-    height: 220px;
-    background-color: rgba(37, 40, 71, 0.8);
-}
-
-.tips-templates a{
-    border: 1px solid #848484;
-}
-
 
