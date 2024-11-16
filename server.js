@@ -52,36 +52,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", landPageRoutes);
 app.use("/auth", authPageRoutes);
 
-app.get("/community", (req, res) => {
-  res.render("community"); 
-});
-app.get('/main_screen', (req, res) => {
-  res.render('main_screen'); 
-});
-app.get('/edubot', (req, res) => {
-  res.render('edubot'); 
-});
-app.get('/auth', (req, res) => {
-  res.render('auth'); 
-});
-app.get('/quizzes', (req, res) => {
-  res.render('quizzes');
-});
-app.get('/quizzes_subject', (req, res) => {
-  res.render('quizzes_subject');
-});
-app.get('/quiz_template', (req, res) => {
-  res.render('quiz_template');
-});
-app.get('/quiz', (req, res) => {
-  res.render('quiz');
-});
-app.get('/quiz_1', (req, res) => {
-  res.render('quiz_1');
-});
-
-
-
 mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,
