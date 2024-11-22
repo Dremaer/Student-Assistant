@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,9 +74,6 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a href="/quiz_template" class="nav-link">Templates</a>
-              </li>
-              <li class="nav-item">
                 <a href="/community" class="nav-link">Community</a>
               </li>
               <li class="nav-item">
@@ -99,15 +96,10 @@
       <section class="info text-center">
         <div class="container justify-content-center">
           <div class="title">
-            <h1 class="text-white">StudentAssistant AI: <br />
-            Your Partner in <span>Exam Preparation</span></h1>
+            <h1 class="text-white">StudentAssistant<br />
+            <span class="auto-type">Your Partner in Exam Preparation</span></h1>
             <p class="text">Unlock your study potential! Upload your materials and access <br>
             AI-generated quizzes, flashcards, and practice tests to enhance your learning.</p>
-          </div>
-            <div class="search-bar input-group mb-3">
-              <input type="text" class="form-control" placeholder="Enter topic which you want to prepare" aria-label="Enter topic which you want to prepare">
-              <button class="btn btn-warning btn-left" type="button"><i class="bi bi-search"></i></button>
-              <button class="btn btn-outline-light btn-right ms-2" type="button">+ Upload Hub</button>
           </div>
         </div>
       </section>
@@ -131,7 +123,6 @@
               <button class="tip-btn" onclick="selectOption('Quiz')">Quiz</button>
               <button class="tip-btn" onclick="selectOption('Flashcard')">Flashcard</button>
               <button class="tip-btn" onclick="selectOption('Mid-term exam')">Mid-term exam</button>
-              <button class="tip-btn" onclick="selectOption('Final exam')">Final exam</button>
             </div>
             <button class="generate-btn" onclick="generateContent()">Generate</button>
           </div>
@@ -221,5 +212,16 @@
     <script src="/js/modal-signinup.js" defer></script>
     <script src="/js/modal-uploadhub.js" defer></script>
     <script src="/js/quizzes.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        new Typed('.auto-type', {
+          strings: ["Your Partner in Exam Preparation"],
+          typeSpeed: 50,
+          backSpeed: 30,
+          loop: false,
+        });
+      });
+    </script>
 </body>
 </html>

@@ -167,3 +167,25 @@ nav .navbar-brand img{
     text-decoration: underline;
 }
 
+
+
+#auto-type {
+    font-size: 2rem;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+}
+
+/* Blinking cursor */
+#auto-type::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
