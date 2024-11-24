@@ -19,36 +19,85 @@ exports.getEduBot = (req, res, next) => {
   });
 };
 
-exports.getQuizzes = (req, res, next) => {
-  res.render("quizzes", {
+exports.getGrade1 = (req, res, next) => {
+  res.render("grade_1", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getQuizzesSubject = (req, res, next) => {
-  res.render("quizzes_subject", {
+exports.getDiscreteMaths = (req, res, next) => {
+  res.render("discrete_math", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getQuizTemplate = (req, res, next) => {
-  res.render("quiz_template", {
+exports.getProgramming = (req, res, next) => {
+  res.render("programming", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getQuiz = (req, res, next) => {
-  res.render("quiz", {
+exports.getGrade2 = (req, res, next) => {
+  res.render("grade_2", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getQuiz1 = (req, res, next) => {
-  res.render("quiz_1", {
+exports.getDataStructure = (req, res, next) => {
+  res.render("data_structure", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOP = (req, res, next) => {
+  res.render("oop", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getProbability = (req, res, next) => {
+  res.render("probability", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getAlgorithm = (req, res, next) => {
+  res.render("algorithm", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getGrade3 = (req, res, next) => {
+  res.render("grade_3", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getML = (req, res, next) => {
+  res.render("machine_learning", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getGrade4 = (req, res, next) => {
+  res.render("grade_4", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCV = (req, res, next) => {
+  res.render("computer_vision", {
     pageTitle: "project",
     path: "/landPage",
   });
