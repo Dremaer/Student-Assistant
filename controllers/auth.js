@@ -102,5 +102,5 @@ exports.postSignup = (req, res, next) => {
             const error = new Error(err);
             error.statusCode = 500;
             throw error;
-        });
+        });        
 };

@@ -40,7 +40,8 @@ app.use((req, res, next) => {
 });
 
 app.set("view engine", "ejs");
-app.set("views", "views");
+app.set("views", path.join(__dirname, "views"));
+/*app.set("views", "views");*/
 
 const landPageRoutes = require("./routes/landing-page");
 const authPageRoutes = require("./routes/auth");
