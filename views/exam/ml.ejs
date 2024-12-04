@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/exam/ml.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="/" class="navbar-brand"><img src="/images/blue_logo.png" /></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                <a href="/quizzes" class="nav-link" onclick="quizList(event)">Quizzes</a>
+                  <!-- Quizzes's Mega Drop Menu  -->                                
+                  <div class="dropdown-menu" id="quiz-dropdown">
+                    <div class="subject-types">
+                        <h3>Subject's types</h3>
+                        <p>Learn, challenge, and practice subjects to make exam preparation easier.</p>
+                    </div>
+                    <div class="subjects">
+                        <div class="category-column">
+                            <div class="category">
+                                <h4><a href="/grade_1">1 Grade</a></h4>
+                                <a href="/subjects/discrete_math" class="subject-link" data-subject="Discrete Mathematics">Discrete Mathematics</a>
+                                <a href="/subjects/programming" class="subject-link" data-subject="Introduction to Programming">Introduction to Programming</a>
+                            </div>
+                            <div class="category">
+                                <h4><a href="/grade_2">2 Grade</a></h4>
+                                <a href="/subjects/data_structure" class="subject-link" data-subject="Data Structure">Data Structure</a>
+                                <a href="/subjects/oop" class="subject-link" data-subject="Object Oriented Programming">Obejct Oriented Programming</a>
+                                <a href="/subjects/probability" class="subject-link" data-subject="Probability and Statistics">Probability and Statistics</a>
+                                <a href="/subjects/algorithm" class="subject-link" data-subject="Algorithm Analysis and Design">Algorithm Analysis and Design</a>
+                            </div>
+                        </div>
+                        <div class="category-column">
+                            <div class="category">
+                                <h4><a href="/grade_3">3 Grade</a></h4>
+                                <a href="/subjects/machine_learning" class="subject-link" data-subject="Machine Learning with Python">Machine Learning with Python</a>
+                            </div>
+                            <div class="category">
+                                <h4><a href="/grade_4">4 Grade</a></h4>
+                                <a href="/subjects/computer_vision" class="subject-link" data-subject="Computer Vision">Computer Vision</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                <a href="/community" class="nav-link">Community</a>
+                </li>
+                <li class="nav-item">
+                <a href="/edubot" class="nav-link">EduBot</a>
+                </li>
+            </ul>
+
+            <div class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a href="#" class="nav-link" id="log-in">Log In</a> <!-- ID 추가 -->
+                </li>
+                <li class="nav-item">
+                <button type="button" class="btn"><a href="#" class="nav-link ">Sign Up</a></button>
+                </li>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <a class="back-button" href="/subjects/machine_learning">⇐ Explore other options</a>
+    </div>
+
+    <!-- Question 1 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Bayesian Model Analysis
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>
+                        Given the dataset:
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Color</th>
+                                <th>Owns Laptop (Nb)</th>
+                                <th>Gender (Sex)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Red</td>
+                                <td>Yes</td>
+                                <td>Male</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Blue</td>
+                                <td>No</td>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Red</td>
+                                <td>No</td>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Blue</td>
+                                <td>Yes</td>
+                                <td>Male</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        1. Calculate \( P(\text{Color} = \text{Red} \mid \text{Nb} = \text{Yes}) \).<br>
+                        2. Calculate \( P(\text{Nb} = \text{Yes} \mid \text{Color} = \text{Red} \, \text{and} \, \text{Sex} = \text{Male}) \) using Bayes' theorem.
+                    </p>
+                        <div class="solution">
+                            <h5>Solution:</h5>
+                            <p><strong>1. \( P(\text{Color} = \text{Red} \mid \text{Nb} = \text{Yes}) \):</strong></p>
+                            <p>
+                                \[
+                                P(\text{Color} = \text{Red} \mid \text{Nb} = \text{Yes}) = \frac{P(\text{Color} = \text{Red} \, \text{and} \, \text{Nb} = \text{Yes})}{P(\text{Nb} = \text{Yes})}
+                                \]
+                                From the dataset:
+                                \[
+                                P(\text{Color} = \text{Red} \, \text{and} \, \text{Nb} = \text{Yes}) = \frac{1}{4}, \quad P(\text{Nb} = \text{Yes}) = \frac{2}{4}
+                                \]
+                                \[
+                                P(\text{Color} = \text{Red} \mid \text{Nb} = \text{Yes}) = \frac{\frac{1}{4}}{\frac{2}{4}} = \frac{1}{2}
+                                \]
+                            </p>
+                            <p><strong>2. Bayes' Theorem:</strong></p>
+                            <p>
+                                \[
+                                P(\text{Nb} = \text{Yes} \mid \text{Color} = \text{Red} \, \text{and} \, \text{Sex} = \text{Male}) = \frac{P(\text{Color} = \text{Red} \, \text{and} \, \text{Sex} = \text{Male} \mid \text{Nb} = \text{Yes}) P(\text{Nb} = \text{Yes})}{P(\text{Color} = \text{Red} \, \text{and} \, \text{Sex} = \text{Male})}
+                                \]
+                                Using the dataset:
+                                \[
+                                P(\text{Color} = \text{Red} \, \text{and} \, \text{Sex} = \text{Male} \mid \text{Nb} = \text{Yes}) = \frac{1}{2}, \quad P(\text{Nb} = \text{Yes}) = \frac{2}{4}, \quad P(\text{Color} = \text{Red} \, \text{and} \, \text{Sex} = \text{Male}) = \frac{1}{4}
+                                \]
+                                \[
+                                P(\text{Nb} = \text{Yes} \mid \text{Color} = \text{Red} \, \text{and} \, \text{Sex} = \text{Male}) = \frac{\frac{1}{2} \cdot \frac{2}{4}}{\frac{1}{4}} = 1
+                                \]
+                            </p>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Decision Tree Models
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Using the dataset:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Score (Sc)</th>
+                                <th>Owns Laptop (Nb)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>80</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>20</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>50</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>90</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Split the dataset based on \( \text{Sc} \geq 50 \). Calculate Gini impurity before and after the split.
+                    </p>                
+                    <div class="solution">
+                        <h5>Solution:</h5> <br>
+                        <p><strong>Initial Gini Impurity:</strong></p>
+                        <p>
+                            \[
+                            Gini = 1 - P(\text{Yes})^2 - P(\text{No})^2
+                            \]
+                            From the dataset:
+                            \[
+                            P(\text{Yes}) = \frac{2}{4}, \quad P(\text{No}) = \frac{2}{4}
+                            \]
+                            \[
+                            Gini = 1 - \left(\frac{2}{4}\right)^2 - \left(\frac{2}{4}\right)^2 = 0.5
+                            \]
+                        </p>
+                        <p><strong>After Split:</strong></p>
+                        <p>
+                            Group 1 (\( \text{Sc} \geq 50 \)): IDs 1, 4 (\( \text{Yes} = 2/2 \))<br>
+                            Gini = \( 1 - \left(\frac{2}{2}\right)^2 - 0^2 = 0 \)<br>
+                            Group 2 (\( \text{Sc} < 50 \)): IDs 2, 3 (\( \text{No} = 2/2 \))<br>
+                            Gini = \( 1 - 0^2 - \left(\frac{2}{2}\right)^2 = 0 \)
+                        </p>
+                        <p><strong>Weighted Gini:</strong></p>
+                        \[
+                        Gini = \frac{2}{4} \cdot 0 + \frac{2}{4} \cdot 0 = 0
+                        \]
+                        <p><strong>Gain:</strong></p>
+                        \[
+                        Gain = 0.5 - 0 = 0.5
+                        \]
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Distance Metrics
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>
+                        Given two data points:
+                        \[
+                        A = (1, 2, 3), \quad B = (4, 5, 6)
+                        \]
+                    </p>
+                    <ol>
+                        <li>Calculate <strong>Manhattan distance</strong></li>
+                        <li>Calculate <strong>Cosine similarity</strong></li>
+                        <li>Binary vectors for <strong>Jaccard similarity</strong>: \[ A = (1,0,1,1), \quad B = (1,1,0,1).\]</li>
+                    </ol>
+                    <div class="solution">
+                        <h5>Solution:</h5>
+                        <p><strong>1. Manhattan Distance:</strong></p>
+                        <p>
+                            \[
+                            d_M = |1-4| + |2-5| + |3-6| = 3 + 3 + 3 = 9.
+                            \]
+                        </p>
+                        <p><strong>2. Cosine Similarity:</strong></p>
+                        <p>
+                            \[
+                            A \cdot B = (1 \cdot 4) + (2 \cdot 5) + (3 \cdot 6) = 32.
+                            \]
+                            \[
+                            \|A\| = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{14}, \quad \|B\| = \sqrt{4^2 + 5^2 + 6^2} = \sqrt{77}
+                            \]
+                            \[
+                            \text{Cosine} = \frac{32}{\sqrt{14} \cdot \sqrt{77}}.
+                            \]
+                        </p>
+                        <p><strong>3. Jaccard Similarity:</strong></p>
+                        <p>
+                            \[
+                            Intersection = (1, 0, 0, 1) = 2. 
+                            \]
+                            \[
+                            Union = (1, 1, 1, 1) = 4. 
+                            \]
+                            \[
+                            Jaccard = \frac{2}{4} = 0.5. 
+                            \]
+                        </p>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 4-->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Classification Tasks
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Consider the following dataset:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Color</th>
+                                <th>Owns Laptop (Nb)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Blue</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Red</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Blue</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Pink</td>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><strong>Split:</strong></p>
+                    <ul>
+                        <li>Training: IDs 1, 2.</li>
+                        <li>Testing: IDs 3, 4.</li>
+                    </ul>
+                    <p><strong>Rule:</strong> If Color = Blue, predict Nb = Yes. Else, predict Nb = No.</p>
+                    <div class="solution">
+                        <h5>Solution:</h5>
+                        <ul>
+                            <li>Apply rule:</li>
+                            <ul>
+                                <li>ID 3: \[ Blue -> Predict Yes -> Correct.\]</li>
+                                <li>ID 4: \[Pink -> Predict No -> Correct.\]</li>
+                            </ul>
+                            <li>\[Accuracy = \frac{Correct Predictions}{Total Predictions} = \frac{2}{2} = 100%.\]
+                            </li>
+                        </ul>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    k-NN Classification
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>Using the training set below, classify a test record with weight = 69 kg, height=170 cm, and k = 1.</p>
+                    <table border="1">
+                        <tr>
+                            <th>ID</th>
+                            <th>Weight (kg)</th>
+                            <th>Height (cm)</th>
+                            <th>Gender</th>
+                        </tr>
+                        <tr><td>1</td><td>60</td><td>165</td><td>Female</td></tr>
+                        <tr><td>2</td><td>63</td><td>160</td><td>Female</td></tr>
+                        <tr><td>3</td><td>70</td><td>178</td><td>Male</td></tr>
+                        <tr><td>4</td><td>75</td><td>173</td><td>Male</td></tr>
+                    </table>
+                    <h5>Solution:</h5>
+                    <ol>
+                        <li><strong>Compute Euclidean Distance:</strong></li>
+                        <p>\[d = \sqrt{(x_{\text{weight}} - x_{\text{weight,test}})^2 + (y_{\text{height}} - y_{\text{height,test}})^2}\]</p>
+                        <p>For each record:</p>
+                        <ul>
+                            <li>Record 1: \[d = \sqrt{(60 - 69)^2 + (165 - 170)^2} = \sqrt{81 + 25} = \sqrt{106} ≈ 10.30\]</li>
+                            <li>Record 2: \[d = \sqrt{(63 - 69)^2 + (160 - 170)^2} = \sqrt{36 + 100} = \sqrt{136} ≈ 11.66\]</li>
+                            <li>Record 3: \[d = \sqrt{(70 - 69)^2 + (178 - 170)^2} = \sqrt{1 + 64} = \sqrt{65} ≈ 8.06\]</li>
+                            <li>Record 4: \[d = \sqrt{(75 - 69)^2 + (173 - 170)^2} = \sqrt{36 + 9} = \sqrt{45} ≈ 6.71\]</li>
+                        </ul>
+                        <li><strong>Find Nearest Neighbor:</strong> The closest record is Record 4 with d = 6.71.</li>
+                        <li><strong>Classify the Test Record:</strong> Based on k = 1, the test record is classified as "Male".</li>
+                    </ol>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    k-Means Clustering
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Apply \( k = 5 \) clustering to the data points \( \{2, 5, 6, 8, 10, 13\} \). Initial centroids are \( c_{1} = 2 \) and \( c_{2} = 10 \).</p>
+                    <h5>Solution:</h5>
+                    <ol>
+                        <li><strong>Initial Assignment:</strong> Assign each point to the nearest centroid: 
+                            <ul>
+                                <li>Distance to \( c_{1} = 2: |2-2|, |5-2|, |6-2|, |8-2|, |10-2|, |13-2| =\) {0, 3, 4, 6, 8, 11}.</li>
+                                <li>Distance to \( c_{2} = 10: |2-10|, |5-10|, |6-10|, |8-10|, |10-10|, |13-10| =\) {8, 5, 4, 2, 0, 3}.</li>
+                            </ul>
+                            Assignments: 
+                            <ul>
+                                <li>Cluster 1 \( c_{1} = 2:\) {2, 5, 6}</li>
+                                <li>Cluster 2 \( c_{2} = 10:\) {8, 10, 13}</li>
+                            </ul>
+                            <li><strong>Update Centroids:</strong> Compute the mean of each cluster:</li>
+                            <ul>
+                                <li>\(c_{1}' = \) mean(2, 5, 6) = \(\frac{2+5+6}{3} = 4.33\).</li>
+                                <li>\(c_{2}' = \) mean(8, 10, 13) = \(\frac{8+10+13}{3} = 10.33\).</li>
+                            </ul>
+                            <li><strong>Iterate:</strong> Repeat the task and update steps until centroids stabilize.</li>
+                        </li>
+                    </ol>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Jaccard Coefficient
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Calculate the Jaccard coefficient for the binary document vectors:</p>
+                    <p>\[ D1 = [1, 0, 1, 0, 1], D2 = [1, 1, 0, 1, 1]. \]</p>
+                    <h5>Solution:</h5>
+                    <ol>
+                        <li><strong>Intersection ( \( |D1 \cap D2|\) )</strong> Identify overlapping 1's: \( [1, 0, 0, 1] = 2\).</li>
+                        <li><strong>Union ( \( |D1 \cup D2|\) )</strong> Combine all unique 1's: \( [1, 1, 1, 1] = 4\).</li>
+                        <li><strong>Jaccard Coefficient:</strong></li>
+                        <p>\[
+                            J(D1, D2) = \frac{|D1 \cap D2|}{|D1 \cup D2|} = \frac{2}{4} = 0.5
+                            \]
+                        </p>
+                    </ol>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    GINI Index
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Compute GINI before and after a split using the following data:</p>
+                    <table border="1">
+                        <tr>
+                            <th>Class</th>
+                            <th>Total Before Split</th>
+                            <th>Node 1</th>
+                            <th>Node 2</th>
+                        </tr>
+                        <tr><td>A</td><td>50</td><td>20</td><td>30</td></tr>
+                        <tr><td>B</td><td>50</td><td>40</td><td>10</td></tr>
+                    </table>
+                    <h5>Solution:</h5>
+                    <ol>
+                        <li><strong>GINI Before Split:</strong></li>
+                        <p>\[\text{GINI} = 1 - \sum (\text{Proportion})^2 = 1 - (0.5^2 + 0.5^2) = 0.5\].</p>
+                        <li><strong>GINI After Split(Weighted):</strong></li>
+                        <ul>
+                            <br>
+                            <li>Node 1:</li>
+                            <p>\[ GINI =  1 - (\frac{20}{40})^2 - (\frac{40}{60})^2 = 1 - 0.111 - 0.444 = 0.444\].</p>
+                            <li>Node 2:</li>
+                            <p>\[ GINI = 1 - (\frac{30}{40})^2 - (\frac{10}{40})^2 = 1 - 0.5625 - 0.0625 = 0.375\].</p>
+                            <li>Weighted GINI:</li>
+                            <p>\[ GINI_{split} = \frac{60}{100} * 0.444 - \frac{40}{100} * 0.375 =0.42\]</p>
+                        </ul>
+                    </ol>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Association Rule Metrics
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>For the rule \( {A, B} -> C\):</p>
+                    <ul>
+                        <li>Support = 20,</li>
+                        <li>Total Transactions = 100,</li>
+                        <li>\( P(A, B)\) = 30,</li>
+                        <li>\( P(C)\) = 60.</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ol>
+                        <li><strong>Support:</strong></li>
+                        <p>\[
+                            \text{Support} = \frac{\text{Occurrences of } \{A, B, C\}}{\text{Total Transactions}} = \frac{20}{100} = 0.2
+                            \]
+                        </p>
+                        <li><strong>Confidence:</strong></li>
+                        <p>\[
+                            \text{Confidence} = \frac{\text{Support of } \{A, B, C\}}{\text{Support of } \{A, B\}} = \frac{20}{30} = 0.67
+                            \]
+                        </p>
+                        <li><strong>Lift:</strong></li>
+                        <p>\[
+                            \text{Lift} = \frac{\text{Confidence}}{\text{Support of } C} = \frac{0.67}{0.6} = 1.12
+                            \]
+                        </p>
+                    </ol>
+                </div>                    
+            </div>
+        </div>
+    </div>
+        
+    <!-- Question 10 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Support Vector Machines (SVM)
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p><strong>Given two classes, find the hyperplane using</strong> \( y = w_{1} x_{1} + w_{2} x_{2} + b = 0\).</p>
+                    <h5>Answer:</h5>
+                    <ol>
+                        <li><strong>Define the dataset:</strong></li>
+                        <ul> 
+                            <li>Class A: (1, 2), (2, 3)</li>
+                            <li>Class B: (4, 5), (6, 6)</li>
+                        </ul>
+                        <li><strong>Separate the classes:</strong></li>
+                        <ul> 
+                            <li>SVM aims to maximize the margin between Class A and B while <br> 
+                                ensuring no points fall on the wrong side of the hyperplane.
+                            </li>
+                        </ul>
+                        <li><strong>Find the decision boundary:</strong></li>
+                        <ul>
+                            <li>The hyperplane is determined by solving: </li>
+                            <p>\[ y = w_{1} x_{1} + w_{2} x_{2} + b = 0\]</p>
+                            <p>For Class A points:</p>
+                            <p>\[ w_{1}(1) + w_{2}(2) + b ≥ 1 \]</p>
+                            <p>For Class B points:</p>
+                            <p>\[ w_{1}(4) + w_{2}(5) + b ≤ -1 \]</p>
+                        </ul>
+                        <li><strong>Optimization:</strong></li>
+                        <ul>
+                            <li>Use an optimization solver to maximize the margin: <br> 
+                                \( Maximize \frac{2}{||w||} \)</li>
+                            <li>Subject to constraints from both classes.</li>
+                        </ul>
+                    </ol>
+                    <p><strong>Final Output:</strong> The hyperplane equation \(y = -0.5 x_{1} + x_{2} + 0.2 = 0\)</p>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 11 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    ROC Curve
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Given confusion matrix, calculate TPR and FPR, and draw the curve.</p>
+                    <h5>Answer:</h5>
+                    <ol>
+                        <li><strong>Define the confusion matrix:</strong></li>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Positive</th>
+                                    <th>Negative</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Actual Pos</strong></td>
+                                    <td>70</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Actual Neg</strong></td>
+                                    <td>20</td>
+                                    <td>80</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <li><strong>Calculate TPR:</strong></li>
+                        <p>$$ TPR = \frac{TP}{TP + FN} = \frac{70}{70 + 30} = 0.7 $$</p>
+                        <li><strong>Calculate FPR:</strong></li>
+                        <p>$$ FPR = \frac{FP}{FP + TN} = \frac{20}{20 + 80} = 0.2 $$</p>
+                        <li><strong>Plot the ROC Curve:</strong></li>
+                        <ul>
+                            <li>Point 1: (FPR = 0, TPR = 0).</li>
+                            <li>Point 2: (FPR = 0.2, TPR = 0.7).</li>
+                            <li>Point 3: (FPR = 1, TPR = 1).</li>
+                        </ul>
+                    </ol>                    
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer" class="text-center justify-content-center fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy;
+              <span id="year">2024</span> studentassistant.com </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/quizzes.js" defer></script>
+    <script src="/js/exam/ml.js" defer></script>
+</body>
+</html>

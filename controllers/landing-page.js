@@ -57,15 +57,165 @@ exports.getSubject = (req, res, next) => {
   });
 };
 
+/* Subjects's quizs */
 exports.getMLQuiz = (req, res, next) => {
-  res.render("quizs", {
+  res.render("quizs/quizs_ml", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
 exports.getMLQTopic1 = (req, res, next) => {
-  res.render("data_mining_process", {
+  res.render("quizs/data_mining_process", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic2 = (req, res, next) => {
+  res.render("quizs/data_search", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic3 = (req, res, next) => {
+  res.render("quizs/tree_model", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic4 = (req, res, next) => {
+  res.render("quizs/bayesian_model", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic5 = (req, res, next) => {
+  res.render("quizs/ann", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic6 = (req, res, next) => {
+  res.render("quizs/regression_analysis", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic7 = (req, res, next) => {
+  res.render("quizs/ensemble_training", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic8 = (req, res, next) => {
+  res.render("quizs/linear_regression", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic9 = (req, res, next) => {
+  res.render("quizs/clustering", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic10 = (req, res, next) => {
+  res.render("quizs/assosiation_analysis", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+/* Subjects's flashcards  */
+exports.getMLFlah = (req, res, next) => {
+  res.render("flashcards/flash_ml", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic1 = (req, res, next) => {
+  res.render("flashcards/data_mining", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic2 = (req, res, next) => {
+  res.render("flashcards/data_search", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic3 = (req, res, next) => {
+  res.render("flashcards/tree_model", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic4 = (req, res, next) => {
+  res.render("flashcards/bayesian_model", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic5 = (req, res, next) => {
+  res.render("flashcards/ann", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic6 = (req, res, next) => {
+  res.render("flashcards/regression_analysis", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic7 = (req, res, next) => {
+  res.render("flashcards/ensemble_training", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic8 = (req, res, next) => {
+  res.render("flashcards/linear_regression", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic9 = (req, res, next) => {
+  res.render("flashcards/clustering", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLFlahTopic10 = (req, res, next) => {
+  res.render("flashcards/assosiation_analysis", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+/* Exam */
+exports.getMLExam = (req, res, next) => {
+  res.render("exam/ml", {
     pageTitle: "project",
     path: "/landPage",
   });

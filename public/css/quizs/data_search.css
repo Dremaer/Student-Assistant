@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body{
+    width: 1440px;
+    margin: 0 auto;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -115,126 +117,81 @@ nav .navbar-brand img{
 #main-footer{
     color: white;
     padding-top: 8px;
-    background-color: #848484;
+    background-color: #d3d3d3;
 }
 
-.subject-container{
-    background-image: url('../images/subject_img.png');
-    background-attachment: fixed;
-    background-position-x: right;
-    min-height: 180px;
-    position: relative;
-}
-
-.dark-overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.bg-box{
-    width: 1040px;
+/* Quizzes part */
+#quiz .container{
+    width: 1200px;
     margin: 0 auto;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
+}
+.quiz {
+    margin-top: 20px;
+    padding: 20px 0;
 }
 
-.person-info{
-    display: flex;
-    padding-top: 30px;
-}
-
-.person-info img{
-    width: 30px;
-    height: 30px;
-}
-
-.person-info p{
-    padding-left: 5px;
+.quiz h2{
     font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
 }
 
-.subject-tip{
-    margin-top: 30px;
+#answer-buttons .btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .0s;
 }
 
-.first-tip{
+#answer-buttons .btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
+
+#answer-buttons .btn:disabled{
+    cursor: no-drop;
+}
+
+.quiz-navigation{
     display: flex;
-    gap: 10px;
-    margin-left: 16%;
-    margin-top: 20px;
+}
+
+#prev-btn, #next-btn, #back-btn{
+    background-color: #ECA72C;
+    color: #fff;
+    font-weight: 500;
+    width: 120px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.first-tip .tip {
-    width: 300px;
-    height: 180px;
-    background: #25283D;
-    border: none;
-    border-radius: 10px;
-    color: #ffffff;
+#prev-btn{
+    float: left;
 }
 
-.first-tip .tip:nth-child(1) a{
-    color: #ffffff;
-    text-decoration: none;
+#next-btn{
+    float: right;
 }
 
-.first-tip .tip:nth-child(2) a{
-    color: #ffffff;
-    text-decoration: none;
+#back-btn{
+    float: right;
+    margin-right: 10px;
 }
 
-
-.first-tip .tip:nth-child(3) a{
-    color: #ffffff;
-    text-decoration: none;
+#answer-buttons .btn.correct{
+    background: #9aeabc;
 }
 
-.first-tip .tip:nth-child(2),
-.first-tip .tip:nth-child(3){
-    margin-left: 8px;
-}
-
-.first-tip .tip:hover{
-    background-color: rgba(37, 40, 61, 0.5);
-    color: #424242;
-}
-
-.first-tip .tip p{
-    font-size: 22px;
-    text-align: center;
-    font-weight: 450;
-    padding-top: 70px;
-}
-
-.second-tip {
-    display: flex;
-    gap: 10px;
-    margin-left: 16%;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.second-tip .tip{
-    width: 300px;
-    height: 180px;
-    background: #25283D;
-    border: none;
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-.second-tip .tip:hover{
-    background-color: rgba(37, 40, 61, 0.5);
-    color: #424242;   
-}
-
-.second-tip .tip p{
-    font-size: 22px;
-    text-align: center;
-    font-weight: 450;
-    padding-top: 70px;
+#answer-buttons .btn.incorrect{
+    background: #ff9393;
 }

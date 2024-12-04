@@ -160,3 +160,10 @@ nav .navbar-brand img{
 .quiz_item a:hover{
     color: #fff;
 } 
+
+.back-button{
+    color: #ebbe53;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}

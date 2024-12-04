@@ -9,15 +9,6 @@ const questions = [
         ]
     },
     {
-        question: "Which of the following fields is NOT related to data science?",
-        answers: [
-            {text: "Artificial Intelligence", correct: false},
-            {text: "Machine Learning", correct: false},
-            {text: "Painting", correct: true},
-            {text: "Statistics", correct: false},
-        ]
-    },
-    {
         question: "What is predictive analytics?",
         answers: [
             {text: "Predicting future outcomes based on historical data", correct: true},
@@ -191,11 +182,22 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz() {
-    currentQuestionIndex = 0; // Reset the question index
-    score = 0; // Reset the score
-    nextBtn.innerHTML = "Next"; // Reset the button text
-    backBtn.style.display = "none"; // Hide the Back button during the quiz
-    showQuestion(); // Show the first question
+    // Reset question index and score
+    currentQuestionIndex = 0;
+    score = 0;
+
+    // Reset all user answers only when restarting the quiz
+    questions.forEach(question => {
+        question.userAnswer = null; 
+    });
+
+    // Reset UI elements
+    nextBtn.innerHTML = "Next";
+    backBtn.style.display = "none";
+    prevBtn.style.display = "none";
+
+    // Start the quiz from the first question
+    showQuestion();
 }
 
 function showQuestion() {
@@ -208,26 +210,30 @@ function showQuestion() {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
+
+        // Persist user's previous answer during normal navigation
+        if (currentQuestion.userAnswer === answer.text) {
+            button.classList.add(answer.correct ? "correct" : "incorrect");
+        }
+
         answerBtn.appendChild(button);
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener("click", selectAnswer);
+
+        button.addEventListener("click", (e) => {
+            selectAnswer(e, answer.text); 
+        });
     });
 }
 
-function resetState() {
-    nextBtn.style.display = "block";
-    prevBtn.style.display = currentQuestionIndex > 0 ? "block" : "none"; // Show Previous button only if not on the first question
-    backBtn.style.display = "none"; // Hide the Back button during the quiz
-    while (answerBtn.firstChild) {
-        answerBtn.removeChild(answerBtn.firstChild); // Remove old buttons
-    }
-}
-
-function selectAnswer(e) {
+function selectAnswer(e, selectedText) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
+
+    // Save the user's selected answer
+    questions[currentQuestionIndex].userAnswer = selectedText;
+
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
@@ -235,13 +241,25 @@ function selectAnswer(e) {
         selectedBtn.classList.add("incorrect");
     }
 
+    // Highlight correct answer and disable all buttons
     Array.from(answerBtn.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
-        button.disabled = true; // Disable buttons after selecting
+        button.disabled = true;
     });
-    nextBtn.style.display = "block"; // Show Next button after selection
+
+    nextBtn.style.display = "block";
+}
+
+function resetState() {
+    nextBtn.style.display = "block";
+    prevBtn.style.display = currentQuestionIndex > 0 ? "block" : "none";
+    backBtn.style.display = "none";
+
+    while (answerBtn.firstChild) {
+        answerBtn.removeChild(answerBtn.firstChild);
+    }
 }
 
 function showScore() {
@@ -249,52 +267,48 @@ function showScore() {
 
     questionElement.innerHTML = `
         <h2 style="font-size: 36px; font-weight: bold; color: #001e4d; margin-bottom: 15px; text-align: center; margin-top: 100px;">
-            Fantastic! You've completed the all quiz session! 🎓
+            Fantastic! You've completed the quiz session! 🎓
         </h2>
-        <p style="font-size: 28px; margin-bottom: 10px; text-align: center;">
-            Do you want to look at your quiz's answers?
-        </p>
         <p style="font-size: 26px; font-weight: bold; color: #333; text-align: center; margin-bottom: 180px;">
-            You answered ${score} out of ${questions.length} quizzes.
+            You answered ${score} out of ${questions.length} questions correctly.
         </p>
     `;
-    nextBtn.innerHTML = "Play Again"; // Change button text to "Play Again"
-    nextBtn.style.display = "block"; // Ensure the Play Again button is visible
-    prevBtn.style.display = "none"; // Hide the Previous button on the score screen
-    backBtn.style.display = "block"; // Show the Back button
+    nextBtn.innerHTML = "Take Quiz"; 
+    nextBtn.style.display = "block";
+    prevBtn.style.display = "none";
+    backBtn.style.display = "block";
 }
 
+// Handle navigation to the next question
 function handleNextButton() {
     if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++; // Go to the next question
+        currentQuestionIndex++;
         showQuestion();
     } else {
-        showScore(); // If last question, show the score
+        showScore();
     }
 }
 
+// Handle navigation to the previous question
 function handlePrevButton() {
     if (currentQuestionIndex > 0) {
-        currentQuestionIndex--; // Go to the previous question
+        currentQuestionIndex--;
         showQuestion();
     }
 }
 
-// Add event listeners
 prevBtn.addEventListener("click", handlePrevButton);
 
 nextBtn.addEventListener("click", () => {
-    if (nextBtn.innerHTML === "Play Again") {
-        startQuiz(); // Restart the quiz
+    if (nextBtn.innerHTML === "Take Quiz") {
+        startQuiz();
     } else {
-        handleNextButton(); // Go to the next question
+        handleNextButton(); 
     }
 });
 
 backBtn.addEventListener("click", () => {
-    // Redirect to the subject file or specific page
-    window.location.href = "/quizs"; // Replace "/subjects" with your desired URL
+    window.location.href = "/quizs/quizs_ml";
 });
 
-// Start the quiz
 startQuiz();

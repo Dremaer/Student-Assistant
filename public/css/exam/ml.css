@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body{
+    width: 1440px;
+    margin: 0 auto;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -88,8 +90,8 @@ nav .navbar-brand img{
 
 .nav-link {
     color: #848484;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 550;
 }
 
 .btn {
@@ -118,123 +120,89 @@ nav .navbar-brand img{
     background-color: #848484;
 }
 
-.subject-container{
-    background-image: url('../images/subject_img.png');
-    background-attachment: fixed;
-    background-position-x: right;
-    min-height: 180px;
-    position: relative;
+/* Exam part */
+#exam-questions .container{
+    width: 1200px;
+    margin: 0 auto; 
 }
-
-.dark-overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.bg-box{
-    width: 1040px;
-    margin: 0 auto;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-}
-
-.person-info{
-    display: flex;
-    padding-top: 30px;
-}
-
-.person-info img{
-    width: 30px;
-    height: 30px;
-}
-
-.person-info p{
-    padding-left: 5px;
+.accordion{
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
     font-size: 18px;
-}
-
-.subject-tip{
-    margin-top: 30px;
-}
-
-.first-tip{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 1px solid #d9d9d9;
+    outline: none;
+    transition: 0.4s;
     display: flex;
-    gap: 10px;
-    margin-left: 16%;
-    margin-top: 20px;
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
 }
 
-.first-tip .tip {
-    width: 300px;
-    height: 180px;
-    background: #25283D;
+.accordion i{
+    font-size: 20px;
+}
+
+.passive, 
+.accordion:hover{
+    background-color: #f1f5f7;
+}
+
+.panel{
+    padding: 1rem 2rem 2rem 3rem;
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+    display: none;
+}
+
+.panel p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.panel h5 {
+    font-weight: 550;
+}
+
+.question{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+#exam-questions:nth-child(13) {
+    margin-bottom: 80px;
+}
+
+.question.passive{
     border: none;
-    border-radius: 10px;
-    color: #ffffff;
 }
 
-.first-tip .tip:nth-child(1) a{
-    color: #ffffff;
+table {
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    width: 60%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px 0 8px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.back-button{
+    color: #ebbe53;
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
-}
-
-.first-tip .tip:nth-child(2) a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-.first-tip .tip:nth-child(3) a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.first-tip .tip:nth-child(2),
-.first-tip .tip:nth-child(3){
-    margin-left: 8px;
-}
-
-.first-tip .tip:hover{
-    background-color: rgba(37, 40, 61, 0.5);
-    color: #424242;
-}
-
-.first-tip .tip p{
-    font-size: 22px;
-    text-align: center;
-    font-weight: 450;
-    padding-top: 70px;
-}
-
-.second-tip {
-    display: flex;
-    gap: 10px;
-    margin-left: 16%;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.second-tip .tip{
-    width: 300px;
-    height: 180px;
-    background: #25283D;
-    border: none;
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-.second-tip .tip:hover{
-    background-color: rgba(37, 40, 61, 0.5);
-    color: #424242;   
-}
-
-.second-tip .tip p{
-    font-size: 22px;
-    text-align: center;
-    font-weight: 450;
-    padding-top: 70px;
 }
