@@ -65,6 +65,15 @@ exports.getMLQuiz = (req, res, next) => {
   });
 };
 
+exports.getMLQuiz1 = (req, res, next) => {
+  res.render("quizs/quizs_probability", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+
+
 exports.getMLQTopic1 = (req, res, next) => {
   res.render("quizs/data_mining_process", {
     pageTitle: "project",
