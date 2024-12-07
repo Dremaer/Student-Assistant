@@ -46,6 +46,9 @@ router.get("/quizs/clustering", landPageController.getMLQTopic9);
 
 router.get("/quizs/assosiation_analysis", landPageController.getMLQTopic10);
 
+router.get("/quizs/Fundamental_Concepts_Rules", landPageController.getMLQTopic11);
+
+
 /* Subjects's flashcards */
 router.get("/flashcards/flash_ml", landPageController.getMLFlah);
 

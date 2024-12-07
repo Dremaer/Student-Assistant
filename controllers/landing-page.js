@@ -144,6 +144,14 @@ exports.getMLQTopic10 = (req, res, next) => {
   });
 };
 
+
+exports.getMLQTopic11 = (req, res, next) => {
+  res.render("quizs/Fundamental_Concepts_Rules", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
 /* Subjects's flashcards  */
 exports.getMLFlah = (req, res, next) => {
   res.render("flashcards/flash_ml", {
