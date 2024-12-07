@@ -23,6 +23,9 @@ router.get("/subjects/:subject", landPageController.getSubject);
 /*Subjects's quizs*/
 router.get("/quizs/quizs_ml", landPageController.getMLQuiz);
 
+router.get("/quizs/quizs_probability", landPageController.getMLQuiz1);
+
+
 router.get("/quizs/data_mining_process", landPageController.getMLQTopic1);
 
 router.get("/quizs/data_search", landPageController.getMLQTopic2);
