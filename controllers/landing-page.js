@@ -152,6 +152,7 @@ exports.getMLQTopic11 = (req, res, next) => {
   });
 };
 
+
 /* Subjects's flashcards  */
 exports.getMLFlah = (req, res, next) => {
   res.render("flashcards/flash_ml", {

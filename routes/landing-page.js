@@ -25,7 +25,6 @@ router.get("/quizs/quizs_ml", landPageController.getMLQuiz);
 
 router.get("/quizs/quizs_probability", landPageController.getMLQuiz1);
 
-
 router.get("/quizs/data_mining_process", landPageController.getMLQTopic1);
 
 router.get("/quizs/data_search", landPageController.getMLQTopic2);
@@ -48,9 +47,9 @@ router.get("/quizs/assosiation_analysis", landPageController.getMLQTopic10);
 
 router.get("/quizs/Fundamental_Concepts_Rules", landPageController.getMLQTopic11);
 
-router.get("/quizs/Fundamental_Concepts_Rules", landPageController.getMLQTopic12);
 
 /* Subjects's flashcards */
+
 router.get("/flashcards/flash_ml", landPageController.getMLFlah);
 
 router.get("/flashcards/data_mining", landPageController.getMLFlahTopic1);
@@ -74,6 +73,7 @@ router.get("/flashcards/clustering", landPageController.getMLFlahTopic9);
 router.get("/flashcards/assosiation_analysis", landPageController.getMLFlahTopic10);
 
 /* Subjects's exam */
+
 router.get("/exam/ml", landPageController.getMLExam);
 
 module.exports = router;
