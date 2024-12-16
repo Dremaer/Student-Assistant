@@ -53,11 +53,23 @@ router.get("/quizs/Functions_Random_Variables", landPageController.getMLQTopic13
 
 router.get("/quizs/Mathematical_Expectation", landPageController.getMLQTopic14);
 
-router.get("/quizs/", landPageController.getMLQTopic15);
+router.get("/quizs/Discrete_Probability_Distributions", landPageController.getMLQTopic15);
+
+router.get("/quizs/Continuous _Probability_Distributions", landPageController.getMLQTopic16);
 
 router.get("/quizs/", landPageController.getMLQTopic11);
 
+router.get("/quizs/", landPageController.getMLQTopic11);
 
+router.get("/quizs/", landPageController.getMLQTopic11);
+
+router.get("/quizs/", landPageController.getMLQTopic11);
+
+router.get("/quizs/", landPageController.getMLQTopic11);
+
+router.get("/quizs/", landPageController.getMLQTopic11);
+
+router.get("/quizs/", landPageController.getMLQTopic11);
 
 /* Subjects's flashcards */
 

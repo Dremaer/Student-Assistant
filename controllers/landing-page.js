@@ -173,14 +173,14 @@ exports.getMLQTopic14 = (req, res, next) => {
 };
 
 exports.getMLQTopic15 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Discrete_Probability_Distributions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
 exports.getMLQTopic16 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Continuous _Probability_Distributions", {
     pageTitle: "project",
     path: "/landPage",
   });
