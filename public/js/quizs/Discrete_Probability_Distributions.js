@@ -1,7 +1,69 @@
 const questions = [
-  
     {
-        "question": "",
+        "question": "What is the density function of a discrete uniform random variable X over the range x1,x2,x3....xn?",
+        "answers": [
+            {"text": "P(X=x)=1, for all x", "correct": false},
+            {"text": "p(X=x)=1/n,for x =x1,x2,x3....xn", "correct": true},
+            {"text": "p(X=x)=n", "correct": false},
+            {"text": "p(X=x)=0,for all x", "correct": false}
+        ]
+    },
+    {
+        "question": "Which of the following is not a condition for a Bernoulli process?",
+        "answers": [
+            {"text": "Each trial results in a success or failure.", "correct": false},
+            {"text": "The probability of success changes from trial to trial.", "correct": true},
+            {"text": "The trials are independent.", "correct": false},
+            {"text": "The experiment consists of repeated trials.", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the expected value and variance of a binomial random variable 𝑋 with n trials and success probability p?",
+        "answers": [
+            {"text": "E(X)=np,Var(X)=np(1-p)", "correct": true},
+            {"text": "E(X)=p,Var(X)=np", "correct": false},
+            {"text": "E(X)=n(1-p),Var(X)=p(1-p)", "correct": false},
+            {"text": "E(X)=1-p,Var(X)=n", "correct": false}
+        ]
+    },
+    {
+        "question": "In a hypergeometric distribution, what distinguishes it from a binomial distribution?",
+        "answers": [
+            {"text": "Trials are independent.", "correct": false},
+            {"text": "Sampling is done with replacement.", "correct": false},
+            {"text": "Sampling is done without replacement.", "correct": true},
+            {"text": "The probability of success is constant.", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the probability of exactly 3 defectives in a hypergeometric experiment where a sample of 10 is drawn from a population of 5000, of which 1000 are defective?",
+        "answers": [
+            {"text": "Use P(X=3) from the binomial distribution.", "correct": true},
+            {"text": "Use P(X=3) from the hypergeometric formula.", "correct": false},
+            {"text": "Use P(X=3) from the Poisson distribution.", "correct": false},
+            {"text": "Cannot be calculated without replacement.", "correct": false}
+        ]
+    },
+    {
+        "question": "What is a defining property of the Poisson process?",
+        "answers": [
+            {"text": "The events depend on each other.", "correct": false},
+            {"text": "The total probability sums to more than 1.", "correct": false},
+            {"text": "The process cannot handle continuous distributions.", "correct": false},
+            {"text": "The probability of one event occurring in a short interval is independent of others.", "correct": true}
+        ]
+    },
+    {
+        "question": "In a manufacturing process, 1 out of 1000 items is defective. What is the probability that fewer than 7 defectives are found in a sample of 8000 items?",
+        "answers": [
+            {"text": "Approximate using the binomial distribution.", "correct": false},
+            {"text": "Use a hypergeometric approach.", "correct": false},
+            {"text": "Calculate using the uniform distribution.", "correct": false},
+            {"text": "Approximate using the Poisson distribution.", "correct": true}
+        ]
+    },
+    {
+        "question": "What is the relationship between a geometric and a negative binomial distribution?",
         "answers": [
             {"text": "", "correct": true},
             {"text": "", "correct": false},
@@ -9,6 +71,25 @@ const questions = [
             {"text": "", "correct": false}
         ]
     },
+    {
+        "question": "What is the expected number of successes in a negative binomial distribution where p=0.5 and k=4?",
+        "answers": [
+            {"text": "4", "correct": false},
+            {"text": "6", "correct": false},
+            {"text": "8", "correct": true},
+            {"text": "Cannot be calculated without variance.", "correct": false}
+        ]
+    },
+    {
+        "question": "How is the Poisson distribution used to approximate the binomial distribution?",
+        "answers": [
+            {"text": "", "correct": true},
+            {"text": "", "correct": false},
+            {"text": "", "correct": false},
+            {"text": "", "correct": false}
+        ]
+    },
+
 
 ];
 
