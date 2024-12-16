@@ -3,9 +3,8 @@
     color: black;
     text-align: left;
 }
-.container.mt-4 .header.text-center.mb-4 .btn .discussion-button {
-    
-}
+.container.mt-4 .header.text-center.mb-4 {
+text-align: left;}
 
 .discussion-button {
     background-color: #ECA72C; /* 버튼 배경색을 이미지와 맞게 조정 */

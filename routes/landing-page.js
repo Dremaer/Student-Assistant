@@ -47,6 +47,17 @@ router.get("/quizs/assosiation_analysis", landPageController.getMLQTopic10);
 
 router.get("/quizs/Fundamental_Concepts_Rules", landPageController.getMLQTopic11);
 
+router.get("/quizs/RandomVariables_ProbabilityDistributions", landPageController.getMLQTopic12);
+
+router.get("/quizs/Functions_Random_Variables", landPageController.getMLQTopic13);
+
+router.get("/quizs/Mathematical_Expectation", landPageController.getMLQTopic14);
+
+router.get("/quizs/", landPageController.getMLQTopic15);
+
+router.get("/quizs/", landPageController.getMLQTopic11);
+
+
 
 /* Subjects's flashcards */
 

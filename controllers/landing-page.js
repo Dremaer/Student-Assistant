@@ -151,6 +151,72 @@ exports.getMLQTopic11 = (req, res, next) => {
     path: "/landPage",
   });
 };
+exports.getMLQTopic12 = (req, res, next) => {
+  res.render("quizs/RandomVariables_ProbabilityDistributions", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic13 = (req, res, next) => {
+  res.render("quizs/quizs/Functions_Random_Variables", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic14 = (req, res, next) => {
+  res.render("quizs/Mathematical_Expectation", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic15 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic16 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic17 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQTopic18 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic19 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic20 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic21 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
 
 
 /* Subjects's flashcards  */
