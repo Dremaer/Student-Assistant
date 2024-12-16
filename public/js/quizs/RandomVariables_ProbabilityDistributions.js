@@ -75,10 +75,10 @@ const questions = [
     {
         "question": "What is the key feature of the Bernoulli distribution?",
         "answers": [
-            {"text": "", "correct": false},
-            {"text": "", "correct": true},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false}
+            {"text": "Multiple outcomes with varying probabilities", "correct": false},
+            {"text": "Two possible outcomes", "correct": true},
+            {"text": "Continuous probability values", "correct": false},
+            {"text": "A fixed range of outcomes", "correct": false}
         ]
     },
 
