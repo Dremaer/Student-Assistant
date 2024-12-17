@@ -57,13 +57,13 @@ router.get("/quizs/Discrete_Probability_Distributions", landPageController.getML
 
 router.get("/quizs/Continuous _Probability_Distributions", landPageController.getMLQTopic16);
 
-router.get("/quizs/", landPageController.getMLQTopic11);
+router.get("/quizs/Moment_Generating_Functions", landPageController.getMLQTopic17);
 
-router.get("/quizs/", landPageController.getMLQTopic11);
+router.get("/quizs/Sampling_Distributions_Data_Descriptions", landPageController.getMLQTopic18);
 
-router.get("/quizs/", landPageController.getMLQTopic11);
+router.get("/quizs/Estimation", landPageController.getMLQTopic19);
 
-router.get("/quizs/", landPageController.getMLQTopic11);
+router.get("/quizs/Test_Hypothesis", landPageController.getMLQTopic20);
 
 router.get("/quizs/", landPageController.getMLQTopic11);
 

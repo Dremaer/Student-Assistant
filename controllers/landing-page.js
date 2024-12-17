@@ -187,26 +187,26 @@ exports.getMLQTopic16 = (req, res, next) => {
 };
 
 exports.getMLQTopic17 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Moment_Generating_Functions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
 exports.getMLQTopic18 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Sampling_Distributions_Data_Descriptions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 exports.getMLQTopic19 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Estimation", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 exports.getMLQTopic20 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Test_Hypothesis", {
     pageTitle: "project",
     path: "/landPage",
   });

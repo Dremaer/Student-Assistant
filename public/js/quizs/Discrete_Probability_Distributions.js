@@ -65,10 +65,10 @@ const questions = [
     {
         "question": "What is the relationship between a geometric and a negative binomial distribution?",
         "answers": [
-            {"text": "", "correct": true},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false}
+            {"text": "A geometric distribution is a special case of the negative binomial distribution when k=1", "correct": true},
+            {"text": "They are completely unrelated.", "correct": false},
+            {"text": "A negative binomial is a continuous distribution, while geometric is discrete.", "correct": false},
+            {"text": "The negative binomial assumes no success probabilities.", "correct": false}
         ]
     },
     {
@@ -83,10 +83,10 @@ const questions = [
     {
         "question": "How is the Poisson distribution used to approximate the binomial distribution?",
         "answers": [
-            {"text": "", "correct": true},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false}
+            {"text": "when n is large, and p is close to 1.", "correct": false},
+            {"text": "when n is large, and p is small.", "correct": true},
+            {"text": "when n is small, and p is large.", "correct": false},
+            {"text": "when n is small, and p is small.", "correct": false}
         ]
     },
 
