@@ -212,6 +212,48 @@ exports.getMLQTopic20 = (req, res, next) => {
   });
 };
 exports.getMLQTopic21 = (req, res, next) => {
+  res.render("quizs/Sets_Proofs", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic22 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic23 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic24 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic25 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic26 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic27 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic28 = (req, res, next) => {
   res.render("quizs/", {
     pageTitle: "project",
     path: "/landPage",

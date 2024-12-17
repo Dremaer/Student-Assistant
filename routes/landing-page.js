@@ -65,11 +65,24 @@ router.get("/quizs/Estimation", landPageController.getMLQTopic19);
 
 router.get("/quizs/Test_Hypothesis", landPageController.getMLQTopic20);
 
-router.get("/quizs/", landPageController.getMLQTopic11);
+router.get("/quizs/Sets_Proofs", landPageController.getMLQTopic21);
 
-router.get("/quizs/", landPageController.getMLQTopic11);
+router.get("/quizs/", landPageController.getMLQTopic22);
 
-router.get("/quizs/", landPageController.getMLQTopic11);
+router.get("/quizs/", landPageController.getMLQTopic23);
+
+router.get("/quizs/", landPageController.getMLQTopic23);
+
+router.get("/quizs/", landPageController.getMLQTopic23);
+
+router.get("/quizs/", landPageController.getMLQTopic23);
+
+router.get("/quizs/", landPageController.getMLQTopic23);
+
+router.get("/quizs/", landPageController.getMLQTopic23);
+
+router.get("/quizs/", landPageController.getMLQTopic23);
+
 
 /* Subjects's flashcards */
 
