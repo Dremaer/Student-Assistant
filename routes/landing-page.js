@@ -25,6 +25,18 @@ router.get("/quizs/quizs_ml", landPageController.getMLQuiz);
 
 router.get("/quizs/quizs_probability", landPageController.getMLQuiz1);
 
+router.get("/quizs/quizs_Discrete_Math", landPageController.getMLQuiz2);
+
+
+
+
+
+
+
+
+
+
+
 router.get("/quizs/data_mining_process", landPageController.getMLQTopic1);
 
 router.get("/quizs/data_search", landPageController.getMLQTopic2);
@@ -69,7 +81,7 @@ router.get("/quizs/Sets_Proofs", landPageController.getMLQTopic21);
 
 router.get("/quizs/Formal_Logic", landPageController.getMLQTopic22);
 
-router.get("/quizs/", landPageController.getMLQTopic23);
+router.get("/quizs/Relations", landPageController.getMLQTopic23);
 
 router.get("/quizs/", landPageController.getMLQTopic23);
 

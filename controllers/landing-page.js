@@ -71,6 +71,23 @@ exports.getMLQuiz1 = (req, res, next) => {
     path: "/landPage",
   });
 };
+exports.getMLQuiz2 = (req, res, next) => {
+  res.render("quizs/quizs_Discrete_Math", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getMLQuiz3 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+
+
+
 
 
 
@@ -224,7 +241,7 @@ exports.getMLQTopic22 = (req, res, next) => {
   });
 };
 exports.getMLQTopic23 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Relations", {
     pageTitle: "project",
     path: "/landPage",
   });
