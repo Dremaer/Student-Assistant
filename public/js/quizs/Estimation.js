@@ -1,12 +1,66 @@
 const questions = [
   
     {
-        "question": "",
+        "question": "What is point estimation?",
         "answers": [
-            {"text": "", "correct": true},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false}
+            {"text": "A method to estimate a population parameter using a single value.", "correct": true},
+            {"text": "A method to calculate an interval around a statistic.", "correct": false},
+            {"text": "A hypothesis testing method.", "correct": false},
+            {"text": "A method to compare variances.", "correct": false}
+        ]
+    },
+    {
+        "question": "Which of the following is an example of a point estimator?",
+        "answers": [
+            {"text": "Confidence interval for the mean.", "correct": false},
+            {"text": "Sample mean xˉas an estimate of the population mean 𝜇", "correct": true},
+            {"text": "Tolerance limit for a parameter.", "correct": false},
+            {"text": "Prediction interval for future observations.", "correct": false}
+        ]
+    },
+    {
+        "question": "What is an interval estimate?",
+        "answers": [
+            {"text": "A single value used to estimate a parameter.", "correct": false},
+            {"text": "An interval constructed to include the population parameter with a certain confidence level.", "correct": true},
+            {"text": "The exact value of a population parameter.", "correct": false},
+            {"text": "The mean of the population variance.", "correct": false}
+        ]
+    },
+    {
+        "question": "When is the t-distribution used instead of the normal distribution?",
+        "answers": [
+            {"text": "When the population variance 𝜎^2 is known.", "correct": false},
+            {"text": "When the sample size is large.", "correct": false},
+            {"text": "When the population variance is unknown and the sample size is small.", "correct": true},
+            {"text": "When the data is not normally distributed.", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the purpose of a prediction interval?",
+        "answers": [
+            {"text": "To predict the future value of a single observation.", "correct": true},
+            {"text": "To estimate the variance of the population.", "correct": false},
+            {"text": "To calculate the confidence level of a sample mean.", "correct": false},
+            {"text": "To test the equality of two variances.", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the formula for the sample proportion p in a binomial experiment?",
+        "answers": [
+            {"text": "p = x/n", "correct": true},
+            {"text": "p = n/x", "correct": false},
+            {"text": "p = x/(n-1)", "correct": false},
+            {"text": "p = n*x", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the maximum likelihood estimator (MLE)?",
+        "answers": [
+            {"text": "An estimator that minimizes the variance of the sample mean.", "correct": false},
+            {"text": "An estimator that provides a confidence interval for the mean.", "correct": false},
+            {"text": "An estimator that guarantees unbiased estimates.", "correct": false},
+            {"text": "An estimator that maximizes the probability of the observed sample data.", "correct": true}
         ]
     },
 
