@@ -85,7 +85,7 @@ router.get("/quizs/Relations", landPageController.getMLQTopic23);
 
 router.get("/quizs/Functions", landPageController.getMLQTopic24);
 
-router.get("/quizs/", landPageController.getMLQTopic23);
+router.get("/quizs/Graphs", landPageController.getMLQTopic25);
 
 router.get("/quizs/", landPageController.getMLQTopic23);
 
