@@ -90,15 +90,7 @@ const questions = [
             {"text": "The union of all elements in 𝐴 and B.", "correct": false}
         ]
     },
-    {
-        "question": "",
-        "answers": [
-            {"text": "", "correct": true},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false}
-        ]
-    },
+
 
 
 ];
