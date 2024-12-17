@@ -1,14 +1,96 @@
 const questions = [
   
     {
-        "question": "",
+        "question": "What is the probability density function (PDF) of a continuous uniform distribution over [a,b]?",
         "answers": [
-            {"text": "", "correct": true},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false},
-            {"text": "", "correct": false}
+            {"text": "f(x)= 1/(b-a),a≤x≤b", "correct": true},
+            {"text": "f(x)= (b-a)/x", "correct": false},
+            {"text": "f(x)= e^-x", "correct": false},
+            {"text": "f(x) = x^2", "correct": false}
         ]
     },
+    {
+        "question": "Which of the following is not a property of the normal distribution?",
+        "answers": [
+            {"text": "It is symmetric about the mean.", "correct": false},
+            {"text": "The total area under the curve is 1.", "correct": false},
+            {"text": "The mode occurs at x=μ.", "correct": false},
+            {"text": "It is always skewed to the right.", "correct": true}
+        ]
+    },
+    {
+        "question": "What is the standard normal random variable Z defined as?",
+        "answers": [
+            {"text": "Z = (X−μ)/σ", "correct": true},
+            {"text": "Z = X + μ", "correct": false},
+            {"text": "Z = σ − X", "correct": false},
+            {"text": "Z = X/μ", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the probability that a normal random variable X with 𝜇=50 and σ=10 assumes a value between 45 and 62?",
+        "answers": [
+            {"text": "Use the cumulative standard normal table with Z = (X−μ)/σ", "correct": true},
+            {"text": "Directly calculate using X=σZ+μ.", "correct": false},
+            {"text": "Approximate using the Poisson distribution.", "correct": false},
+            {"text": "The probability cannot be determined.", "correct": false}
+        ]
+    },
+    {
+        "question": "When is the normal distribution used to approximate the binomial distribution?",
+        "answers": [
+            {"text": "When n is small and p is close to 1.", "correct": false},
+            {"text": "When n is large and p is small or close to 0.5.", "correct": true},
+            {"text": "When the number of trials is infinite.", "correct": false},
+            {"text": "When p equals 0.", "correct": false}
+        ]
+    },
+    {
+        "question": "The time T until the first event occurs in a Poisson process follows which distribution?",
+        "answers": [
+            {"text": "Gamma distribution", "correct": false},
+            {"text": "Uniform distribution", "correct": false},
+            {"text": "Exponential distribution", "correct": true},
+            {"text": "Chi-squared distribution", "correct": false}
+        ]
+    },
+    {
+        "question": "For an exponential distribution with a mean of 4 years, what is the probability P(T>6)?",
+        "answers": [
+            {"text": "P(T>6) = e^-3/2", "correct": true},
+            {"text": "P(T>6) = e^-2/3", "correct": false},
+            {"text": "P(T>6) =1 - e^-2/3", "correct": false},
+            {"text": "P(T>6) = 1/6", "correct": false}
+        ]
+    },
+    {
+        "question": "Which distribution is a special case of the gamma distribution when k= n/2 and θ=2?",
+        "answers": [
+            {"text": "Uniform distribution", "correct": false},
+            {"text": "Chi-squared distribution", "correct": true},
+            {"text": "Poisson distribution", "correct": false},
+            {"text": "Normal distribution", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the relationship between the Poisson and exponential distributions?",
+        "answers": [
+            {"text": "Poisson distribution models the number of events, and exponential distribution models the time between events.", "correct": true},
+            {"text": "Both are identical distributions.", "correct": false},
+            {"text": "Exponential distribution approximates the Poisson distribution for large events.", "correct": false},
+            {"text": "They are unrelated.", "correct": false}
+        ]
+    },
+    {
+        "question": "What is the probability that a random variable X, following a normal distribution with μ=300 and σ=50, takes a value greater than 362?",
+        "answers": [
+            {"text": "Approximate using the Poisson process.", "correct": false},
+            {"text": "Calculate directly using e^-x", "correct": false},
+            {"text": "Use P(X > 362)=(362-300)/500.", "correct": false},
+            {"text": "Convert to standard normal Z and use the cumulative table.", "correct": true}
+        ]
+    },
+
 
 ];
 
