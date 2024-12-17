@@ -247,7 +247,7 @@ exports.getMLQTopic23 = (req, res, next) => {
   });
 };
 exports.getMLQTopic24 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Functions", {
     pageTitle: "project",
     path: "/landPage",
   });
