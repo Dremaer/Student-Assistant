@@ -218,7 +218,7 @@ exports.getMLQTopic21 = (req, res, next) => {
   });
 };
 exports.getMLQTopic22 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Formal Logic", {
     pageTitle: "project",
     path: "/landPage",
   });

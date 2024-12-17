@@ -67,7 +67,7 @@ router.get("/quizs/Test_Hypothesis", landPageController.getMLQTopic20);
 
 router.get("/quizs/Sets_Proofs", landPageController.getMLQTopic21);
 
-router.get("/quizs/", landPageController.getMLQTopic22);
+router.get("/quizs/Formal_Logic", landPageController.getMLQTopic22);
 
 router.get("/quizs/", landPageController.getMLQTopic23);
 
