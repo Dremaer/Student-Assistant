@@ -91,7 +91,7 @@ nav .navbar-brand img{
 .nav-link {
     color: #848484;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .btn {
@@ -206,6 +206,10 @@ aside ul li{
     width: 300px;
     height: 180px;
     border-radius: 8px;
+}
+
+.course-image:nth-child(3){
+    background-position-x: right;
 }
 
 .course-details{
