@@ -19,6 +19,20 @@ exports.getEduBot = (req, res, next) => {
   });
 };
 
+exports.getLogin = (req, res, next) => {
+  res.render("login", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getSignup = (req, res, next) => {
+  res.render("signup", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
 exports.getGrade1 = (req, res, next) => {
   res.render("grade_1", {
     pageTitle: "project",

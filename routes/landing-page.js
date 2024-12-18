@@ -10,6 +10,10 @@ router.get("/community", landPageController.getCommunity);
 
 router.get("/edubot", landPageController.getEduBot);
 
+router.get("/login", landPageController.getLogin);
+
+router.get("/signup", landPageController.getSignup);
+
 router.get("/grade_1", landPageController.getGrade1);
 
 router.get("/grade_2", landPageController.getGrade2);
@@ -92,27 +96,6 @@ router.get("/quizs/Graphs", landPageController.getMLQTopic26);
 router.get("/quizs/Overview_Algorithms", landPageController.getMLQTopic27);
 
 router.get("/quizs/", landPageController.getMLQTopic28);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
-
 
 /* C subject quiz */
 
