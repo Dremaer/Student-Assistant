@@ -10,6 +10,10 @@ router.get("/community", landPageController.getCommunity);
 
 router.get("/edubot", landPageController.getEduBot);
 
+router.get("/login", landPageController.getLogin);
+
+router.get("/signup", landPageController.getSignup);
+
 router.get("/grade_1", landPageController.getGrade1);
 
 router.get("/grade_2", landPageController.getGrade2);
@@ -153,6 +157,16 @@ router.get("/quizs/structure", landPageController.getCQuiz10);
 
 router.get("/quizs/file_io", landPageController.getCQuiz11);
 
+/* Data Structure Quizzes */
+router.get("/quizs/quiz_data", landPageController.getDataQuiz);
+router.get("/quizs/advanced_cpp", landPageController.getDataQuiz1);
+router.get("/quizs/array", landPageController.getDataQuiz2);
+router.get("/quizs/stack_queue", landPageController.getDataQuiz3);
+router.get("/quizs/inheritance", landPageController.getDataQuiz4);
+router.get("/quizs/linked_list", landPageController.getDataQuiz5);
+router.get("/quizs/tree", landPageController.getDataQuiz6);
+router.get("/quizs/graph", landPageController.getDataQuiz7);
+
 /* ML subject flashcards */
 
 router.get("/flashcards/flash_ml", landPageController.getMLFlah);
@@ -202,11 +216,30 @@ router.get("/flashcards/structure", landPageController.getCFlashTopic10);
 
 router.get("/flashcards/file_io", landPageController.getCFlashTopic11);
 
+/* Data Structure flashcard */
+router.get("/flashcards/flash_data", landPageController.getDataFlashTopic);
+
+router.get("/flashcards/advanced_cpp", landPageController.getDataFlashTopic1);
+
+router.get("/flashcards/array", landPageController.getDataFlashTopic2);
+
+router.get("/flashcards/stack_queue", landPageController.getDataFlashTopic3);
+
+router.get("/flashcards/inheritance", landPageController.getDataFlashTopic4);
+
+router.get("/flashcards/linked_list", landPageController.getDataFlashTopic5);
+
+router.get("/flashcards/tree", landPageController.getDataFlashTopic6);
+
+router.get("/flashcards/graph", landPageController.getDataFlashTopic7);
+
 /* Subjects's exam */
 
 router.get("/exam/ml", landPageController.getMLExam);
 
 router.get("/exam/exam_c", landPageController.getCExam);
+
+router.get("/exam/data_structure", landPageController.getDataExam);
 
 module.exports = router;
 

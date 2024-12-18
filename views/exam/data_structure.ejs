@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/exam/data_str.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="/" class="navbar-brand"><img src="/images/blue_logo.png" /></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                <a href="/quizzes" class="nav-link" onclick="quizList(event)">Quizzes</a>
+                  <!-- Quizzes's Mega Drop Menu  -->                                
+                  <div class="dropdown-menu" id="quiz-dropdown">
+                    <div class="subject-types">
+                        <h3>Subject's types</h3>
+                        <p>Learn, challenge, and practice subjects to make exam preparation easier.</p>
+                    </div>
+                    <div class="subjects">
+                        <div class="category-column">
+                            <div class="category">
+                                <h4><a href="/grade_1">1 Grade</a></h4>
+                                <a href="/subjects/discrete_math" class="subject-link" data-subject="Discrete Mathematics">Discrete Mathematics</a>
+                                <a href="/subjects/programming" class="subject-link" data-subject="Introduction to Programming">Introduction to Programming</a>
+                            </div>
+                            <div class="category">
+                                <h4><a href="/grade_2">2 Grade</a></h4>
+                                <a href="/subjects/data_structure" class="subject-link" data-subject="Data Structure">Data Structure</a>
+                                <a href="/subjects/oop" class="subject-link" data-subject="Object Oriented Programming">Obejct Oriented Programming</a>
+                                <a href="/subjects/probability" class="subject-link" data-subject="Probability and Statistics">Probability and Statistics</a>
+                                <a href="/subjects/algorithm" class="subject-link" data-subject="Algorithm Analysis and Design">Algorithm Analysis and Design</a>
+                            </div>
+                        </div>
+                        <div class="category-column">
+                            <div class="category">
+                                <h4><a href="/grade_3">3 Grade</a></h4>
+                                <a href="/subjects/machine_learning" class="subject-link" data-subject="Machine Learning with Python">Machine Learning with Python</a>
+                            </div>
+                            <div class="category">
+                                <h4><a href="/grade_4">4 Grade</a></h4>
+                                <a href="/subjects/computer_vision" class="subject-link" data-subject="Computer Vision">Computer Vision</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                <a href="/community" class="nav-link">Community</a>
+                </li>
+                <li class="nav-item">
+                <a href="/edubot" class="nav-link">EduBot</a>
+                </li>
+            </ul>
+
+            <div class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a href="#" class="nav-link" id="log-in">Log In</a> <!-- ID 추가 -->
+                </li>
+                <li class="nav-item">
+                <button type="button" class="btn"><a href="#" class="nav-link ">Sign Up</a></button>
+                </li>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <a class="back-button" href="/subjects/data_structure">⇐ Explore other options</a>
+    </div>
+
+    <!-- Question 1 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Algrorithm Design - Selection Sort
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>
+                        Implement the selection sort algorithm in C++ to sort an array of integers in ascending order.
+                    </p>
+                        <div class="solution">
+                            <h5>Solution:</h5>
+                            <pre><code class="language-cpp">
+                                #include &lt;iostream&gt;
+                                using namespace std;
+
+                                void selectionSort(int arr[], int n) {
+                                    for (int i = 0; i < n - 1; i++) {
+                                        int minIndex = i;
+                                        for (int j = i + 1; j < n; j++) {
+                                            if (arr[j] < arr[minIndex]) {
+                                                minIndex = j;
+                                            }
+                                        }
+                                        swap(arr[i], arr[minIndex]);
+                                    }
+                                }
+
+                                int main() {
+                                    int arr[] = {64, 25, 12, 22, 11};
+                                    int n = sizeof(arr) / sizeof(arr[0]);
+                                    selectionSort(arr, n);
+
+                                    cout << "Sorted array: ";
+                                    for (int i = 0; i < n; i++)
+                                        cout << arr[i] << " ";
+                                    return 0;
+                                }
+                            </code></pre>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Sparse Matrix 
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Represent a sparse matrix using a triple <row, col, value> format and perform transposition.</p>               
+                    <div class="solution">
+                        <h5>Solution:</h5> <br>
+                        <pre><code class="language-cpp">
+                            #include &lt;iostream&gt;
+                            using namespace std;
+
+                            struct Triple {
+                                int row, col, value;
+                            };
+
+                            void transpose(Triple matrix[], int n, Triple result[]) {
+                                int index = 0;
+                                for (int i = 0; i < matrix[0].col; i++) {
+                                    for (int j = 1; j <= n; j++) {
+                                        if (matrix[j].col == i) {
+                                            result[++index] = {matrix[j].col, matrix[j].row, matrix[j].value};
+                                        }
+                                    }
+                                }
+                                result[0] = {matrix[0].col, matrix[0].row, matrix[0].value};
+                            }
+
+                            int main() {
+                                Triple sparseMatrix[] = {
+                                    {5, 6, 7}, {0, 0, 15}, {0, 3, 22}, {1, 1, 11}, {4, 0, 91}, {5, 2, 28}
+                                };
+                                int n = 5;  // number of non-zero elements
+                                Triple transposed[6];
+                                transpose(sparseMatrix, n, transposed);
+
+                                cout << "Transposed Matrix:" << endl;
+                                for (int i = 0; i <= n; i++) {
+                                    cout << "(" << transposed[i].row << ", " << transposed[i].col
+                                        << ", " << transposed[i].value << ")" << endl;
+                                }
+                                return 0;
+                            }
+                        </code></pre>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Implement Stack
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>
+                        Implement a stack in C++ with push, pop, and peek operations.
+                    </p>
+                    <div class="solution">
+                        <h5>Solution:</h5>
+                        <pre><code class="language-cpp">
+                            #include &lt;iostream&gt;
+                            using namespace std;
+
+                            class Stack {
+                            private:
+                                int top;
+                                int capacity;
+                                int *array;
+
+                            public:
+                                Stack(int size) {
+                                    capacity = size;
+                                    array = new int[capacity];
+                                    top = -1;
+                                }
+
+                                ~Stack() {
+                                    delete[] array;
+                                }
+
+                                void push(int value) {
+                                    if (top == capacity - 1) {
+                                        cout << "Stack Overflow!" << endl;
+                                        return;
+                                    }
+                                    array[++top] = value;
+                                }
+
+                                int pop() {
+                                    if (top == -1) {
+                                        cout << "Stack Underflow!" << endl;
+                                        return -1;
+                                    }
+                                    return array[top--];
+                                }
+
+                                int peek() {
+                                    if (top == -1) {
+                                        cout << "Stack is empty!" << endl;
+                                        return -1;
+                                    }
+                                    return array[top];
+                                }
+
+                                bool isEmpty() {
+                                    return top == -1;
+                                }
+                            };
+
+                            int main() {
+                                Stack s(5);
+
+                                s.push(10);
+                                s.push(20);
+                                s.push(30);
+
+                                cout << "Top element: " << s.peek() << endl;
+
+                                cout << "Popped: " << s.pop() << endl;
+                                cout << "Popped: " << s.pop() << endl;
+
+                                cout << "Stack is empty: " << (s.isEmpty() ? "Yes" : "No") << endl;
+
+                                return 0;
+                            }
+                        </code></pre>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 4-->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Graph BFS Traversal
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>mplement Breadth First Search (BFS) for a graph using an adjacency list.</p>
+                    <div class="solution">
+                        <h5>Solution:</h5>
+                        <pre><code class="language-cpp">
+                            #include &lt;iostream&gt;
+                            #include &lt;vector&gt;
+                            #include &lt;queue&gt;
+                            using namespace std;
+
+                            class Graph {
+                                int vertices;
+                                vector<int> *adjList;
+
+                            public:
+                                Graph(int v) {
+                                    vertices = v;
+                                    adjList = new vector<int>[v];
+                                }
+
+                                void addEdge(int u, int v) {
+                                    adjList[u].push_back(v);
+                                    adjList[v].push_back(u);  // For undirected graph
+                                }
+
+                                void BFS(int start) {
+                                    vector<bool> visited(vertices, false);
+                                    queue<int> q;
+
+                                    visited[start] = true;
+                                    q.push(start);
+
+                                    while (!q.empty()) {
+                                        int current = q.front();
+                                        q.pop();
+                                        cout << current << " ";
+
+                                        for (int neighbor : adjList[current]) {
+                                            if (!visited[neighbor]) {
+                                                visited[neighbor] = true;
+                                                q.push(neighbor);
+                                            }
+                                        }
+                                    }
+                                }
+                            };
+
+                            int main() {
+                                Graph g(5);
+
+                                g.addEdge(0, 1);
+                                g.addEdge(0, 2);
+                                g.addEdge(1, 3);
+                                g.addEdge(1, 4);
+
+                                cout << "BFS Traversal starting from node 0:" << endl;
+                                g.BFS(0);
+
+                                return 0;
+                            }
+                        </code></pre>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer" class="text-center justify-content-center fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy;
+              <span id="year">2024</span> studentassistant.com </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/quizzes.js" defer></script>
+    <script src="/js/exam/ml.js" defer></script>
+</body>
+</html>

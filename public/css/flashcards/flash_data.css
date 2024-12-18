@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body{
+    width: 1440px;
+    margin: 0 auto;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -88,8 +90,8 @@ nav .navbar-brand img{
 
 .nav-link {
     color: #848484;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 550;
 }
 
 .btn {
@@ -118,97 +120,86 @@ nav .navbar-brand img{
     background-color: #848484;
 }
 
-.subject-container{
-    background-image: url('../images/data_structures_bg.jpg');
-    background-attachment: fixed;
-    background-position-x: right;
-    min-height: 180px;
-    position: relative;
-}
-
-.dark-overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.bg-box{
-    width: 1040px;
-    margin: 40px auto;
-    color: #fff;
-    justify-content: center;
+/* Quizzes part */
+.quiz-block {
+    display: flex;
     align-items: center;
-}
-
-.subject-tip{
+    justify-content: center;
+    gap: 20px;
     margin-top: 30px;
+    flex-wrap: wrap; 
 }
 
-.first-tip{
-    display: flex;
-    gap: 10px;
-    margin-left: 16%;
-    margin-top: 20px;
-    cursor: pointer;
+.flashcard-item {
+    width: 250px;
+    height: 150px;
+    border: none; 
+    border-radius: 8px; 
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: left;
+    justify-content: left;
+    text-align: left; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 4px 6px rgba(45, 45, 45, 0.1);
+    padding: 15px 0 0 15px; 
 }
 
-.first-tip .tip {
-    width: 300px;
-    height: 180px;
-    background: #25283D;
-    border: none;
-    border-radius: 10px;
-    color: #ffffff;
+.flashcard-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(135deg, #334155, #1e293b); 
 }
 
-.first-tip .tip:nth-child(2),
-.first-tip .tip:nth-child(3){
-    margin-left: 8px;
-}
-
-.first-tip .tip:hover{
-    background-color: rgba(37, 40, 61, 0.5);
-    color: #424242;
-}
-
-.first-tip .tip p{
-    font-size: 22px;
-    text-align: center;
-    font-weight: 450;
-    padding-top: 70px;
-}
-
-.first-tip .tip a{
+.flashcard-item a{
+    color: #F5F5F5;
     text-decoration: none;
-    color: #ffffff;
+    font-weight: 550;
+    font-size: 20px;
 }
 
-.second-tip {
+.flashcard-item img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.flashcard-item p {
+    font-size: 16px;
+    margin: 0;
+    color: #ebbe53; 
+}
+
+.flash-text{
     display: flex;
     gap: 10px;
-    margin-left: 16%;
-    margin-top: 20px;
-    cursor: pointer;
+    margin-top: 5px;
 }
 
-.second-tip .tip{
-    width: 300px;
-    height: 180px;
-    background: #25283D;
-    border: none;
-    border-radius: 10px;
-    color: #ffffff;
+.quiz-block:nth-child(3) {
+    margin-bottom: 80px;
+    align-items: left;
+    justify-content: start;
+    margin-left: 250px;
 }
 
-.second-tip .tip:hover{
-    background-color: rgba(37, 40, 61, 0.5);
-    color: #424242;   
+.back-button{
+    color: #ebbe53;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.second-tip .tip p{
-    font-size: 22px;
-    text-align: center;
-    font-weight: 450;
-    padding-top: 70px;
+@media (max-width: 768px) {
+    .quiz-block {
+        flex-direction: column; 
+    }
+
+    .flashcard-item {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
 }
