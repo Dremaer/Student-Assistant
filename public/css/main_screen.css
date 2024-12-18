@@ -23,6 +23,11 @@ nav .navbar-brand img{
     font-weight: 500;
 }
 
+.nav-link:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .info {
     margin-top: 140px;
 }
@@ -31,6 +36,7 @@ nav .navbar-brand img{
     font-size: 14px;
     color: #D2D2D2;
 }
+
 .btn {
     background-color: white;
     width: 100px;
@@ -177,11 +183,11 @@ nav .navbar-brand img{
 }
 
 /* Blinking cursor */
-#auto-type::after {
+/* #auto-type::after {
     content: "|";
     display: inline-block;
     animation: blink 0.7s infinite;
-}
+} */
 
 @keyframes blink {
     0%, 100% { opacity: 1; }

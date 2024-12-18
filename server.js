@@ -15,9 +15,11 @@ const blog = new mongodbBlog({
   collection: "sessions",
 });
 
+// Middleware configuration
 app.use(flash());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(
   session({
     secret: "as312zxvds@!@$!!@sadsa",
@@ -27,6 +29,7 @@ app.use(
   })
 );
 
+// Attach the logged-in user to the request if available
 app.use((req, res, next) => {
   if (!req.session.user) {
     return next();
@@ -39,26 +42,26 @@ app.use((req, res, next) => {
     .catch((err) => console.log(err));
 });
 
+// Set view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
-/*app.set("views", "views");*/
 
+
+// Route imports
 const landPageRoutes = require("./routes/landing-page");
-const authPageRoutes = require("./routes/auth");
+const auth = require("./routes/auth");
 
-
-app.use(express.static(path.join(__dirname, "public")));
-app.use(bodyParser.urlencoded({ extended: false }));
-
+// Define routes
 app.use("/", landPageRoutes);
-app.use("/auth", authPageRoutes);
+app.use("/auth", auth);
 
+// Connect to MongoDB and start the server
 mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then((result) => {
+  .then(() => {
     app.listen(3000, () => console.log("Server is running on port 3000"));
   })
   .catch((err) => console.log("Error connecting to MongoDB:", err));

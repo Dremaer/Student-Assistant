@@ -20,7 +20,7 @@ router.get("/grade_4", landPageController.getGrade4);
 
 router.get("/subjects/:subject", landPageController.getSubject);
 
-/*Subjects's quizs*/
+/* ML subject quizs*/
 router.get("/quizs/quizs_ml", landPageController.getMLQuiz);
 
 router.get("/quizs/quizs_probability", landPageController.getMLQuiz1);
@@ -114,8 +114,33 @@ router.get("/quizs/", landPageController.getMLQTopic29);
 router.get("/quizs/", landPageController.getMLQTopic29);
 
 
+/* C subject quiz */
 
-/* Subjects's flashcards */
+router.get("/quizs/quiz_c", landPageController.getCQuiz);
+
+router.get("/quizs/intro_c", landPageController.getCQuiz1);
+
+router.get("/quizs/data_types", landPageController.getCQuiz2);
+
+router.get("/quizs/commands", landPageController.getCQuiz3);
+
+router.get("/quizs/control_statement", landPageController.getCQuiz4);
+
+router.get("/quizs/function", landPageController.getCQuiz5);
+
+router.get("/quizs/memory_class", landPageController.getCQuiz6);
+
+router.get("/quizs/array_string", landPageController.getCQuiz7);
+
+router.get("/quizs/string_processing", landPageController.getCQuiz8);
+
+router.get("/quizs/pointer", landPageController.getCQuiz9);
+
+router.get("/quizs/structure", landPageController.getCQuiz10);
+
+router.get("/quizs/file_io", landPageController.getCQuiz11);
+
+/* ML subject flashcards */
 
 router.get("/flashcards/flash_ml", landPageController.getMLFlah);
 
@@ -139,9 +164,36 @@ router.get("/flashcards/clustering", landPageController.getMLFlahTopic9);
 
 router.get("/flashcards/assosiation_analysis", landPageController.getMLFlahTopic10);
 
+/* C flashcards */
+router.get("/flashcards/flash_c", landPageController.getCFlash);
+
+router.get("/flashcards/intro_c", landPageController.getCFlashTopic1);
+
+router.get("/flashcards/data_types", landPageController.getCFlashTopic2);
+
+router.get("/flashcards/commands", landPageController.getCFlashTopic3);
+
+router.get("/flashcards/control_statement", landPageController.getCFlashTopic4);
+
+router.get("/flashcards/function", landPageController.getCFlashTopic5);
+
+router.get("/flashcards/memory_class", landPageController.getCFlashTopic6);
+
+router.get("/flashcards/array_string", landPageController.getCFlashTopic7);
+
+router.get("/flashcards/string_processing", landPageController.getCFlashTopic8);
+
+router.get("/flashcards/pointer", landPageController.getCFlashTopic9);
+
+router.get("/flashcards/structure", landPageController.getCFlashTopic10);
+
+router.get("/flashcards/file_io", landPageController.getCFlashTopic11);
+
 /* Subjects's exam */
 
 router.get("/exam/ml", landPageController.getMLExam);
+
+router.get("/exam/exam_c", landPageController.getCExam);
 
 module.exports = router;
 

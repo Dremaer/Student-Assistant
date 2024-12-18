@@ -57,7 +57,7 @@ exports.getSubject = (req, res, next) => {
   });
 };
 
-/* Subjects's quizs */
+/* ML subject quizs */
 exports.getMLQuiz = (req, res, next) => {
   res.render("quizs/quizs_ml", {
     pageTitle: "project",
@@ -216,18 +216,21 @@ exports.getMLQTopic18 = (req, res, next) => {
     path: "/landPage",
   });
 };
+
 exports.getMLQTopic19 = (req, res, next) => {
   res.render("quizs/Estimation", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
+
 exports.getMLQTopic20 = (req, res, next) => {
   res.render("quizs/Test_Hypothesis", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
+
 exports.getMLQTopic21 = (req, res, next) => {
   res.render("quizs/Sets_Proofs", {
     pageTitle: "project",
@@ -313,8 +316,92 @@ exports.getMLQTopic28 = (req, res, next) => {
   });
 };
 
+/* C subject quiz */
+exports.getCQuiz = (req, res, next) => {
+  res.render("quizs/quiz_c", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
 
-/* Subjects's flashcards  */
+exports.getCQuiz1 = (req, res, next) => {
+  res.render("quizs/intro_c", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz2 = (req, res, next) => {
+  res.render("quizs/data_types", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz3 = (req, res, next) => {
+  res.render("quizs/commands", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz4 = (req, res, next) => {
+  res.render("quizs/control_statement", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz5 = (req, res, next) => {
+  res.render("quizs/function", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz6 = (req, res, next) => {
+  res.render("quizs/memory_class", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz7 = (req, res, next) => {
+  res.render("quizs/array_string", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz8 = (req, res, next) => {
+  res.render("quizs/string_processing", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz9 = (req, res, next) => {
+  res.render("quizs/pointer", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz10 = (req, res, next) => {
+  res.render("quizs/structure", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCQuiz11 = (req, res, next) => {
+  res.render("quizs/file_io", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+/* ML subject flashcards  */
 exports.getMLFlah = (req, res, next) => {
   res.render("flashcards/flash_ml", {
     pageTitle: "project",
@@ -392,9 +479,108 @@ exports.getMLFlahTopic10 = (req, res, next) => {
   });
 };
 
+/* C flashcard */
+exports.getCFlash = (req, res, next) => {
+  res.render("flashcards/flash_c", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic1 = (req, res, next) => {
+  res.render("flashcards/intro_c", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic2 = (req, res, next) => {
+  res.render("flashcards/data_types", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic3 = (req, res, next) => {
+  res.render("flashcards/commands", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic4 = (req, res, next) => {
+  res.render("flashcards/control_statement", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic5 = (req, res, next) => {
+  res.render("flashcards/function", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic5 = (req, res, next) => {
+  res.render("flashcards/function", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic6 = (req, res, next) => {
+  res.render("flashcards/memory_class", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic7 = (req, res, next) => {
+  res.render("flashcards/array_string", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic8 = (req, res, next) => {
+  res.render("flashcards/string_processing", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic9 = (req, res, next) => {
+  res.render("flashcards/pointer", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic10 = (req, res, next) => {
+  res.render("flashcards/structure", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCFlashTopic11 = (req, res, next) => {
+  res.render("flashcards/file_io", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
 /* Exam */
 exports.getMLExam = (req, res, next) => {
   res.render("exam/ml", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getCExam = (req, res, next) => {
+  res.render("exam/exam_c", {
     pageTitle: "project",
     path: "/landPage",
   });

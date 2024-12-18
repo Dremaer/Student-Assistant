@@ -89,7 +89,7 @@ nav .navbar-brand img{
 .nav-link {
     color: #848484;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .btn {
@@ -119,7 +119,7 @@ nav .navbar-brand img{
 }
 
 .subject-container{
-    background-image: url('../images/bg_discrete_math.jpg');
+    background-image: url('../images/data_structures_bg.jpg');
     background-attachment: fixed;
     background-position-x: right;
     min-height: 180px;
@@ -135,25 +135,10 @@ nav .navbar-brand img{
 
 .bg-box{
     width: 1040px;
-    margin: 0 auto;
+    margin: 40px auto;
     color: #fff;
     justify-content: center;
     align-items: center;
-}
-
-.person-info{
-    display: flex;
-    padding-top: 30px;
-}
-
-.person-info img{
-    width: 30px;
-    height: 30px;
-}
-
-.person-info p{
-    padding-left: 5px;
-    font-size: 18px;
 }
 
 .subject-tip{

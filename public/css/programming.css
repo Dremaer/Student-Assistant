@@ -89,7 +89,7 @@ nav .navbar-brand img{
 .nav-link {
     color: #848484;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .btn {
@@ -119,7 +119,7 @@ nav .navbar-brand img{
 }
 
 .subject-container{
-    background-image: url('../images/bg_discrete_math.jpg');
+    background-image: url('../images/programming.jpg');
     background-attachment: fixed;
     background-position-x: right;
     min-height: 180px;
@@ -130,12 +130,12 @@ nav .navbar-brand img{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .bg-box{
     width: 1040px;
-    margin: 0 auto;
+    margin: 40px auto;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -175,6 +175,13 @@ nav .navbar-brand img{
     border: none;
     border-radius: 10px;
     color: #ffffff;
+}
+
+.first-tip .tip:nth-child(1) a,
+.first-tip .tip:nth-child(2) a,
+.first-tip .tip:nth-child(3) a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .first-tip .tip:nth-child(2),
