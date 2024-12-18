@@ -124,11 +124,7 @@ router.get("/quizs/Amortized_Analysis", landPageController.getAAQTopic8);
 
 router.get("/quizs/NP-Completeness", landPageController.getAAQTopic9);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
-
-router.get("/quizs/", landPageController.getMLQTopic29);
 
 
 /* C subject quiz */
