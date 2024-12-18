@@ -118,7 +118,7 @@ router.get("/quizs/Greedy_Algorithms", landPageController.getAAQTopic5);
 
 router.get("/quizs/Dynamic_Programming", landPageController.getAAQTopic6);
 
-router.get("/quizs/Greedy_Algorithms", landPageController.getAAQTopic7);
+router.get("/quizs/Graph_Algorithms", landPageController.getAAQTopic7);
 
 router.get("/quizs/Amortized_Analysis", landPageController.getAAQTopic8);
 

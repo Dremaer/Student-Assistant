@@ -331,7 +331,7 @@ exports.getAAQTopic6 = (req, res, next) => {
   });
 };
 exports.getAAQTopic7 = (req, res, next) => {
-  res.render("quizs/Greedy_Algorithms", {
+  res.render("quizs/Graph_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
   });
