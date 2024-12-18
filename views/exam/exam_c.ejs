@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/exam/c_prog.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="/" class="navbar-brand"><img src="/images/blue_logo.png" /></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                <a href="/quizzes" class="nav-link" onclick="quizList(event)">Quizzes</a>
+                  <!-- Quizzes's Mega Drop Menu  -->                                
+                  <div class="dropdown-menu" id="quiz-dropdown">
+                    <div class="subject-types">
+                        <h3>Subject's types</h3>
+                        <p>Learn, challenge, and practice subjects to make exam preparation easier.</p>
+                    </div>
+                    <div class="subjects">
+                        <div class="category-column">
+                            <div class="category">
+                                <h4><a href="/grade_1">1 Grade</a></h4>
+                                <a href="/subjects/discrete_math" class="subject-link" data-subject="Discrete Mathematics">Discrete Mathematics</a>
+                                <a href="/subjects/programming" class="subject-link" data-subject="Introduction to Programming">Introduction to Programming</a>
+                            </div>
+                            <div class="category">
+                                <h4><a href="/grade_2">2 Grade</a></h4>
+                                <a href="/subjects/data_structure" class="subject-link" data-subject="Data Structure">Data Structure</a>
+                                <a href="/subjects/oop" class="subject-link" data-subject="Object Oriented Programming">Obejct Oriented Programming</a>
+                                <a href="/subjects/probability" class="subject-link" data-subject="Probability and Statistics">Probability and Statistics</a>
+                                <a href="/subjects/algorithm" class="subject-link" data-subject="Algorithm Analysis and Design">Algorithm Analysis and Design</a>
+                            </div>
+                        </div>
+                        <div class="category-column">
+                            <div class="category">
+                                <h4><a href="/grade_3">3 Grade</a></h4>
+                                <a href="/subjects/machine_learning" class="subject-link" data-subject="Machine Learning with Python">Machine Learning with Python</a>
+                            </div>
+                            <div class="category">
+                                <h4><a href="/grade_4">4 Grade</a></h4>
+                                <a href="/subjects/computer_vision" class="subject-link" data-subject="Computer Vision">Computer Vision</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                <a href="/community" class="nav-link">Community</a>
+                </li>
+                <li class="nav-item">
+                <a href="/edubot" class="nav-link">EduBot</a>
+                </li>
+            </ul>
+
+            <div class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a href="#" class="nav-link" id="log-in">Log In</a> <!-- ID 추가 -->
+                </li>
+                <li class="nav-item">
+                <button type="button" class="btn"><a href="#" class="nav-link ">Sign Up</a></button>
+                </li>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <a class="back-button" href="/subjects/programming">⇐ Explore other options</a>
+    </div>
+
+    <!-- Question 1 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    If-else condition
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>
+                        Write a C program that demonstrates the use of the if-else conditional statement. The program should check whether a given integer is even or odd.
+                    </p>
+                        <div class="solution">
+                            <h5>Solution:</h5>
+                            <pre><code class="language-c">
+                                #include &lt;stdio.h&gt;
+                                
+                                int main() {
+                                    int num;
+                                    printf("Enter an integer: ");
+                                    scanf("%d", &amp;num);
+                                
+                                    if (num % 2 == 0) {
+                                        printf("%d is Even.\\n", num);
+                                    } else {
+                                        printf("%d is Odd.\\n", num);
+                                    }
+                                
+                                    return 0;
+                                }
+                            </code></pre>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Function
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Write a function called add that takes two integers as arguments and returns their sum. Demonstrate the function in the main() function.</p>               
+                    <div class="solution">
+                        <h5>Solution:</h5> <br>
+                        <pre><code class="language-c">
+                            #include &lt;stdio.h&gt;
+                            
+                            int add(int a, int b); 
+
+                            int main() {
+                                int x = 5, y = 10, result;
+                                result = add(x, y);
+                                printf("Sum of %d and %d is %d\n", x, y, result);
+                                return 0;
+                            }
+
+                            int add(int a, int b) {
+                                return a + b;
+                            }
+                        </code></pre>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    ASCII values
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>
+                        Write a C program that reads a character input using getchar() and displays its ASCII value.
+                    </p>
+                    <div class="solution">
+                        <h5>Solution:</h5>
+                        <pre><code class="language-c">
+                            #include &lt;stdio.h&gt;
+                            
+                            int main() {
+                                char ch;
+                                printf("Enter a character: ");
+                                ch = getchar();
+                                printf("The ASCII value of '%c' is %d\n", ch, ch);
+                                return 0;
+                            }
+                        </code></pre>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 4-->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Recursive function
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Write a program that calculates the factorial of a number using a recursive function.</p>
+                    <div class="solution">
+                        <h5>Solution:</h5>
+                        <pre><code class="language-c">
+                            #include &lt;stdio.h&gt;
+                            
+                            int factorial(int n); // Function prototype
+
+                            int main() {
+                                int num;
+                                printf("Enter a positive integer: ");
+                                scanf("%d", &num);
+
+                                if (num < 0) {
+                                    printf("Factorial of a negative number is undefined.\n");
+                                } else {
+                                    printf("Factorial of %d is %d\n", num, factorial(num));
+                                }
+
+                                return 0;
+                            }
+
+                            int factorial(int n) {
+                                if (n == 0 || n == 1)
+                                    return 1; // Base case
+                                return n * factorial(n - 1); // Recursive call
+                            }
+                        </code></pre>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    For loop
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>Write a program that demonstrates the use of for loops to display the multiplication table for a number entered by the user.</p>
+                    <h5>Solution:</h5>
+                    <pre><code class="language-c">
+                        #include &lt;stdio.h&gt;
+                        
+                        int main() {
+                            int num, i;
+                            printf("Enter a number to display its multiplication table: ");
+                            scanf("%d", &num);
+                        
+                            for (i = 1; i <= 10; i++) {
+                                printf("%d x %d = %d\n", num, i, num * i);
+                            }
+                        
+                            return 0;
+                        }
+                    </code></pre>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    File I/O
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Write a C program to write 5 numbers to a file named "output.txt" and then read the numbers back from the file and display them.</p>
+                    <h5>Solution:</h5>
+                    <pre><code class="language-c">
+                        #include &lt;stdio.h&gt;
+                        
+                        int main() {
+                            FILE *fp;
+                            int i, numbers[5] = {10, 20, 30, 40, 50}, readNumbers[5];
+                        
+                            // Writing to file
+                            fp = fopen("output.txt", "w");
+                            if (fp == NULL) {
+                                printf("Error opening file for writing.\n");
+                                return 1;
+                            }
+                            for (i = 0; i < 5; i++) {
+                                fprintf(fp, "%d ", numbers[i]);
+                            }
+                            fclose(fp);
+                        
+                            // Reading from file
+                            fp = fopen("output.txt", "r");
+                            if (fp == NULL) {
+                                printf("Error opening file for reading.\n");
+                                return 1;
+                            }
+                            for (i = 0; i < 5; i++) {
+                                fscanf(fp, "%d", &readNumbers[i]);
+                            }
+                            fclose(fp);
+                        
+                            // Displaying numbers
+                            printf("Numbers read from file: ");
+                            for (i = 0; i < 5; i++) {
+                                printf("%d ", readNumbers[i]);
+                            }
+                            printf("\n");
+                        
+                            return 0;
+                        }
+                    </code></pre>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Array and Pointer
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Write a C program to compute the sum of elements in an integer array using pointers.</p>
+                    <h5>Solution:</h5>
+                    <pre><code class="language-c">
+                        #include &lt;stdio.h&gt;
+                        
+                        int main() {
+                            int arr[5] = {1, 2, 3, 4, 5};
+                            int *ptr = arr;
+                            int sum = 0, i;
+                        
+                            for (i = 0; i < 5; i++) {
+                                sum += *(ptr + i);  // Access elements using pointer arithmetic
+                            }
+                        
+                            printf("Sum of array elements: %d\n", sum);
+                            return 0;
+                        }
+                    </code></pre>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Structure for Employee Data
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Define a structure Employee with the fields: name, department, and salary. Write a program to take details of 3 employees, calculate their salary after a 10% bonus, and display their details.</p>
+                    <h5>Solution:</h5>
+                    <pre><code class="language-c">
+                        #include &lt;stdio.h&gt;
+                        
+                        struct Employee {
+                            char name[30];
+                            char department[20];
+                            float salary;
+                        };
+                        
+                        int main() {
+                            struct Employee emp[3];
+                            int i;
+                        
+                            for (i = 0; i < 3; i++) {
+                                printf("Enter name, department, and salary for employee %d: ", i + 1);
+                                scanf("%s %s %f", emp[i].name, emp[i].department, &emp[i].salary);
+                                emp[i].salary += emp[i].salary * 0.10;  // Adding 10% bonus
+                            }
+                        
+                            printf("\nEmployee Details (after 10%% bonus):\n");
+                            for (i = 0; i < 3; i++) {
+                                printf("Name: %s, Department: %s, Salary: %.2f\n", emp[i].name, emp[i].department, emp[i].salary);
+                            }
+                        
+                            return 0;
+                        }
+                    </code></pre>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Pointer and Function
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Write a function swap that swaps two integers using pointers. Demonstrate this function in the main() function.</p>
+                    <h5>Solution:</h5>
+                    <pre><code class="language-c">
+                        #include &lt;stdio.h&gt;
+                        
+                        void swap(int *a, int *b) {
+                            int temp = *a;
+                            *a = *b;
+                            *b = temp;
+                        }
+                        
+                        int main() {
+                            int x = 5, y = 10;
+                        
+                            printf("Before swap: x = %d, y = %d\n", x, y);
+                            swap(&x, &y);
+                            printf("After swap: x = %d, y = %d\n", x, y);
+                        
+                            return 0;
+                        }
+                    </code></pre>
+                </div>                    
+            </div>
+        </div>
+    </div>
+        
+    <!-- Question 10 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    Multidimensional Arrays
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>Write a C program to initialize a 2D array, sum the elements of each row, and print the results.</p>
+                    <h5>Solution:</h5>
+                    <pre><code class="language-c">
+                        #include &lt;stdio.h&gt;
+                        
+                        int main() {
+                            int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+                            int rowSum, i, j;
+                        
+                            for (i = 0; i < 3; i++) {
+                                rowSum = 0;
+                                for (j = 0; j < 3; j++) {
+                                    rowSum += arr[i][j];
+                                }
+                                printf("Sum of row %d: %d\n", i + 1, rowSum);
+                            }
+                        
+                            return 0;
+                        }
+                    </code></pre>
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer" class="text-center justify-content-center fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy;
+              <span id="year">2024</span> studentassistant.com </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/quizzes.js" defer></script>
+    <script src="/js/exam/ml.js" defer></script>
+</body>
+</html>
