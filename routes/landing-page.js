@@ -89,11 +89,30 @@ router.get("/quizs/Algorithm_Analysis", landPageController.getMLQTopic25);
 
 router.get("/quizs/Graphs", landPageController.getMLQTopic26);
 
-router.get("/quizs/", landPageController.getMLQTopic23);
+router.get("/quizs/Overview_Algorithms", landPageController.getMLQTopic27);
 
-router.get("/quizs/", landPageController.getMLQTopic23);
+router.get("/quizs/", landPageController.getMLQTopic28);
 
-router.get("/quizs/", landPageController.getMLQTopic23);
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
+router.get("/quizs/", landPageController.getMLQTopic29);
+
 
 
 /* Subjects's flashcards */
