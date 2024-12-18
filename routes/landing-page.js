@@ -23,10 +23,11 @@ router.get("/subjects/:subject", landPageController.getSubject);
 /* ML subject quizs*/
 router.get("/quizs/quizs_ml", landPageController.getMLQuiz);
 
-router.get("/quizs/quizs_probability", landPageController.getMLQuiz1);
+router.get("/quizs/quizs_probability", landPageController.getPQuiz);
 
-router.get("/quizs/quizs_Discrete_Math", landPageController.getMLQuiz2);
+router.get("/quizs/quizs_Discrete_Math", landPageController.getDMQuiz);
 
+router.get("/quizs/quizs_Algorithm_Analysis_Design", landPageController.getAAQuiz);
 
 
 
@@ -57,55 +58,67 @@ router.get("/quizs/clustering", landPageController.getMLQTopic9);
 
 router.get("/quizs/assosiation_analysis", landPageController.getMLQTopic10);
 
-router.get("/quizs/Fundamental_Concepts_Rules", landPageController.getMLQTopic11);
 
-router.get("/quizs/RandomVariables_ProbabilityDistributions", landPageController.getMLQTopic12);
 
-router.get("/quizs/Functions_Random_Variables", landPageController.getMLQTopic13);
 
-router.get("/quizs/Mathematical_Expectation", landPageController.getMLQTopic14);
+router.get("/quizs/Fundamental_Concepts_Rules", landPageController.getPQTopic1);
 
-router.get("/quizs/Discrete_Probability_Distributions", landPageController.getMLQTopic15);
+router.get("/quizs/RandomVariables_ProbabilityDistributions", landPageController.getPQTopic2);
 
-router.get("/quizs/Continuous _Probability_Distributions", landPageController.getMLQTopic16);
+router.get("/quizs/Functions_Random_Variables", landPageController.getPQTopic3);
 
-router.get("/quizs/Moment_Generating_Functions", landPageController.getMLQTopic17);
+router.get("/quizs/Mathematical_Expectation", landPageController.getPQTopic4);
 
-router.get("/quizs/Sampling_Distributions_Data_Descriptions", landPageController.getMLQTopic18);
+router.get("/quizs/Discrete_Probability_Distributions", landPageController.getPQTopic5);
 
-router.get("/quizs/Estimation", landPageController.getMLQTopic19);
+router.get("/quizs/Continuous _Probability_Distributions", landPageController.getPQTopic6);
 
-router.get("/quizs/Test_Hypothesis", landPageController.getMLQTopic20);
+router.get("/quizs/Moment_Generating_Functions", landPageController.getPQTopic7);
 
-router.get("/quizs/Sets_Proofs", landPageController.getMLQTopic21);
+router.get("/quizs/Sampling_Distributions_Data_Descriptions", landPageController.getPQTopic8);
 
-router.get("/quizs/Formal_Logic", landPageController.getMLQTopic22);
+router.get("/quizs/Estimation", landPageController.getPQTopic9);
 
-router.get("/quizs/Relations", landPageController.getMLQTopic23);
+router.get("/quizs/Test_Hypothesis", landPageController.getPQTopic10);
 
-router.get("/quizs/Functions", landPageController.getMLQTopic24);
 
-router.get("/quizs/Algorithm_Analysis", landPageController.getMLQTopic25);
 
-router.get("/quizs/Graphs", landPageController.getMLQTopic26);
 
-router.get("/quizs/Overview_Algorithms", landPageController.getMLQTopic27);
 
-router.get("/quizs/", landPageController.getMLQTopic28);
+router.get("/quizs/Sets_Proofs", landPageController.getDMQTopic1);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
+router.get("/quizs/Formal_Logic", landPageController.getDMQTopic2);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
+router.get("/quizs/Relations", landPageController.getDMQTopic3);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
+router.get("/quizs/Functions", landPageController.getDMQTopic4);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
+router.get("/quizs/Algorithm_Analysis", landPageController.getDMQTopic5);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
+router.get("/quizs/Graphs", landPageController.getDMQTopic6);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
 
-router.get("/quizs/", landPageController.getMLQTopic29);
+
+
+
+
+router.get("/quizs/Overview_Algorithms", landPageController.getAAQTopic1);
+
+router.get("/quizs/Sorting_Algorithms", landPageController.getAAQTopic2);
+
+router.get("/quizs/Search_Trees", landPageController.getAAQTopic3);
+
+router.get("/quizs/Hash_Tables", landPageController.getAAQTopic4);
+
+router.get("/quizs/Greedy_Algorithms", landPageController.getAAQTopic5);
+
+router.get("/quizs/Dynamic_Programming", landPageController.getAAQTopic6);
+
+router.get("/quizs/Greedy_Algorithms", landPageController.getAAQTopic7);
+
+router.get("/quizs/Amortized_Analysis", landPageController.getAAQTopic8);
+
+router.get("/quizs/NP-Completeness", landPageController.getAAQTopic9);
 
 router.get("/quizs/", landPageController.getMLQTopic29);
 

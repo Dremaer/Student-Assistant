@@ -65,21 +65,21 @@ exports.getMLQuiz = (req, res, next) => {
   });
 };
 
-exports.getMLQuiz1 = (req, res, next) => {
+exports.getPQuiz = (req, res, next) => {
   res.render("quizs/quizs_probability", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQuiz2 = (req, res, next) => {
+exports.getDMQuiz = (req, res, next) => {
   res.render("quizs/quizs_Discrete_Math", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQuiz3 = (req, res, next) => {
-  res.render("quizs/", {
+exports.getAAQuiz = (req, res, next) => {
+  res.render("quizs/quizs_Algorithm_Analysis_Design", {
     pageTitle: "project",
     path: "/landPage",
   });
@@ -162,159 +162,181 @@ exports.getMLQTopic10 = (req, res, next) => {
 };
 
 
-exports.getMLQTopic11 = (req, res, next) => {
+
+
+
+exports.getPQTopic1 = (req, res, next) => {
   res.render("quizs/Fundamental_Concepts_Rules", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic12 = (req, res, next) => {
+exports.getPQTopic2 = (req, res, next) => {
   res.render("quizs/RandomVariables_ProbabilityDistributions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic13 = (req, res, next) => {
+exports.getPQTopic3 = (req, res, next) => {
   res.render("quizs/quizs/Functions_Random_Variables", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic14 = (req, res, next) => {
+exports.getPQTopic4 = (req, res, next) => {
   res.render("quizs/Mathematical_Expectation", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic15 = (req, res, next) => {
+exports.getPQTopic5 = (req, res, next) => {
   res.render("quizs/Discrete_Probability_Distributions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic16 = (req, res, next) => {
+exports.getPQTopic6 = (req, res, next) => {
   res.render("quizs/Continuous _Probability_Distributions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic17 = (req, res, next) => {
+exports.getPQTopic7 = (req, res, next) => {
   res.render("quizs/Moment_Generating_Functions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic18 = (req, res, next) => {
+exports.getPQTopic8 = (req, res, next) => {
   res.render("quizs/Sampling_Distributions_Data_Descriptions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic19 = (req, res, next) => {
+exports.getPQTopic9 = (req, res, next) => {
   res.render("quizs/Estimation", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic20 = (req, res, next) => {
+exports.getpQTopic10 = (req, res, next) => {
   res.render("quizs/Test_Hypothesis", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 
-exports.getMLQTopic21 = (req, res, next) => {
+
+
+
+
+exports.getDMQTopic1 = (req, res, next) => {
   res.render("quizs/Sets_Proofs", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic22 = (req, res, next) => {
+exports.getDMQTopic2 = (req, res, next) => {
   res.render("quizs/Formal_Logic", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic23 = (req, res, next) => {
+exports.getDMQTopic3 = (req, res, next) => {
   res.render("quizs/Relations", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic24 = (req, res, next) => {
+exports.getDMQTopic4 = (req, res, next) => {
   res.render("quizs/Functions", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic25 = (req, res, next) => {
+exports.getDMQTopic5 = (req, res, next) => {
   res.render("quizs/Algorithm_Analysis", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic26 = (req, res, next) => {
+exports.getDMQTopic6 = (req, res, next) => {
   res.render("quizs/Graphs", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic27 = (req, res, next) => {
+
+
+
+
+
+
+exports.getAAQTopic1 = (req, res, next) => {
   res.render("quizs/Overview_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic28 = (req, res, next) => {
-  res.render("quizs/", {
+exports.getAAQTopic2 = (req, res, next) => {
+  res.render("quizs/Sorting_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic28 = (req, res, next) => {
-  res.render("quizs/", {
+exports.getAAQTopic3 = (req, res, next) => {
+  res.render("quizs/Search_Trees", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic28 = (req, res, next) => {
-  res.render("quizs/", {
+exports.getAAQTopic4 = (req, res, next) => {
+  res.render("quizs/Hash_Tables", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic28 = (req, res, next) => {
-  res.render("quizs/", {
+exports.getAAQTopic5 = (req, res, next) => {
+  res.render("quizs/Greedy_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic28 = (req, res, next) => {
-  res.render("quizs/", {
+exports.getAAQTopic6 = (req, res, next) => {
+  res.render("quizs/Dynamic_Programming", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic28 = (req, res, next) => {
-  res.render("quizs/", {
+exports.getAAQTopic7 = (req, res, next) => {
+  res.render("quizs/Greedy_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
-exports.getMLQTopic28 = (req, res, next) => {
-  res.render("quizs/", {
+exports.getAAQTopic8 = (req, res, next) => {
+  res.render("quizs/Amortized_Analysis", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
+exports.getAAQTopic9 = (req, res, next) => {
+  res.render("quizs/NP-Completeness", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+
+
 
 /* C subject quiz */
 exports.getCQuiz = (req, res, next) => {
