@@ -253,13 +253,13 @@ exports.getMLQTopic24 = (req, res, next) => {
   });
 };
 exports.getMLQTopic25 = (req, res, next) => {
-  res.render("quizs/Graphs", {
+  res.render("quizs/Algorithm_Analysis", {
     pageTitle: "project",
     path: "/landPage",
   });
 };
 exports.getMLQTopic26 = (req, res, next) => {
-  res.render("quizs/", {
+  res.render("quizs/Graphs", {
     pageTitle: "project",
     path: "/landPage",
   });
