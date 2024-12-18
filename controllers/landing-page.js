@@ -241,7 +241,7 @@ exports.getPQTopic9 = (req, res, next) => {
   });
 };
 
-exports.getpQTopic10 = (req, res, next) => {
+exports.getPQTopic10 = (req, res, next) => {
   res.render("quizs/Test_Hypothesis", {
     pageTitle: "project",
     path: "/landPage",
