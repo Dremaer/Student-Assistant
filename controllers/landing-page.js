@@ -265,6 +265,42 @@ exports.getMLQTopic26 = (req, res, next) => {
   });
 };
 exports.getMLQTopic27 = (req, res, next) => {
+  res.render("quizs/Overview_Algorithms", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic28 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic28 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic28 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic28 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic28 = (req, res, next) => {
+  res.render("quizs/", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getMLQTopic28 = (req, res, next) => {
   res.render("quizs/", {
     pageTitle: "project",
     path: "/landPage",
