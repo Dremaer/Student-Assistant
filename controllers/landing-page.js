@@ -742,3 +742,23 @@ exports.getDataExam = (req, res, next) => {
     path: "/landPage",
   });
 };
+
+exports.getDMExam = (req, res, next) => {
+  res.render("exam/Discrete_Math", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPExam = (req, res, next) => {
+  res.render("exam/probability", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getAAExam = (req, res, next) => {
+  res.render("exam/Algorithm_Analysis_Design", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
