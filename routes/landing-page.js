@@ -8,7 +8,7 @@ router.get("/", landPageController.getLandPage);
 
 router.get("/community", landPageController.getCommunity);
 
-router.get("/edubot", landPageController.getEduBot);
+router.get("/news", landPageController.getNews);
 
 router.get("/login", landPageController.getLogin);
 
@@ -325,6 +325,15 @@ router.get("/exam/Algorithm_Analysis_Design", landPageController.getAAExam);
 router.get("/exam/probability", landPageController.getPExam);
 
 router.get("/exam/exam_oop", landPageController.getOOPExam);
+
+/* Articles  */
+router.get("/articles/article1", landPageController.getArticle1);
+
+router.get("/articles/article2", landPageController.getArticle2);
+
+router.get("/articles/article3", landPageController.getArticle3);
+
+router.get("/articles/article4", landPageController.getArticle4);
 
 module.exports = router;
 

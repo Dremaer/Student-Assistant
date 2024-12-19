@@ -14,8 +14,8 @@ exports.getCommunity = (req, res, next) => {
   });
 };
 
-exports.getEduBot = (req, res, next) => {
-  res.render("edubot", {
+exports.getNews = (req, res, next) => {
+  res.render("news", {
     pageTitle: "project",
     path: "/landPage",
     isAuthenticated: req.session.isLoggedIn,
@@ -1263,5 +1263,39 @@ exports.getOOPExam = (req, res, next) => {
   res.render("exam/exam_oop", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
+  });
+};
+
+/* Articles */
+exports.getArticle1 = (req, res, next) => {
+  res.render("articles/article1", {
+    pageTitle: "project",
+    path: "/landpages",
+    isAuthenticated: req.session.isLoggedIn,
+  });
+};
+
+exports.getArticle2 = (req, res, next) => {
+  res.render("articles/article2", {
+    pageTitle: "project",
+    path: "/landpages",
+    isAuthenticated: req.session.isLoggedIn,
+  });
+};
+
+exports.getArticle3 = (req, res, next) => {
+  res.render("articles/article3", {
+    pageTitle: "project",
+    path: "/landpages",
+    isAuthenticated: req.session.isLoggedIn,
+  });
+};
+
+exports.getArticle4 = (req, res, next) => {
+  res.render("articles/article4", {
+    pageTitle: "project",
+    path: "/landpages",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };

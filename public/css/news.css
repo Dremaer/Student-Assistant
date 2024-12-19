@@ -100,6 +100,13 @@ nav .navbar-brand img{
     height: 40px;
     padding: 0;
     border-radius: 20px;
+    color: #fff;
+}
+
+.btn:hover{
+    border: 2px solid #25283D;
+    color: #25283D;
+    background-color: #fff;
 }
 
 .btn .nav-link{
@@ -120,104 +127,29 @@ nav .navbar-brand img{
     background-color: #aaa9a9;
 }
 
-/* Subject-part */
-.subject-part{
-    margin-top: 20px;
+/* News part */
+#news .container{
+    width: 1024px;
+    margin: 0 auto;
 }
 
-.subject-part .container h2{
-    color: #25283D;
-}
-
-.subject-part .container h2 span{
-    color: #FFBC40;
-}
-
-.small-detail #filter-btn, .result{
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.small-detail .result {
-    margin-left: 1050px;
-}
-
-.small-detail .custom-btn{
-    padding: 5px;
-    background-color: #ffffff;
-    border: 1px solid #848484;
-    color: #25283D;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.small-detail .custom-btn:hover{
-    background-color: #f0f0f0;
-    color: #333333;
-}
-
-.result{
-    color: #424242;
-}
-
-.info-content{
+.news-blocks{
     display: flex;
+    justify-content: center;
     gap: 20px;
-    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.info-content h5{
-    color: #25283D;
+.news-block{
+    width: 420px;
 }
 
-aside ul li{
-    overflow: hidden;
-}
-
-.filter-list{
-    padding-left: 5px;
-}
-
-.filter-list li{
-    font-size: 16px;
-}
-
-.custom-checkbox{
-    width: 12px;
-    height: 12px;
-}
-
-.course-section {
-    display: block;
-}
-
-.course-card {
-    display: flex;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: #fff;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-}
-
-.course-image {
-    width: 300px;
-    height: 180px;
-    border-radius: 8px;
-}
-
-.course-details{
-    padding-left: 20px;
-}
-
-.course-description{
-    font-size: 16px;
-    color: #424242;
-    padding-top: 70px;
-}
-
-.course-details a{
-    color: #25283D;
+.news-block a{
+    color: #2937a3;
     text-decoration: none;
+}
+
+.news-block a:hover{
+    text-decoration: underline;
 }

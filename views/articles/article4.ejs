@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/article.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="/" class="navbar-brand"><img src="/images/yellow_logo.png" /></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+                <a href="/quizzes" class="nav-link">Quizzes</a>
+              </li>
+              <li class="nav-item">
+                <a href="/community" class="nav-link">Community</a>
+              </li>
+              <li class="nav-item">
+                <a href="/news" class="nav-link">News</a>
+              </li>
+            </ul>
+
+            <div id="auth">
+              <ul class="navbar-nav ms-auto">
+                <% if (!isAuthenticated) { %>
+                <li class="nav-item" <%=path==='/login' ? 'active' : '' %>>
+                  <a href="/login" class="nav-link">Log in</a>
+                </li>
+                <li class="nav-item" <%=path==='/signup' ? 'active' : '' %>>
+                  <a href="/signup" class="nav-link">Sign up</a>
+                </li>
+                <% } else { %>
+                <div class="nav-item d-flex align-items-center">
+                  <!-- User Avatar -->
+                  <div class="user-avatar"
+                    style="background-image: url('/images/user.png'); width: 40px; height: 40px; background-size: cover; border-radius: 50%; margin-right: 10px;">
+                  </div>
+                  <!-- Logout Button -->
+                  <form action="/auth/logout" method="POST" style="display: inline;">
+                    <button type="submit" class="btn log p-0">Log out</button>
+                  </form>
+                </div>
+                <% } %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="news">
+        <div class="container">
+            <h4 class="title">Breaking barriers: Study uses AI to interpret American Sign Language in real-time</h4>
+            <p class="brief-descrip">Dec. 16, 2024 — A study is the first-of-its-kind to recognize American Sign Language (ASL) alphabet gestures using computer vision. Researchers developed a custom dataset of 29,820 static images of ASL hand gestures. Each image was annotated with 21 key landmarks on the hand, providing detailed spatial information about its structure and position. Combining MediaPipe and YOLOv8, a deep learning method they trained, with fine-tuning hyperparameters for the best accuracy, represents a groundbreaking and innovative approach that hasn't been explored in previous research.</p>
+            <p class="content">
+                Sign language is not universal; rather, there are many different sign languages used around the world, each with its own grammar, syntax and vocabulary, highlighting the diversity and complexity of sign languages globally.
+
+                Various methods are being explored to convert sign language hand gestures into text or spoken language in real time. To improve communication accessibility for people who are deaf or hard-of-hearing, there is a need for a dependable, real-time system that can accurately detect and track American Sign Language gestures. This system could play a key role in breaking down communication barriers and ensuring more inclusive interactions.
+
+                To address these communication barriers, researchers from the College of Engineering and Computer Science at Florida Atlantic University conducted a first-of-its-kind study focused on recognizing American Sign Language alphabet gestures using computer vision. They developed a custom dataset of 29,820 static images of American Sign Language hand gestures. Using MediaPipe, each image was annotated with 21 key landmarks on the hand, providing detailed spatial information about its structure and position.
+
+                These annotations played a critical role in enhancing the precision of YOLOv8, the deep learning model the researchers trained, by allowing it to better detect subtle differences in hand gestures.
+
+                Results of the study, published in the Elsevier journal Franklin Open, reveal that by leveraging this detailed hand pose information, the model achieved a more refined detection process, accurately capturing the complex structure of American Sign Language gestures. Combining MediaPipe for hand movement tracking with YOLOv8 for training, resulted in a powerful system for recognizing American Sign Language alphabet gestures with high accuracy.
+
+                "Combining MediaPipe and YOLOv8, along with fine-tuning hyperparameters for the best accuracy, represents a groundbreaking and innovative approach," said Bader Alsharif, first author and a Ph.D. candidate in the FAU Department of Electrical Engineering and Computer Science. "This method hasn't been explored in previous research, making it a new and promising direction for future advancements."
+
+
+
+                Findings show that the model performed with an accuracy of 98%, the ability to correctly identify gestures (recall) at 98%, and an overall performance score (F1 score) of 99%. It also achieved a mean Average Precision (mAP) of 98% and a more detailed mAP50-95 score of 93%, highlighting its strong reliability and precision in recognizing American Sign Language gestures.
+
+                "Results from our research demonstrate our model's ability to accurately detect and classify American Sign Language gestures with very few errors," said Alsharif. "Importantly, findings from this study emphasize not only the robustness of the system but also its potential to be used in practical, real-time applications to enable more intuitive human-computer interaction."
+
+                The successful integration of landmark annotations from MediaPipe into the YOLOv8 training process significantly improved both bounding box accuracy and gesture classification, allowing the model to capture subtle variations in hand poses. This two-step approach of landmark tracking and object detection proved essential in ensuring the system's high accuracy and efficiency in real-world scenarios. The model's ability to maintain high recognition rates even under varying hand positions and gestures highlights its strength and adaptability in diverse operational settings.
+
+                "Our research demonstrates the potential of combining advanced object detection algorithms with landmark tracking for real-time gesture recognition, offering a reliable solution for American Sign Language interpretation," said Mohammad Ilyas, Ph.D., co-author and a professor in the FAU Department of Electrical Engineering and Computer Science. "The success of this model is largely due to the careful integration of transfer learning, meticulous dataset creation, and precise tuning of hyperparameters. This combination has led to the development of a highly accurate and reliable system for recognizing American Sign Language gestures, representing a major milestone in the field of assistive technology."
+
+
+
+                Future efforts will focus on expanding the dataset to include a wider range of hand shapes and gestures to improve the model's ability to differentiate between gestures that may appear visually similar, thus further enhancing recognition accuracy. Additionally, optimizing the model for deployment on edge devices will be a priority, ensuring that it retains its real-time performance in resource-constrained environments.
+
+                "By improving American Sign Language recognition, this work contributes to creating tools that can enhance communication for the deaf and hard-of-hearing community," said Stella Batalama, Ph.D., dean, FAU College of Engineering and Computer Science. "The model's ability to reliably interpret gestures opens the door to more inclusive solutions that support accessibility, making daily interactions -- whether in education, health care, or social settings -- more seamless and effective for individuals who rely on sign language. This progress holds great promise for fostering a more inclusive society where communication barriers are reduced."
+
+                Study co-author is Easa Alalwany, Ph.D., a recent Ph.D. graduate of the FAU College of Engineering and Computer Science and an assistant professor at Taibah University in Saudi Arabia.
+            </p>
+        </div>
+      </div>
+      
+
+      <footer id="main-footer" class="text-center justify-content-center fixed-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p>Copyright &copy;
+                <span id="year">2024</span> studentassistant.com </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>
