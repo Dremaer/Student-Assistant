@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/flashcards/flash_ml.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="/" class="navbar-brand"><img src="/images/blue_logo.png" /></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                <a href="/quizzes" class="nav-link" onclick="quizList(event)">Quizzes</a>
+                  <!-- Quizzes's Mega Drop Menu  -->                                
+                  <div class="dropdown-menu" id="quiz-dropdown">
+                    <div class="subject-types">
+                        <h3>Subject's types</h3>
+                        <p>Learn, challenge, and practice subjects to make exam preparation easier.</p>
+                    </div>
+                    <div class="subjects">
+                        <div class="category-column">
+                            <div class="category">
+                                <h4><a href="/grade_1">1 Grade</a></h4>
+                                <a href="/subjects/discrete_math" class="subject-link" data-subject="Discrete Mathematics">Discrete Mathematics</a>
+                                <a href="/subjects/programming" class="subject-link" data-subject="Introduction to Programming">Introduction to Programming</a>
+                            </div>
+                            <div class="category">
+                                <h4><a href="/grade_2">2 Grade</a></h4>
+                                <a href="/subjects/data_structure" class="subject-link" data-subject="Data Structure">Data Structure</a>
+                                <a href="/subjects/oop" class="subject-link" data-subject="Object Oriented Programming">Obejct Oriented Programming</a>
+                                <a href="/subjects/probability" class="subject-link" data-subject="Probability and Statistics">Probability and Statistics</a>
+                                <a href="/subjects/algorithm" class="subject-link" data-subject="Algorithm Analysis and Design">Algorithm Analysis and Design</a>
+                            </div>
+                        </div>
+                        <div class="category-column">
+                            <div class="category">
+                                <h4><a href="/grade_3">3 Grade</a></h4>
+                                <a href="/subjects/machine_learning" class="subject-link" data-subject="Machine Learning with Python">Machine Learning with Python</a>
+                            </div>
+                            <div class="category">
+                                <h4><a href="/grade_4">4 Grade</a></h4>
+                                <a href="/subjects/computer_vision" class="subject-link" data-subject="Computer Vision">Computer Vision</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                <a href="/community" class="nav-link">Community</a>
+                </li>
+                <li class="nav-item">
+                <a href="/edubot" class="nav-link">EduBot</a>
+                </li>
+            </ul>
+
+            <div class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a href="#" class="nav-link" id="log-in">Log In</a> <!-- ID 추가 -->
+                </li>
+                <li class="nav-item">
+                <button type="button" class="btn"><a href="#" class="nav-link ">Sign Up</a></button>
+                </li>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <a class="back-button" href="/subjects/algorithm">⇐ Explore other options</a>
+    </div>
+
+    <div id="quiz-items">
+        <div class="container">
+            <!-- Quiz Block 1 -->
+            <div class="quiz-block">
+                <div class="flashcard-item">
+                    <a href="/flashcards/Overview_Algorithms">Overview of Algorithms</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Overview of Algorithms">
+                    <p>Flashcard (5)</p>
+                    </div>  
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Sorting_Algorithms">Sorting Algorithms</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Sorting Algorithms">
+                        <p>Flashcard (5)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Search_Trees">Search Trees</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Search Trees">
+                        <p>Flashcard (5)</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Quiz Block 2 -->
+            <div class="quiz-block">
+                <div class="flashcard-item">
+                    <a href="/flashcards/Hash_Tables">Hash Tables</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Hash Tables">
+                        <p>Flashcard (7)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Greedy_Algorithms">Greedy Algorithms</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Greedy Algorithms">
+                        <p>Flashcard (8)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Dynamic_Programming">Dynamic Programming</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Dynamic Programming">
+                        <p>Flashcard (8)</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Quiz Block 3 -->
+            <div class="quiz-block">
+                <div class="flashcard-item">
+                    <a href="/flashcards/Graph_Algorithms">Graph Algorithms</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Graph Algorithms">
+                        <p>Flashcard (8)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Amortized_Analysis">Amortized Analysis</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Amortized Analysis">
+                        <p>Flashcard (10)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/NP-Completeness">NP-Completeness</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="NP-Completeness">
+                        <p>Flashcard (8)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer id="main-footer" class="text-center justify-content-center fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy;
+              <span id="year">2024</span> studentassistant.com </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/quizzes.js" defer></script>
+</body>
+</html>
