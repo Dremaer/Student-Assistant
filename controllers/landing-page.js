@@ -494,6 +494,71 @@ exports.getDataQuiz7 = (req, res, next) => {
   });
 };
 
+/* OOP quizzes */
+exports.getOOPQuiz = (req, res, next) => {
+  res.render("quizs/quiz_oop", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPQuiz1 = (req, res, next) => {
+  res.render("quizs/intro_kotlin", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPQuiz2 = (req, res, next) => {
+  res.render("quizs/logic_construct", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPQuiz3 = (req, res, next) => {
+  res.render("quizs/class_object", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPQuiz4 = (req, res, next) => {
+  res.render("quizs/functional_prog", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPQuiz5 = (req, res, next) => {
+  res.render("quizs/class_types", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPQuiz6 = (req, res, next) => {
+  res.render("quizs/collection_types", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPQuiz7 = (req, res, next) => {
+  res.render("quizs/high_classes", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPQuiz8 = (req, res, next) => {
+  res.render("quizs/generics", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+
 /* ML subject flashcards  */
 exports.getMLFlah = (req, res, next) => {
   res.render("flashcards/flash_ml", {
@@ -721,6 +786,65 @@ exports.getDataFlashTopic7 = (req, res, next) => {
   });
 };
 
+/* OOP flashcard */
+exports.getOOPFlashTopic = (req, res, next) => {
+  res.render("flashcards/flash_oop", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPFlashTopic1 = (req, res, next) => {
+  res.render("flashcards/intro_kotlin", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPFlashTopic2 = (req, res, next) => {
+  res.render("flashcards/logic_construct", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPFlashTopic3 = (req, res, next) => {
+  res.render("flashcards/class_object", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getOOPFlashTopic4 = (req, res, next) => {
+  res.render("flashcards/functional_prog", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getOOPFlashTopic5 = (req, res, next) => {
+  res.render("flashcards/class_types", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getOOPFlashTopic6 = (req, res, next) => {
+  res.render("flashcards/collection_types", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getOOPFlashTopic7 = (req, res, next) => {
+  res.render("flashcards/high_classes", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getOOPFlashTopic8 = (req, res, next) => {
+  res.render("flashcards/generics", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
 /* Exam */
 exports.getMLExam = (req, res, next) => {
   res.render("exam/ml", {
@@ -758,6 +882,13 @@ exports.getPExam = (req, res, next) => {
 
 exports.getAAExam = (req, res, next) => {
   res.render("exam/Algorithm_Analysis_Design", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getOOPExam = (req, res, next) => {
+  res.render("exam/exam_oop", {
     pageTitle: "project",
     path: "/landPage",
   });
