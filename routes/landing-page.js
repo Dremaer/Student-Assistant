@@ -265,6 +265,7 @@ router.get("/flashcards/high_classes", landPageController.getOOPFlashTopic7);
 router.get("/flashcards/generics", landPageController.getOOPFlashTopic8);
 
 
+router.get("/flashcards/flash_Algorithm_Analysis_Design", landPageController.getAAFlashTopic);
 
 router.get("/flashcards/Overview_Algorithms", landPageController.getAAFlashTopic1);
 
@@ -280,6 +281,7 @@ router.get("/flashcards/NP-Completeness", landPageController.getAAFlashTopic9);
 
 
 
+router.get("/flashcards/flash_probability", landPageController.getDMFlashTopic);
 
 router.get("/flashcards/Sets_Proofs", landPageController.getDMFlashTopic1);
 
@@ -289,6 +291,10 @@ router.get("/flashcards/Functions", landPageController.getDMFlashTopic4);
 router.get("/flashcards/Algorithm_Analysis", landPageController.getDMFlashTopic5);
 router.get("/flashcards/Graphs", landPageController.getDMFlashTopic6);
 
+
+
+
+router.get("/flashcards/flash_probability", landPageController.getPFlashTopic);
 
 router.get("/flashcards/Fundamental_Concepts_Rules", landPageController.getPFlashTopic1);
 

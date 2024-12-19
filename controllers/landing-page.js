@@ -1022,7 +1022,13 @@ exports.getOOPFlashTopic8 = (req, res, next) => {
   });
 };
 
-
+exports.getAAFlah = (req, res, next) => {
+  res.render("flashcards/flash_Algorithm_Analysis_Design", {
+    pageTitle: "project",
+    path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
+  });
+};
 exports.getAAFlashTopic1 = (req, res, next) => {
   res.render("flashcards/Overview_Algorithms", {
     pageTitle: "project",
@@ -1075,6 +1081,15 @@ exports.getAAFlashTopic9 = (req, res, next) => {
   res.render("flashcards/NP-Completeness", {
     pageTitle: "project",
     path: "/landPage",
+  });
+};
+
+
+exports.getPFlah = (req, res, next) => {
+  res.render("flashcards/flash_probability", {
+    pageTitle: "project",
+    path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -1138,7 +1153,13 @@ exports.getPFlashTopic10 = (req, res, next) => {
     path: "/landPage",
   });
 };
-
+exports.getDMFlah = (req, res, next) => {
+  res.render("flashcards/flash_Discrete_Math", {
+    pageTitle: "project",
+    path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
+  });
+};
 
 exports.getDMFlashTopic1 = (req, res, next) => {
   res.render("flashcards/Sets_Proofs", {
