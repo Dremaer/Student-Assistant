@@ -24,6 +24,46 @@
         <ul class="navbar-nav me-auto">
           <li class="nav-item active">
             <a href="#" class="nav-link" onclick="quizList(event)">Quizzes</a>
+            <div class="dropdown-menu" id="quiz-dropdown">
+              <div class="subject-types">
+                <h3>Subject's types</h3>
+                <p>Learn, challenge, and practice subjects to make exam preparation easier.</p>
+              </div>
+              <div class="subjects">
+                <div class="category-column">
+                  <div class="category">
+                    <h4><a href="/grade_1">1st Grade</a></h4>
+                    <a href="/subjects/discrete_math" class="subject-link" data-subject="Discrete Mathematics">Discrete
+                      Mathematics</a>
+                    <a href="/subjects/programming" class="subject-link"
+                      data-subject="Introduction to Programming">Introduction to Programming</a>
+                  </div>
+                  <div class="category">
+                    <h4><a href="/grade_2">2nd Grade</a></h4>
+                    <a href="/subjects/data_structure" class="subject-link" data-subject="Data Structure">Data
+                      Structure</a>
+                    <a href="/subjects/oop" class="subject-link" data-subject="Object Oriented Programming">Obejct
+                      Oriented Programming</a>
+                    <a href="/subjects/probability" class="subject-link"
+                      data-subject="Probability and Statistics">Probability and Statistics</a>
+                    <a href="/subjects/algorithm" class="subject-link"
+                      data-subject="Algorithm Analysis and Design">Algorithm Analysis and Design</a>
+                  </div>
+                </div>
+                <div class="category-column">
+                  <div class="category">
+                    <h4><a href="/grade_3">3rd Grade</a></h4>
+                    <a href="/subjects/machine_learning" class="subject-link"
+                      data-subject="Machine Learning with Python">Machine Learning with Python</a>
+                  </div>
+                  <div class="category">
+                    <h4><a href="/grade_4">4th Grade</a></h4>
+                    <a href="/subjects/computer_vision" class="subject-link" data-subject="Computer Vision">Computer
+                      Vision</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
             <a href="/community" class="nav-link">Community</a>
@@ -43,9 +83,11 @@
             </li>
             <% } else { %>
             <div class="nav-item d-flex align-items-center">
+              <!-- User Avatar -->
               <div class="user-avatar"
                 style="background-image: url('/images/user.png'); width: 40px; height: 40px; background-size: cover; border-radius: 50%; margin-right: 10px;">
               </div>
+              <!-- Logout Button -->
               <form action="/auth/logout" method="POST" style="display: inline;">
                 <button type="submit" class="btn nav-link p-0">Log out</button>
               </form>
@@ -78,6 +120,7 @@
       </div>
     </div>
   </footer>
+  <script src="/js/quizzes.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {

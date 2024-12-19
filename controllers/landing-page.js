@@ -968,6 +968,7 @@ exports.getOOPFlashTopic = (req, res, next) => {
   res.render("flashcards/flash_oop", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -975,6 +976,7 @@ exports.getOOPFlashTopic1 = (req, res, next) => {
   res.render("flashcards/intro_kotlin", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -982,6 +984,7 @@ exports.getOOPFlashTopic2 = (req, res, next) => {
   res.render("flashcards/logic_construct", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -989,36 +992,42 @@ exports.getOOPFlashTopic3 = (req, res, next) => {
   res.render("flashcards/class_object", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getOOPFlashTopic4 = (req, res, next) => {
   res.render("flashcards/functional_prog", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getOOPFlashTopic5 = (req, res, next) => {
   res.render("flashcards/class_types", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getOOPFlashTopic6 = (req, res, next) => {
   res.render("flashcards/collection_types", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getOOPFlashTopic7 = (req, res, next) => {
   res.render("flashcards/high_classes", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getOOPFlashTopic8 = (req, res, next) => {
   res.render("flashcards/generics", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic = (req, res, next) => {
@@ -1032,54 +1041,63 @@ exports.getAAFlashTopic1 = (req, res, next) => {
   res.render("flashcards/Overview_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic2 = (req, res, next) => {
   res.render("flashcards/Sorting_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic3 = (req, res, next) => {
   res.render("flashcards/Search_Trees", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic4 = (req, res, next) => {
   res.render("flashcards/Hash_Tables", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic5 = (req, res, next) => {
   res.render("flashcards/Greedy_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic6 = (req, res, next) => {
   res.render("flashcards/Dynamic_Programming", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic7 = (req, res, next) => {
   res.render("flashcards/Graph_Algorithms", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic8 = (req, res, next) => {
   res.render("flashcards/Amortized_Analysis", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getAAFlashTopic9 = (req, res, next) => {
   res.render("flashcards/NP-Completeness", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -1185,12 +1203,14 @@ exports.getDMFlashTopic2 = (req, res, next) => {
   res.render("flashcards/Algorithm_Analysis", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getDMFlashTopic6 = (req, res, next) => {
   res.render("flashcards/Graphs", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
