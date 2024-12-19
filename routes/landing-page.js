@@ -264,6 +264,46 @@ router.get("/flashcards/high_classes", landPageController.getOOPFlashTopic7);
 
 router.get("/flashcards/generics", landPageController.getOOPFlashTopic8);
 
+
+
+router.get("/flashcards/Overview_Algorithms", landPageController.getAAFlashTopic1);
+
+router.get("/flashcards/Sorting_Algorithms", landPageController.getAAFlashTopic2);
+router.get("/flashcards/Search_Trees", landPageController.getAAFlashTopic3);
+router.get("/flashcards/Hash_Tables", landPageController.getAAFlashTopic4);
+
+router.get("/flashcards/Greedy_Algorithms", landPageController.getAAFlashTopic5);
+router.get("/flashcards/Dynamic_Programming", landPageController.getAAFlashTopic6);
+router.get("/flashcards/Graph_Algorithms", landPageController.getAAFlashTopic7);
+router.get("/flashcards/Amortized_Analysis", landPageController.getAAFlashTopic8);
+router.get("/flashcards/NP-Completeness", landPageController.getAAFlashTopic9);
+
+
+
+
+router.get("/flashcards/Sets_Proofs", landPageController.getDMFlashTopic1);
+
+router.get("/flashcards/Formal_Logic", landPageController.getDMFlashTopic2);
+router.get("/flashcards/Relations", landPageController.getDMFlashTopic3);
+router.get("/flashcards/Functions", landPageController.getDMFlashTopic4);
+router.get("/flashcards/Algorithm_Analysis", landPageController.getDMFlashTopic5);
+router.get("/flashcards/Graphs", landPageController.getDMFlashTopic6);
+
+
+router.get("/flashcards/Fundamental_Concepts_Rules", landPageController.getPFlashTopic1);
+
+router.get("/flashcards/RandomVariables_ProbabilityDistributions", landPageController.getPFlashTopic2);
+
+router.get("/flashcards/Functions_Random_Variables", landPageController.getPFlashTopic3);
+router.get("/flashcards/Mathematical_Expectation", landPageController.getPFlashTopic4);
+router.get("/flashcards/Discrete_Probability_Distributions", landPageController.getPFlashTopic5);
+router.get("/flashcards/Continuous _Probability_Distributions", landPageController.getPFlashTopic6);
+router.get("/flashcards/Moment_Generating_Functions", landPageController.getPFlashTopic7);
+router.get("/flashcards/Sampling_Distributions_Data_Descriptions", landPageController.getPFlashTopic8);
+router.get("/flashcards/Estimation", landPageController.getPFlashTopic9);
+router.get("/flashcards/Test_Hypothesis", landPageController.getPFlashTopic10);
+
+
 /* Subjects's exam */
 
 router.get("/exam/ml", landPageController.getMLExam);
@@ -272,15 +312,6 @@ router.get("/exam/exam_c", landPageController.getCExam);
 
 router.get("/exam/data_structure", landPageController.getDataExam);
 
-<<<<<<< Updated upstream
-router.get("/exam/Discrete_Math", landPageController.getDMExam);
-
-router.get("/exam/Algorithm_Analysis_Design", landPageController.getAAExam);
-
-router.get("/exam/probability", landPageController.getPExam);
-
-=======
->>>>>>> Stashed changes
 router.get("/exam/exam_oop", landPageController.getOOPExam);
 
 module.exports = router;

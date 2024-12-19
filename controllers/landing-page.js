@@ -566,10 +566,6 @@ exports.getOOPQuiz = (req, res, next) => {
   res.render("quizs/quiz_oop", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
-    isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -577,10 +573,7 @@ exports.getOOPQuiz1 = (req, res, next) => {
   res.render("quizs/intro_kotlin", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -588,10 +581,7 @@ exports.getOOPQuiz2 = (req, res, next) => {
   res.render("quizs/logic_construct", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -599,10 +589,7 @@ exports.getOOPQuiz3 = (req, res, next) => {
   res.render("quizs/class_object", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -610,10 +597,7 @@ exports.getOOPQuiz4 = (req, res, next) => {
   res.render("quizs/functional_prog", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -621,10 +605,7 @@ exports.getOOPQuiz5 = (req, res, next) => {
   res.render("quizs/class_types", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -632,10 +613,7 @@ exports.getOOPQuiz6 = (req, res, next) => {
   res.render("quizs/collection_types", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -643,10 +621,7 @@ exports.getOOPQuiz7 = (req, res, next) => {
   res.render("quizs/high_classes", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -654,17 +629,11 @@ exports.getOOPQuiz8 = (req, res, next) => {
   res.render("quizs/generics", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
   });
 };
 
 
-=======
-  });
-};
-
->>>>>>> Stashed changes
 /* ML subject flashcards  */
 exports.getMLFlah = (req, res, next) => {
   res.render("flashcards/flash_ml", {
@@ -1050,6 +1019,167 @@ exports.getOOPFlashTopic8 = (req, res, next) => {
     path: "/landPage",
   });
 };
+
+
+exports.getAAFlashTopic1 = (req, res, next) => {
+  res.render("flashcards/Overview_Algorithms", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getAAFlashTopic2 = (req, res, next) => {
+  res.render("flashcards/Sorting_Algorithms", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getAAFlashTopic3 = (req, res, next) => {
+  res.render("flashcards/Search_Trees", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getAAFlashTopic4 = (req, res, next) => {
+  res.render("flashcards/Hash_Tables", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getAAFlashTopic5 = (req, res, next) => {
+  res.render("flashcards/Greedy_Algorithms", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getAAFlashTopic6 = (req, res, next) => {
+  res.render("flashcards/Dynamic_Programming", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getAAFlashTopic7 = (req, res, next) => {
+  res.render("flashcards/Graph_Algorithms", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getAAFlashTopic8 = (req, res, next) => {
+  res.render("flashcards/Amortized_Analysis", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getAAFlashTopic9 = (req, res, next) => {
+  res.render("flashcards/NP-Completeness", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+exports.getPFlashTopic1 = (req, res, next) => {
+  res.render("flashcards/Fundamental_Concepts_Rules", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic2 = (req, res, next) => {
+  res.render("flashcards/RandomVariables_ProbabilityDistributions", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic3 = (req, res, next) => {
+  res.render("flashcards/Functions_Random_Variables", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic4 = (req, res, next) => {
+  res.render("flashcards/Mathematical_Expectation", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic5 = (req, res, next) => {
+  res.render("flashcards/Discrete_Probability_Distributions", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic6 = (req, res, next) => {
+  res.render("flashcards/Continuous _Probability_Distributions", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic7 = (req, res, next) => {
+  res.render("flashcards/Moment_Generating_Functions", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic8 = (req, res, next) => {
+  res.render("flashcards/Sampling_Distributions_Data_Descriptions", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic9 = (req, res, next) => {
+  res.render("flashcards/Estimation", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getPFlashTopic10 = (req, res, next) => {
+  res.render("flashcards/Test_Hypothesis", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+
+exports.getDMFlashTopic1 = (req, res, next) => {
+  res.render("flashcards/Sets_Proofs", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getDMFlashTopic2 = (req, res, next) => {
+  res.render("flashcards/Formal_Logic", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};exports.getDMFlashTopic3 = (req, res, next) => {
+  res.render("flashcards/Relations", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};exports.getDMFlashTopic4 = (req, res, next) => {
+  res.render("flashcards/Functions", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};exports.getDMFlashTopic5 = (req, res, next) => {
+  res.render("flashcards/Algorithm_Analysis", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+exports.getDMFlashTopic6 = (req, res, next) => {
+  res.render("flashcards/Graphs", {
+    pageTitle: "project",
+    path: "/landPage",
+  });
+};
+
+
+
+
+
+
+
+
+
 
 /* Exam */
 exports.getMLExam = (req, res, next) => {
