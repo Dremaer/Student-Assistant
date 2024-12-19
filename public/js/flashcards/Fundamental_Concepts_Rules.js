@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     homeButton.addEventListener('click', () => {
-        window.location.href = '/flashcards/flash_data'; 
+        window.location.href = '/flashcards/flash_probability'; 
     });
     
     updateUI(currentCard);    

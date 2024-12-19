@@ -65,7 +65,7 @@ router.get("/quizs/Mathematical_Expectation", landPageController.getPQTopic4);
 
 router.get("/quizs/Discrete_Probability_Distributions", landPageController.getPQTopic5);
 
-router.get("/quizs/Continuous _Probability_Distributions", landPageController.getPQTopic6);
+router.get("/quizs/Continuous_Probability_Distributions", landPageController.getPQTopic6);
 
 router.get("/quizs/Moment_Generating_Functions", landPageController.getPQTopic7);
 
@@ -303,7 +303,7 @@ router.get("/flashcards/RandomVariables_ProbabilityDistributions", landPageContr
 router.get("/flashcards/Functions_Random_Variables", landPageController.getPFlashTopic3);
 router.get("/flashcards/Mathematical_Expectation", landPageController.getPFlashTopic4);
 router.get("/flashcards/Discrete_Probability_Distributions", landPageController.getPFlashTopic5);
-router.get("/flashcards/Continuous _Probability_Distributions", landPageController.getPFlashTopic6);
+router.get("/flashcards/Continuous_Probability_Distributions", landPageController.getPFlashTopic6);
 router.get("/flashcards/Moment_Generating_Functions", landPageController.getPFlashTopic7);
 router.get("/flashcards/Sampling_Distributions_Data_Descriptions", landPageController.getPFlashTopic8);
 router.get("/flashcards/Estimation", landPageController.getPFlashTopic9);

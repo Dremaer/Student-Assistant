@@ -1114,60 +1114,70 @@ exports.getPFlashTopic1 = (req, res, next) => {
   res.render("flashcards/Fundamental_Concepts_Rules", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic2 = (req, res, next) => {
   res.render("flashcards/RandomVariables_ProbabilityDistributions", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic3 = (req, res, next) => {
   res.render("flashcards/Functions_Random_Variables", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic4 = (req, res, next) => {
   res.render("flashcards/Mathematical_Expectation", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic5 = (req, res, next) => {
   res.render("flashcards/Discrete_Probability_Distributions", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic6 = (req, res, next) => {
   res.render("flashcards/Continuous _Probability_Distributions", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic7 = (req, res, next) => {
   res.render("flashcards/Moment_Generating_Functions", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic8 = (req, res, next) => {
   res.render("flashcards/Sampling_Distributions_Data_Descriptions", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic9 = (req, res, next) => {
   res.render("flashcards/Estimation", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getPFlashTopic10 = (req, res, next) => {
   res.render("flashcards/Test_Hypothesis", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getDMFlashTopic = (req, res, next) => {
@@ -1220,14 +1230,6 @@ exports.getDMFlashTopic6 = (req, res, next) => {
     isAuthenticated: req.session.isLoggedIn,
   });
 };
-
-
-
-
-
-
-
-
 
 
 /* Exam */
