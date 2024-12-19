@@ -34,14 +34,6 @@ router.get("/quizs/quizs_Discrete_Math", landPageController.getDMQuiz);
 router.get("/quizs/quizs_Algorithm_Analysis_Design", landPageController.getAAQuiz);
 
 
-
-
-
-
-
-
-
-
 router.get("/quizs/data_mining_process", landPageController.getMLQTopic1);
 
 router.get("/quizs/data_search", landPageController.getMLQTopic2);
@@ -61,8 +53,6 @@ router.get("/quizs/linear_regression", landPageController.getMLQTopic8);
 router.get("/quizs/clustering", landPageController.getMLQTopic9);
 
 router.get("/quizs/assosiation_analysis", landPageController.getMLQTopic10);
-
-
 
 
 router.get("/quizs/Fundamental_Concepts_Rules", landPageController.getPQTopic1);
@@ -282,12 +272,15 @@ router.get("/exam/exam_c", landPageController.getCExam);
 
 router.get("/exam/data_structure", landPageController.getDataExam);
 
+<<<<<<< Updated upstream
 router.get("/exam/Discrete_Math", landPageController.getDMExam);
 
 router.get("/exam/Algorithm_Analysis_Design", landPageController.getAAExam);
 
 router.get("/exam/probability", landPageController.getPExam);
 
+=======
+>>>>>>> Stashed changes
 router.get("/exam/exam_oop", landPageController.getOOPExam);
 
 module.exports = router;

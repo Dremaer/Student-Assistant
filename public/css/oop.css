@@ -184,6 +184,11 @@ nav .navbar-brand img{
     padding-top: 70px;
 }
 
+.first-tip .tip a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .second-tip {
     display: flex;
     gap: 10px;
