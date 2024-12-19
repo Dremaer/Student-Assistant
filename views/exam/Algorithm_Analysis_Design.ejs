@@ -1,52 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discrete Mathematics</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Student Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/exam/data_str.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a href="/" class="navbar-brand"><img src="/images/blue_logo.png" /></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item active">
-                <a href="/quizzes" class="nav-link" onclick="quizList(event)">Quizzes</a>
-                </li>
-                <li class="nav-item">
-                <a href="/community" class="nav-link">Community</a>
-                </li>
-                <li class="nav-item">
-                <a href="/edubot" class="nav-link">EduBot</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a href="/quizzes" class="nav-link" onclick="quizList(event)">Quizzes</a>
+                        <!-- Quizzes's Mega Drop Menu  -->
+                        <div class="dropdown-menu" id="quiz-dropdown">
+                            <div class="subject-types">
+                                <h3>Subject's types</h3>
+                                <p>Learn, challenge, and practice subjects to make exam preparation easier.</p>
+                            </div>
+                            <div class="subjects">
+                                <div class="category-column">
+                                    <div class="category">
+                                        <h4><a href="/grade_1">1 Grade</a></h4>
+                                        <a href="/subjects/discrete_math" class="subject-link"
+                                            data-subject="Discrete Mathematics">Discrete Mathematics</a>
+                                        <a href="/subjects/programming" class="subject-link"
+                                            data-subject="Introduction to Programming">Introduction to Programming</a>
+                                    </div>
+                                    <div class="category">
+                                        <h4><a href="/grade_2">2 Grade</a></h4>
+                                        <a href="/subjects/data_structure" class="subject-link"
+                                            data-subject="Data Structure">Data Structure</a>
+                                        <a href="/subjects/oop" class="subject-link"
+                                            data-subject="Object Oriented Programming">Obejct Oriented Programming</a>
+                                        <a href="/subjects/probability" class="subject-link"
+                                            data-subject="Probability and Statistics">Probability and Statistics</a>
+                                        <a href="/subjects/algorithm" class="subject-link"
+                                            data-subject="Algorithm Analysis and Design">Algorithm Analysis and
+                                            Design</a>
+                                    </div>
+                                </div>
+                                <div class="category-column">
+                                    <div class="category">
+                                        <h4><a href="/grade_3">3 Grade</a></h4>
+                                        <a href="/subjects/machine_learning" class="subject-link"
+                                            data-subject="Machine Learning with Python">Machine Learning with Python</a>
+                                    </div>
+                                    <div class="category">
+                                        <h4><a href="/grade_4">4 Grade</a></h4>
+                                        <a href="/subjects/computer_vision" class="subject-link"
+                                            data-subject="Computer Vision">Computer Vision</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/community" class="nav-link">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/edubot" class="nav-link">EduBot</a>
+                    </li>
+                </ul>
 
-            <div class="navbar-nav ms-auto">
-                <li class="nav-item">
-                <a href="#" class="nav-link" id="log-in">Log In</a>
-                </li>
-                <li class="nav-item">
-                <button type="button" class="btn"><a href="#" class="nav-link ">Sign Up</a></button>
-                </li>
-            </div>
+                <div class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="log-in">Log In</a> <!-- ID 추가 -->
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn"><a href="#" class="nav-link ">Sign Up</a></button>
+                    </li>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="container mt-4">
-        <a class="back-button" href="/subjects/discrete_math">⇐ Explore other options</a>
+        <a class="back-button" href="/subjects/algorithm">⇐ Explore other options</a>
     </div>
 
     <!-- Question 1 -->
@@ -54,23 +101,33 @@
         <div class="container">
             <div class="question">
                 <button class="accordion">
-                    Logical Propositions
+                    Recurrence Relations
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
                 <div class="panel">
                     <h5>Question:</h5>
                     <p>
-                        Write the truth table for the proposition \( (p \lor q) \land \neg(p \land q) \).
+                        Solve the following recurrence relations:
+                        <br>(a) \( T(n) = 2T(n/2) + n/2 \)
+                        <br>(b) \( T(n) = T(n/2) + n/2 \)
                     </p>
                     <div class="solution">
                         <h5>Solution:</h5>
                         <pre><code class="language-markup">
-| p | q | \( p \lor q \) | \( p \land q \) | \( \neg(p \land q) \) | \( (p \lor q) \land \neg(p \land q) \) |
-|---|---|-------------|-------------|-----------------|-----------------------------------|
-| T | T |      T      |      T      |        F        |                F                |
-| T | F |      T      |      F      |        T        |                T                |
-| F | T |      T      |      F      |        T        |                T                |
-| F | F |      F      |      F      |        T        |                F                |
+(a) \( T(n) = 2T(n/2) + n/2 \):
+    Using the Master Theorem:
+    \( a = 2, b = 2, f(n) = n/2 \).
+    Compare \( f(n) \) with \( n^{\log_b a} = n^{\log_2 2} = n \):
+    Since \( f(n) = O(n) \), we find \( T(n) = \Theta(n \log n) \).
+
+(b) \( T(n) = T(n/2) + n/2 \):
+    Solve using iteration:
+    \( T(n) = T(n/2) + n/2 \)
+           \( = T(n/4) + n/4 + n/2 \)
+           \( = T(n/8) + n/8 + n/4 + n/2 \)
+           \( = \dots + n/2 \)
+    Total: \( n/2 + n/4 + \dots + 1 = n \).
+    Therefore, \( T(n) = \Theta(n) \).
                         </code></pre>
                     </div>
                 </div>
@@ -83,82 +140,161 @@
         <div class="container">
             <div class="question">
                 <button class="accordion">
-                    Set Operations
-                    <i class="fa-solid fa-chevron-down"></i>
-                </button>
-                <div class="panel">
-                    <h5>Question:</h5>
-                    <p>Given sets \( A = \{1, 2, 3\} \) and \( B = \{3, 4, 5\} \), find \( A \cap B \), \( A \cup B \), and \( A - B \).</p>               
-                    <div class="solution">
-                        <h5>Solution:</h5>
-                        <pre><code class="language-markup">
-\( A \cap B = \{3\} \)
-\( A \cup B = \{1, 2, 3, 4, 5\} \)
-\( A - B = \{1, 2\} \)
-                        </code></pre>
-                    </div> 
-                </div> 
-            </div>
-        </div>
-    </div>
-
-    <!-- Question 3 -->
-    <div id="exam-questions">
-        <div class="container">
-            <div class="question">
-                <button class="accordion">
-                    Graph Theory
+                    Merge Sort Stability
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
                 <div class="panel">
                     <h5>Question:</h5>
                     <p>
-                        Draw a graph with 5 vertices and 6 edges. Check if it is connected or disconnected.
+                        (a) Sort the sequence \( 3, 1, 4, 1, 5, 9, 2, 6 \) in ascending order using merge sort.
+                        <br>(b) Demonstrate that merge sort is stable using the result from (a).
                     </p>
                     <div class="solution">
                         <h5>Solution:</h5>
-                        <p>The graph can be connected if all vertices are reachable from any other vertex. Otherwise, it is disconnected.</p>
+                        <pre><code class="language-markup">
+    (a) Merge Sort:
+        Initial sequence: \( 3, 1, 4, 1, 5, 9, 2, 6 \)
+        Step 1: Divide into halves: \( [3, 1, 4, 1] \) and \( [5, 9, 2, 6] \)
+        Step 2: Further divide: \( [3, 1] \), \( [4, 1] \), \( [5, 9] \), \( [2, 6] \)
+        Step 3: Sort and merge:
+            \( [1, 3] \), \( [1, 4] \), \( [5, 9] \), \( [2, 6] \)
+            Merge into: \( [1, 1, 3, 4] \), \( [2, 5, 6, 9] \)
+        Final merge: \( [1, 1, 2, 3, 4, 5, 6, 9] \).
+    
+    (b) Stability:
+        To demonstrate stability, note that identical elements retain their original order.
+        Example:
+        In \( [3, 1, 4, 1, 5, 9, 2, 6] \), the two \( 1 \)'s appear in the same order in the sorted sequence \( [1, 1, 2, 3, 4, 5, 6, 9] \).
+        Therefore, merge sort is stable.
+                            </code></pre>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+    <!-- Question 3 -->
+    <div id="exam-questions">
+        <div class="container">
+            <div class="question">
+                <button class="accordion">
+                    NP-Completeness and Subset Sum Problem
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <h5>Question:</h5>
+                    <p>
+                        (a) Write two conditions for a problem \( A \) to be NP-complete.
+                        <br>(b) The subset sum problem asks whether, given a set \( S \) of \( n \) distinct integers
+                        and an integer \( K \), there exists a subset of \( S \) whose elements sum to exactly \( K \).
+                        Prove that this problem belongs to NP.
+                    </p>
+                    <div class="solution">
+                        <h5>Solution:</h5>
+                        <pre><code class="language-markup">
+(a) A problem \( A \) is NP-complete if:
+    1. \( A \) is in NP, meaning a given solution can be verified in polynomial time.
+    2. Every problem in NP can be reduced to \( A \) in polynomial time (NP-hard).
+
+(b) Proof that the subset sum problem is in NP:
+    - Verification: Given a subset \( S' \subseteq S \), compute the sum of its elements and check if it equals \( K \).
+    - This verification requires summing \( n \) integers, which takes polynomial time.
+    - Therefore, the subset sum problem is in NP.
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Question 4 -->
     <div id="exam-questions">
         <div class="container">
             <div class="question">
                 <button class="accordion">
-                    Combinatorics
+                    Hash Table and Collision Resolution
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
                 <div class="panel">
                     <h5>Question:</h5>
-                    <p>How many ways can you arrange the letters in the word "DISCRETE"?</p>
+                    <p>
+                        A hash table of size 13 uses the hash function \( h(x) = x \mod 13 \). Given this table, we want
+                        to insert the keys 1, 2, 14, 15, 27, and 28 in order.
+                        <br>(a) Show the resulting hash table when resolving collisions using each of the following
+                        methods: chaining, linear probing, and quadratic probing.
+                        <br>(b) Describe the process of removing the key 1 from the hash table.
+                    </p>
                     <div class="solution">
                         <h5>Solution:</h5>
                         <pre><code class="language-markup">
-The word "DISCRETE" has 8 letters, with "E" repeated twice.
-Number of arrangements = \( \frac{8!}{2!} = 20160 \).
-                        </code></pre>
+    (a) Hash Table after inserting 1, 2, 14, 15, 27, and 28:
+    
+    1. Chaining:
+       Index | Keys
+       ----------------
+       0     | 
+       1     | 1 -> 14 -> 27
+       2     | 2 -> 15 -> 28
+       3     | 
+       ...   |
+    
+    2. Linear Probing:
+       Index | Keys
+       ----------------
+       0     | 
+       1     | 1
+       2     | 2
+       3     | 14
+       4     | 15
+       5     | 27
+       6     | 28
+       ...   |
+    
+    3. Quadratic Probing:
+       Index | Keys
+       ----------------
+       0     | 
+       1     | 1
+       2     | 2
+       3     | 14
+       4     | 15
+       7     | 27
+       9     | 28
+       ...   |
+    
+    (b) Removing key 1:
+    1. Chaining:
+       - Remove 1 from the chain at index 1. Updated chain: \( 14 \to 27 \).
+    
+    2. Linear Probing:
+       - Replace 1 at index 1 with a special marker (e.g., DELETED) to preserve the search integrity for other elements.
+    
+    3. Quadratic Probing:
+       - Replace 1 at index 1 with a special marker (e.g., DELETED). Continue to maintain quadratic probing rules for subsequent searches.
+                            </code></pre>
                     </div>
-                </div>                    
+                </div>
             </div>
         </div>
     </div>
 
+
     <footer id="main-footer" class="text-center justify-content-center fixed-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <p>Copyright &copy;
-              <span id="year">2024</span> discreteassistant.com </p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy;
+                        <span id="year">2024</span> studentassistant.com
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
     <script src="/js/quizzes.js" defer></script>
-    <script src="/js/exam/Discrete_Math.js" defer></script>
+    <script src="/js/exam/ml.js" defer></script>
 </body>
+
 </html>
