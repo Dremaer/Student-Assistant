@@ -24,11 +24,11 @@ router.post(
       })
       .normalizeEmail(),
     body("password")
-      .matches(/^.{8,32}$/) //regex
+      .matches(/^.{8,32}$/) //regular expression (regex)
       .withMessage("Password must be between 8 and 32 characters.") // Length check
       .matches(/[a-z]/)
       .withMessage("Password must contain at least one lowercase letter.") // Lowercase check
-      .matches(/\d/) //regex
+      .matches(/\d/) //regular expression (regex)
       .withMessage("Password must contain at least one number.") // Number check
       .trim(),
   ],
