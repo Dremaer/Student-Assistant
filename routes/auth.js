@@ -24,7 +24,6 @@ router.post(
         });
       }),
     body("password").isLength({ min: 8, max: 32 }).trim(),
-    body("name").trim().not().isEmpty(),
   ],
   authController.postSignup
 );

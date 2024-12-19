@@ -2,6 +2,7 @@ exports.getLandPage = (req, res, next) => {
   res.render("main_screen", {
     pageTitle: "project",
     path: "/",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -9,6 +10,7 @@ exports.getCommunity = (req, res, next) => {
   res.render("community", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -16,6 +18,7 @@ exports.getEduBot = (req, res, next) => {
   res.render("edubot", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -23,12 +26,15 @@ exports.getLogin = (req, res, next) => {
   res.render("login", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
+
   });
 };
 
 exports.getSignup = (req, res, next) => {
   res.render("signup", {
     pageTitle: "project",
+    isAuthenticated: req.session.isLoggedIn,
     path: "/landPage",
   });
 };
@@ -36,6 +42,7 @@ exports.getSignup = (req, res, next) => {
 exports.getGrade1 = (req, res, next) => {
   res.render("grade_1", {
     pageTitle: "project",
+    isAuthenticated: req.session.isLoggedIn,
     path: "/landPage",
   });
 };
@@ -44,6 +51,8 @@ exports.getGrade2 = (req, res, next) => {
   res.render("grade_2", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
+
   });
 };
 
@@ -51,6 +60,7 @@ exports.getGrade2 = (req, res, next) => {
 exports.getGrade3 = (req, res, next) => {
   res.render("grade_3", {
     pageTitle: "project",
+    isAuthenticated: req.session.isLoggedIn,
     path: "/landPage",
   });
 };
@@ -59,6 +69,7 @@ exports.getGrade4 = (req, res, next) => {
   res.render("grade_4", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -68,6 +79,7 @@ exports.getSubject = (req, res, next) => {
   res.render(`subjects/${subject}`, {
     pageTitle: `${subject.replace("_", " ")}`,
     path: `/subjects/${subject}`,
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -76,6 +88,7 @@ exports.getMLQuiz = (req, res, next) => {
   res.render("quizs/quizs_ml", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -83,12 +96,14 @@ exports.getPQuiz = (req, res, next) => {
   res.render("quizs/quizs_probability", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getDMQuiz = (req, res, next) => {
   res.render("quizs/quizs_Discrete_Math", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -96,6 +111,7 @@ exports.getAAQuiz = (req, res, next) => {
   res.render("quizs/quizs_Algorithm_Analysis_Design", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
@@ -109,6 +125,7 @@ exports.getMLQTopic1 = (req, res, next) => {
   res.render("quizs/data_mining_process", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 
