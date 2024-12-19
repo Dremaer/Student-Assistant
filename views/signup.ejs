@@ -74,7 +74,6 @@
           </div>
         </div>
       </nav>
-
       <form method="post" action="/auth/signup">
         <h2>Sign up</h2>
         <label for="email">Email</label>
@@ -84,7 +83,15 @@
         <input type="password" name="password" required />
         <div class="password error"></div>
         <button>Sign up</button>
+        <% if (typeof errorMessage !== "undefined" && errorMessage) { %>
+        <div>
+          <div class="alert alert-danger mt-3" style="text-align: center;">
+            <%= errorMessage %>
+          </div>
+        </div>
+        <% } %>
       </form>
+    
 
     <footer id="main-footer" class="text-center justify-content-center bg-white fixed-bottom">
       <div class="container">

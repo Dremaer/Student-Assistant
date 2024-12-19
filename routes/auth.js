@@ -3,7 +3,6 @@ const express = require("express");
 const router = express.Router();
 
 const authController = require("../controllers/auth");
-
 const { body } = require("express-validator");
 
 const User = require("../models/users");
@@ -22,8 +21,16 @@ router.post(
             return Promise.reject("E-Mail address already exists!");
           }
         });
-      }),
-    body("password").isLength({ min: 8, max: 32 }).trim(),
+      })
+      .normalizeEmail(),
+    body("password")
+      .matches(/^.{8,32}$/) //regex
+      .withMessage("Password must be between 8 and 32 characters.") // Length check
+      .matches(/[a-z]/)
+      .withMessage("Password must contain at least one lowercase letter.") // Lowercase check
+      .matches(/\d/) //regex
+      .withMessage("Password must contain at least one number.") // Number check
+      .trim(),
   ],
   authController.postSignup
 );

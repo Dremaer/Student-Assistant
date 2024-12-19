@@ -16,10 +16,10 @@ const blog = new mongodbBlog({
 });
 
 // Middleware configuration
-app.use(flash());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Session middleware
 app.use(
   session({
     secret: "as312zxvds@!@$!!@sadsa",
@@ -28,6 +28,9 @@ app.use(
     store: blog,
   })
 );
+
+// Flash middleware (must come after session)
+app.use(flash());
 
 // Attach the logged-in user to the request if available
 app.use((req, res, next) => {
@@ -45,7 +48,6 @@ app.use((req, res, next) => {
 // Set view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
-
 
 // Route imports
 const landPageRoutes = require("./routes/landing-page");
