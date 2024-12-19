@@ -155,13 +155,39 @@ router.get("/quizs/file_io", landPageController.getCQuiz11);
 
 /* Data Structure Quizzes */
 router.get("/quizs/quiz_data", landPageController.getDataQuiz);
+
 router.get("/quizs/advanced_cpp", landPageController.getDataQuiz1);
+
 router.get("/quizs/array", landPageController.getDataQuiz2);
+
 router.get("/quizs/stack_queue", landPageController.getDataQuiz3);
+
 router.get("/quizs/inheritance", landPageController.getDataQuiz4);
+
 router.get("/quizs/linked_list", landPageController.getDataQuiz5);
+
 router.get("/quizs/tree", landPageController.getDataQuiz6);
+
 router.get("/quizs/graph", landPageController.getDataQuiz7);
+
+/* OOP quizzes */
+router.get("/quizs/quiz_oop", landPageController.getOOPQuiz);
+
+router.get("/quizs/intro_kotlin", landPageController.getOOPQuiz1);
+
+router.get("/quizs/logic_construct", landPageController.getOOPQuiz2);
+
+router.get("/quizs/class_object", landPageController.getOOPQuiz3);
+
+router.get("/quizs/functional_prog", landPageController.getOOPQuiz4);
+
+router.get("/quizs/class_types", landPageController.getOOPQuiz5);
+
+router.get("/quizs/collection_types", landPageController.getOOPQuiz6);
+
+router.get("/quizs/high_classes", landPageController.getOOPQuiz7);
+
+router.get("/quizs/generics", landPageController.getOOPQuiz8);
 
 /* ML subject flashcards */
 
@@ -229,6 +255,25 @@ router.get("/flashcards/tree", landPageController.getDataFlashTopic6);
 
 router.get("/flashcards/graph", landPageController.getDataFlashTopic7);
 
+/* OOP flashcard */
+router.get("/flashcards/flash_oop", landPageController.getOOPFlashTopic);
+
+router.get("/flashcards/intro_kotlin", landPageController.getOOPFlashTopic1);
+
+router.get("/flashcards/logic_construct", landPageController.getOOPFlashTopic2);
+
+router.get("/flashcards/class_object", landPageController.getOOPFlashTopic3);
+
+router.get("/flashcards/functional_prog", landPageController.getOOPFlashTopic4);
+
+router.get("/flashcards/class_types", landPageController.getOOPFlashTopic5);
+
+router.get("/flashcards/collection_types", landPageController.getOOPFlashTopic6);
+
+router.get("/flashcards/high_classes", landPageController.getOOPFlashTopic7);
+
+router.get("/flashcards/generics", landPageController.getOOPFlashTopic8);
+
 /* Subjects's exam */
 
 router.get("/exam/ml", landPageController.getMLExam);
@@ -243,6 +288,7 @@ router.get("/exam/Algorithm_Analysis_Design", landPageController.getAAExam);
 
 router.get("/exam/probability", landPageController.getPExam);
 
+router.get("/exam/exam_oop", landPageController.getOOPExam);
 
 module.exports = router;
 
