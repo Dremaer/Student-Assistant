@@ -566,10 +566,7 @@ exports.getOOPQuiz = (req, res, next) => {
   res.render("quizs/quiz_oop", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -577,10 +574,7 @@ exports.getOOPQuiz1 = (req, res, next) => {
   res.render("quizs/intro_kotlin", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -588,10 +582,7 @@ exports.getOOPQuiz2 = (req, res, next) => {
   res.render("quizs/logic_construct", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -599,10 +590,7 @@ exports.getOOPQuiz3 = (req, res, next) => {
   res.render("quizs/class_object", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -610,10 +598,7 @@ exports.getOOPQuiz4 = (req, res, next) => {
   res.render("quizs/functional_prog", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -621,10 +606,7 @@ exports.getOOPQuiz5 = (req, res, next) => {
   res.render("quizs/class_types", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -632,10 +614,7 @@ exports.getOOPQuiz6 = (req, res, next) => {
   res.render("quizs/collection_types", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -643,10 +622,7 @@ exports.getOOPQuiz7 = (req, res, next) => {
   res.render("quizs/high_classes", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
-=======
->>>>>>> Stashed changes
   });
 };
 
@@ -654,17 +630,10 @@ exports.getOOPQuiz8 = (req, res, next) => {
   res.render("quizs/generics", {
     pageTitle: "project",
     path: "/landPage",
-<<<<<<< Updated upstream
     isAuthenticated: req.session.isLoggedIn,
   });
 };
 
-
-=======
-  });
-};
-
->>>>>>> Stashed changes
 /* ML subject flashcards  */
 exports.getMLFlah = (req, res, next) => {
   res.render("flashcards/flash_ml", {
