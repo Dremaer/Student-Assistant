@@ -1182,24 +1182,31 @@ exports.getDMFlashTopic1 = (req, res, next) => {
   res.render("flashcards/Sets_Proofs", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
 };
 exports.getDMFlashTopic2 = (req, res, next) => {
   res.render("flashcards/Formal_Logic", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
-};exports.getDMFlashTopic3 = (req, res, next) => {
+};
+exports.getDMFlashTopic3 = (req, res, next) => {
   res.render("flashcards/Relations", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
-};exports.getDMFlashTopic4 = (req, res, next) => {
+};
+exports.getDMFlashTopic4 = (req, res, next) => {
   res.render("flashcards/Functions", {
     pageTitle: "project",
     path: "/landPage",
+    isAuthenticated: req.session.isLoggedIn,
   });
-};exports.getDMFlashTopic5 = (req, res, next) => {
+};
+exports.getDMFlashTopic5 = (req, res, next) => {
   res.render("flashcards/Algorithm_Analysis", {
     pageTitle: "project",
     path: "/landPage",

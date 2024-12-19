@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     homeButton.addEventListener('click', () => {
-        window.location.href = '/flashcards/flash_c'; 
+        window.location.href = '/flashcards/flash_Discrete_Math';
     });
     
     updateUI(currentCard);    

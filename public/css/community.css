@@ -154,3 +154,15 @@ text-align: left;}
     color: #777;
     margin-top: 5px;
 }
+
+.nav-link{
+    font-size: 16px;
+    font-weight: bold;
+}
+#main-footer{
+    background-color: #aaa9a9;
+}
+
+#main-footer .col{
+    color: #fff;
+}

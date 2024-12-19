@@ -230,7 +230,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 backBtn.addEventListener("click", () => {
-    window.location.href = "/quizs/quizs_ml";
+    window.location.href = "/quizs/quizs_probability";
 });
 
 startQuiz();
