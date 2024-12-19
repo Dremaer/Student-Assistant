@@ -312,6 +312,12 @@ router.get("/exam/exam_c", landPageController.getCExam);
 
 router.get("/exam/data_structure", landPageController.getDataExam);
 
+router.get("/exam/Discrete_Math", landPageController.getDMExam);
+
+router.get("/exam/Algorithm_Analysis_Design", landPageController.getAAExam);
+
+router.get("/exam/probability", landPageController.getPExam);
+
 router.get("/exam/exam_oop", landPageController.getOOPExam);
 
 module.exports = router;
