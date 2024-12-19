@@ -281,7 +281,7 @@ router.get("/flashcards/NP-Completeness", landPageController.getAAFlashTopic9);
 
 
 
-router.get("/flashcards/flash_probability", landPageController.getDMFlashTopic);
+router.get("/flashcards/flash_Discrete_Math", landPageController.getDMFlashTopic);
 
 router.get("/flashcards/Sets_Proofs", landPageController.getDMFlashTopic1);
 

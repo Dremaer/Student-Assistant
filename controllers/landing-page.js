@@ -1021,8 +1021,7 @@ exports.getOOPFlashTopic8 = (req, res, next) => {
     path: "/landPage",
   });
 };
-
-exports.getAAFlah = (req, res, next) => {
+exports.getAAFlashTopic = (req, res, next) => {
   res.render("flashcards/flash_Algorithm_Analysis_Design", {
     pageTitle: "project",
     path: "/landPage",
@@ -1085,7 +1084,7 @@ exports.getAAFlashTopic9 = (req, res, next) => {
 };
 
 
-exports.getPFlah = (req, res, next) => {
+exports.getPFlashTopic = (req, res, next) => {
   res.render("flashcards/flash_probability", {
     pageTitle: "project",
     path: "/landPage",
@@ -1153,7 +1152,7 @@ exports.getPFlashTopic10 = (req, res, next) => {
     path: "/landPage",
   });
 };
-exports.getDMFlah = (req, res, next) => {
+exports.getDMFlashTopic = (req, res, next) => {
   res.render("flashcards/flash_Discrete_Math", {
     pageTitle: "project",
     path: "/landPage",
