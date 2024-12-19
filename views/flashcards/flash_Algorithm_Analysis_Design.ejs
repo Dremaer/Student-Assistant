@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Assistant</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/flashcards/data_mining.css">
+    <link rel="stylesheet" href="/css/flashcards/flash_ml.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
@@ -74,34 +74,90 @@
         </div>
     </nav>
 
-    <div class="flashcard-container">
-        <div id="flashcard" class="flashcard">
-            <h2>Advanced C++</h2>
-            <div class="flashcard-inner">
-                <div class="flashcard-front">
-                    <p id="question">Question will appear here</p>
+    <div class="container mt-4">
+        <a class="back-button" href="/subjects/algorithm">⇐ Explore other options</a>
+    </div>
+
+    <div id="quiz-items">
+        <div class="container">
+            <!-- Quiz Block 1 -->
+            <div class="quiz-block">
+                <div class="flashcard-item">
+                    <a href="/flashcards/Overview_Algorithms">Overview of Algorithms</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Overview of Algorithms">
+                    <p>Flashcard (5)</p>
+                    </div>  
                 </div>
-                <div class="flashcard-back">
-                    <p id="answer">Answer will appear here</p>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Sorting_Algorithms">Sorting Algorithms</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Sorting Algorithms">
+                        <p>Flashcard (5)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Search_Trees">Search Trees</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Search Trees">
+                        <p>Flashcard (5)</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Quiz Block 2 -->
+            <div class="quiz-block">
+                <div class="flashcard-item">
+                    <a href="/flashcards/Hash_Tables">Hash Tables</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Hash Tables">
+                        <p>Flashcard (7)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Greedy_Algorithms">Greedy Algorithms</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Greedy Algorithms">
+                        <p>Flashcard (8)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Dynamic_Programming">Dynamic Programming</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Dynamic Programming">
+                        <p>Flashcard (8)</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Quiz Block 3 -->
+            <div class="quiz-block">
+                <div class="flashcard-item">
+                    <a href="/flashcards/Graph_Algorithms">Graph Algorithms</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Graph Algorithms">
+                        <p>Flashcard (8)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/Amortized_Analysis">Amortized Analysis</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="Amortized Analysis">
+                        <p>Flashcard (10)</p>
+                    </div>
+                </div>
+                <div class="flashcard-item">
+                    <a href="/flashcards/NP-Completeness">NP-Completeness</a>
+                    <div class="flash-text">
+                        <img src="/images/flashcards.png" alt="NP-Completeness">
+                        <p>Flashcard (8)</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="navigation">
-            <button id="prev-card">←</button>
-            <span id="card-number">1 / 1</span>
-            <button id="next-card">→</button> 
-        </div>
     </div>
+    
 
-    <div id="flashcardEnd" style="display: none;">
-        <p class="end-message">🎉 You've completed the flashcards! 🎉</p>
-        <div class="end-buttons">
-          <button id="reset-flashcards" class="btn reset-btn">Review flashcards</button>
-          <button id="back-home" class="btn home-btn">Next</button>
-        </div>
-    </div>
-    
-    
     <footer id="main-footer" class="text-center justify-content-center fixed-bottom">
       <div class="container">
         <div class="row">
@@ -114,6 +170,5 @@
     </footer>
 
     <script src="/js/quizzes.js" defer></script>
-    <script src="/js/flashcards/Estimation.js" defer></script>
 </body>
 </html>
