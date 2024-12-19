@@ -34,14 +34,6 @@ router.get("/quizs/quizs_Discrete_Math", landPageController.getDMQuiz);
 router.get("/quizs/quizs_Algorithm_Analysis_Design", landPageController.getAAQuiz);
 
 
-
-
-
-
-
-
-
-
 router.get("/quizs/data_mining_process", landPageController.getMLQTopic1);
 
 router.get("/quizs/data_search", landPageController.getMLQTopic2);
@@ -61,8 +53,6 @@ router.get("/quizs/linear_regression", landPageController.getMLQTopic8);
 router.get("/quizs/clustering", landPageController.getMLQTopic9);
 
 router.get("/quizs/assosiation_analysis", landPageController.getMLQTopic10);
-
-
 
 
 router.get("/quizs/Fundamental_Concepts_Rules", landPageController.getPQTopic1);
