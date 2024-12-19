@@ -636,7 +636,6 @@ exports.getOOPQuiz8 = (req, res, next) => {
 
 
 
->>>>>>> Stashed changes
 /* ML subject flashcards  */
 exports.getMLFlah = (req, res, next) => {
   res.render("flashcards/flash_ml", {
